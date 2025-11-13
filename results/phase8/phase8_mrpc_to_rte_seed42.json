@@ -1,0 +1,11 @@
+{
+  "experiment_id": "phase8_mrpc_to_rte_seed42",
+  "train_task": "mrpc",
+  "test_task": "rte",
+  "seed": 42,
+  "metrics": {
+    "accuracy": 0.47,
+    "training_time_hours": 0.053,
+    "peak_gpu_memory_gb": 0.45
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "experiment_id": "phase2_mrpc_4bit_seed43",
+  "phase": 2,
+  "task": "mrpc",
+  "quantization": "4bit",
+  "seed": 43,
+  "timestamp": "2025-10-28T19:17:35.371258",
+  "dataset_info": {
+    "train_samples": 3668,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 67017988,
+    "trainable_params": 296450,
+    "trainable_percent": 0.44,
+    "quantization_bits": 4
+  },
+  "metrics": {
+    "accuracy": 0.685,
+    "f1": 0.685,
+    "training_loss": 0.6309,
+    "training_time_hours": 0.0414,
+    "peak_gpu_memory_gb": 0.4,
+    "total_training_steps": 690
+  }
+}

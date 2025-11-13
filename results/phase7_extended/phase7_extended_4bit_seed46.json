@@ -1,0 +1,46 @@
+{
+  "experiment_id": "phase7_extended_4bit_seed46",
+  "phase": 7,
+  "extension": true,
+  "method": "4bit",
+  "seed": 46,
+  "timestamp": "2025-10-31T09:29:01.427997",
+  "task_sequence": [
+    "rte",
+    "mrpc",
+    "cola",
+    "sst2"
+  ],
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.555,
+      "after_mrpc": 0.45,
+      "after_cola": 0.445,
+      "after_sst2": 0.445
+    },
+    "mrpc": {
+      "after_mrpc": 0.685,
+      "after_cola": 0.685,
+      "after_sst2": 0.695
+    },
+    "cola": {
+      "after_cola": 0.665,
+      "after_sst2": 0.695
+    },
+    "sst2": {
+      "after_sst2": 0.52
+    }
+  },
+  "forgetting_metrics": {
+    "avg_forgetting": 0.0233,
+    "max_forgetting": 0.11,
+    "forgetting_per_task": {
+      "rte": 0.11,
+      "mrpc": -0.01,
+      "cola": -0.03
+    }
+  },
+  "metrics": {
+    "total_time_hours": 0.2145
+  }
+}

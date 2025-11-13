@@ -1,0 +1,28 @@
+{
+  "experiment_id": "phase4_cola_qkv_seed43",
+  "phase": 4,
+  "task": "cola",
+  "module_type": "qkv",
+  "module_description": "query+key+value",
+  "seed": 43,
+  "timestamp": "2025-10-29T20:56:11.870001",
+  "dataset_info": {
+    "train_samples": 8551,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 109927684,
+    "trainable_params": 443906,
+    "trainable_percent": 0.4,
+    "expected_params": 444675
+  },
+  "metrics": {
+    "accuracy": 0.655,
+    "f1": 0.655,
+    "training_loss": 0.5929,
+    "training_time_hours": 0.0442,
+    "peak_gpu_memory_gb": 1.38,
+    "total_training_steps": 1605
+  }
+}

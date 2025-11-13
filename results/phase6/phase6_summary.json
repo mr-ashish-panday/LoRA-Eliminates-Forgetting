@@ -1,0 +1,1359 @@
+{
+  "phase": 6,
+  "total_experiments": 48,
+  "successful_experiments": 48,
+  "failed_experiments": 0,
+  "total_time_hours": 12.99,
+  "combinations_tested": [
+    "qv_4bit",
+    "qv_8bit",
+    "all_4bit",
+    "all_8bit"
+  ],
+  "results": {
+    "rte_qv_4bit_seed42": {
+      "experiment_id": "phase6_rte_qv_4bit_seed42",
+      "phase": 6,
+      "task": "rte",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T00:59:39.102200",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.545,
+        "f1": 0.545,
+        "training_loss": 0.7055,
+        "training_time_hours": 0.029,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 468
+      }
+    },
+    "rte_qv_4bit_seed43": {
+      "experiment_id": "phase6_rte_qv_4bit_seed43",
+      "phase": 6,
+      "task": "rte",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T01:01:26.644784",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.54,
+        "f1": 0.54,
+        "training_loss": 0.6992,
+        "training_time_hours": 0.0299,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 468
+      }
+    },
+    "rte_qv_4bit_seed44": {
+      "experiment_id": "phase6_rte_qv_4bit_seed44",
+      "phase": 6,
+      "task": "rte",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T01:03:16.874415",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.475,
+        "f1": 0.475,
+        "training_loss": 0.6965,
+        "training_time_hours": 0.0306,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 468
+      }
+    },
+    "rte_qv_8bit_seed42": {
+      "experiment_id": "phase6_rte_qv_8bit_seed42",
+      "phase": 6,
+      "task": "rte",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T01:05:45.984044",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.535,
+        "f1": 0.535,
+        "training_loss": 0.7053,
+        "training_time_hours": 0.0414,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 468
+      }
+    },
+    "rte_qv_8bit_seed43": {
+      "experiment_id": "phase6_rte_qv_8bit_seed43",
+      "phase": 6,
+      "task": "rte",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T01:08:15.756929",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.515,
+        "f1": 0.515,
+        "training_loss": 0.7017,
+        "training_time_hours": 0.0416,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 468
+      }
+    },
+    "rte_qv_8bit_seed44": {
+      "experiment_id": "phase6_rte_qv_8bit_seed44",
+      "phase": 6,
+      "task": "rte",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T01:10:45.756099",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.45,
+        "f1": 0.45,
+        "training_loss": 0.6976,
+        "training_time_hours": 0.0417,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 468
+      }
+    },
+    "rte_all_4bit_seed42": {
+      "experiment_id": "phase6_rte_all_4bit_seed42",
+      "phase": 6,
+      "task": "rte",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T01:13:07.409388",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.535,
+        "f1": 0.535,
+        "training_loss": 0.7052,
+        "training_time_hours": 0.0393,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 468
+      }
+    },
+    "rte_all_4bit_seed43": {
+      "experiment_id": "phase6_rte_all_4bit_seed43",
+      "phase": 6,
+      "task": "rte",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T01:15:25.367096",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.555,
+        "f1": 0.555,
+        "training_loss": 0.6963,
+        "training_time_hours": 0.0383,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 468
+      }
+    },
+    "rte_all_4bit_seed44": {
+      "experiment_id": "phase6_rte_all_4bit_seed44",
+      "phase": 6,
+      "task": "rte",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T01:17:44.067613",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.52,
+        "f1": 0.52,
+        "training_loss": 0.6977,
+        "training_time_hours": 0.0385,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 468
+      }
+    },
+    "rte_all_8bit_seed42": {
+      "experiment_id": "phase6_rte_all_8bit_seed42",
+      "phase": 6,
+      "task": "rte",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T01:20:35.408281",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.52,
+        "f1": 0.52,
+        "training_loss": 0.7048,
+        "training_time_hours": 0.0476,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 468
+      }
+    },
+    "rte_all_8bit_seed43": {
+      "experiment_id": "phase6_rte_all_8bit_seed43",
+      "phase": 6,
+      "task": "rte",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T01:23:30.383218",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.555,
+        "f1": 0.555,
+        "training_loss": 0.6994,
+        "training_time_hours": 0.0486,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 468
+      }
+    },
+    "rte_all_8bit_seed44": {
+      "experiment_id": "phase6_rte_all_8bit_seed44",
+      "phase": 6,
+      "task": "rte",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T01:26:25.461773",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.505,
+        "f1": 0.505,
+        "training_loss": 0.6989,
+        "training_time_hours": 0.0486,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 468
+      }
+    },
+    "mrpc_qv_4bit_seed42": {
+      "experiment_id": "phase6_mrpc_qv_4bit_seed42",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T01:29:02.753352",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.626,
+        "training_time_hours": 0.0437,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_qv_4bit_seed43": {
+      "experiment_id": "phase6_mrpc_qv_4bit_seed43",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T01:31:34.358598",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6309,
+        "training_time_hours": 0.0421,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_qv_4bit_seed44": {
+      "experiment_id": "phase6_mrpc_qv_4bit_seed44",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T01:34:01.450188",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6306,
+        "training_time_hours": 0.0409,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_qv_8bit_seed42": {
+      "experiment_id": "phase6_mrpc_qv_8bit_seed42",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T01:37:24.661711",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6325,
+        "training_time_hours": 0.0564,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_qv_8bit_seed43": {
+      "experiment_id": "phase6_mrpc_qv_8bit_seed43",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T01:41:35.269262",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6313,
+        "training_time_hours": 0.0696,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_qv_8bit_seed44": {
+      "experiment_id": "phase6_mrpc_qv_8bit_seed44",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T01:44:51.234078",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6343,
+        "training_time_hours": 0.0544,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_all_4bit_seed42": {
+      "experiment_id": "phase6_mrpc_all_4bit_seed42",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T01:48:11.651058",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.72,
+        "f1": 0.72,
+        "training_loss": 0.6007,
+        "training_time_hours": 0.0557,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_all_4bit_seed43": {
+      "experiment_id": "phase6_mrpc_all_4bit_seed43",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T01:51:11.068571",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6217,
+        "training_time_hours": 0.0498,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_all_4bit_seed44": {
+      "experiment_id": "phase6_mrpc_all_4bit_seed44",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T01:54:28.403720",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.695,
+        "f1": 0.695,
+        "training_loss": 0.6169,
+        "training_time_hours": 0.0548,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_all_8bit_seed42": {
+      "experiment_id": "phase6_mrpc_all_8bit_seed42",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T01:58:38.339229",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.7,
+        "f1": 0.7,
+        "training_loss": 0.6084,
+        "training_time_hours": 0.0694,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_all_8bit_seed43": {
+      "experiment_id": "phase6_mrpc_all_8bit_seed43",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T02:02:44.850991",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6201,
+        "training_time_hours": 0.0685,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_all_8bit_seed44": {
+      "experiment_id": "phase6_mrpc_all_8bit_seed44",
+      "phase": 6,
+      "task": "mrpc",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T02:06:50.815424",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.69,
+        "f1": 0.69,
+        "training_loss": 0.6215,
+        "training_time_hours": 0.0683,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 690
+      }
+    },
+    "cola_qv_4bit_seed42": {
+      "experiment_id": "phase6_cola_qv_4bit_seed42",
+      "phase": 6,
+      "task": "cola",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T02:12:15.931884",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.675,
+        "f1": 0.675,
+        "training_loss": 0.5804,
+        "training_time_hours": 0.0903,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_qv_4bit_seed43": {
+      "experiment_id": "phase6_cola_qv_4bit_seed43",
+      "phase": 6,
+      "task": "cola",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T02:17:49.626760",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.655,
+        "f1": 0.655,
+        "training_loss": 0.5884,
+        "training_time_hours": 0.0927,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_qv_4bit_seed44": {
+      "experiment_id": "phase6_cola_qv_4bit_seed44",
+      "phase": 6,
+      "task": "cola",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T02:22:58.222587",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.665,
+        "f1": 0.665,
+        "training_loss": 0.5833,
+        "training_time_hours": 0.0857,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_qv_8bit_seed42": {
+      "experiment_id": "phase6_cola_qv_8bit_seed42",
+      "phase": 6,
+      "task": "cola",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T02:30:10.088980",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.67,
+        "f1": 0.67,
+        "training_loss": 0.586,
+        "training_time_hours": 0.12,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_qv_8bit_seed43": {
+      "experiment_id": "phase6_cola_qv_8bit_seed43",
+      "phase": 6,
+      "task": "cola",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T02:37:27.888797",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.65,
+        "f1": 0.65,
+        "training_loss": 0.5918,
+        "training_time_hours": 0.1216,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_qv_8bit_seed44": {
+      "experiment_id": "phase6_cola_qv_8bit_seed44",
+      "phase": 6,
+      "task": "cola",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T02:44:36.366489",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.66,
+        "f1": 0.66,
+        "training_loss": 0.5884,
+        "training_time_hours": 0.119,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_all_4bit_seed42": {
+      "experiment_id": "phase6_cola_all_4bit_seed42",
+      "phase": 6,
+      "task": "cola",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T02:51:29.449936",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.73,
+        "f1": 0.73,
+        "training_loss": 0.5276,
+        "training_time_hours": 0.1147,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_all_4bit_seed43": {
+      "experiment_id": "phase6_cola_all_4bit_seed43",
+      "phase": 6,
+      "task": "cola",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T02:58:51.592234",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.74,
+        "f1": 0.74,
+        "training_loss": 0.5373,
+        "training_time_hours": 0.1228,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_all_4bit_seed44": {
+      "experiment_id": "phase6_cola_all_4bit_seed44",
+      "phase": 6,
+      "task": "cola",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T03:05:53.110642",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.74,
+        "f1": 0.74,
+        "training_loss": 0.5304,
+        "training_time_hours": 0.1171,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_all_8bit_seed42": {
+      "experiment_id": "phase6_cola_all_8bit_seed42",
+      "phase": 6,
+      "task": "cola",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T03:14:29.969501",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.725,
+        "f1": 0.725,
+        "training_loss": 0.5322,
+        "training_time_hours": 0.1436,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_all_8bit_seed43": {
+      "experiment_id": "phase6_cola_all_8bit_seed43",
+      "phase": 6,
+      "task": "cola",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T03:23:22.666093",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.735,
+        "f1": 0.735,
+        "training_loss": 0.5416,
+        "training_time_hours": 0.148,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_all_8bit_seed44": {
+      "experiment_id": "phase6_cola_all_8bit_seed44",
+      "phase": 6,
+      "task": "cola",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T03:32:13.404691",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.73,
+        "f1": 0.73,
+        "training_loss": 0.5341,
+        "training_time_hours": 0.1474,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 1605
+      }
+    },
+    "sst2_qv_4bit_seed42": {
+      "experiment_id": "phase6_sst2_qv_4bit_seed42",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T04:12:42.883093",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.87,
+        "f1": 0.87,
+        "training_loss": 0.3066,
+        "training_time_hours": 0.6748,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_qv_4bit_seed43": {
+      "experiment_id": "phase6_sst2_qv_4bit_seed43",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T04:52:34.842726",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.87,
+        "f1": 0.87,
+        "training_loss": 0.3096,
+        "training_time_hours": 0.6644,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_qv_4bit_seed44": {
+      "experiment_id": "phase6_sst2_qv_4bit_seed44",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "qv_4bit",
+      "module_type": "query+value",
+      "quantization": "4bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T05:31:32.371400",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 67017988,
+        "trainable_params": 296450,
+        "trainable_percent": 0.44
+      },
+      "metrics": {
+        "accuracy": 0.88,
+        "f1": 0.88,
+        "training_loss": 0.3116,
+        "training_time_hours": 0.6493,
+        "peak_gpu_memory_gb": 0.4,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_qv_8bit_seed42": {
+      "experiment_id": "phase6_sst2_qv_8bit_seed42",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T06:24:04.620094",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.87,
+        "f1": 0.87,
+        "training_loss": 0.3063,
+        "training_time_hours": 0.8756,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_qv_8bit_seed43": {
+      "experiment_id": "phase6_sst2_qv_8bit_seed43",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T07:16:10.545783",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.89,
+        "f1": 0.89,
+        "training_loss": 0.3091,
+        "training_time_hours": 0.8683,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_qv_8bit_seed44": {
+      "experiment_id": "phase6_sst2_qv_8bit_seed44",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "qv_8bit",
+      "module_type": "query+value",
+      "quantization": "8bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T08:08:00.970937",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.885,
+        "f1": 0.885,
+        "training_loss": 0.3112,
+        "training_time_hours": 0.864,
+        "peak_gpu_memory_gb": 0.48,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_all_4bit_seed42": {
+      "experiment_id": "phase6_sst2_all_4bit_seed42",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T08:59:18.441030",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.915,
+        "f1": 0.915,
+        "training_loss": 0.2564,
+        "training_time_hours": 0.8548,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_all_4bit_seed43": {
+      "experiment_id": "phase6_sst2_all_4bit_seed43",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T09:51:49.599210",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.92,
+        "f1": 0.92,
+        "training_loss": 0.256,
+        "training_time_hours": 0.8753,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_all_4bit_seed44": {
+      "experiment_id": "phase6_sst2_all_4bit_seed44",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "all_4bit",
+      "module_type": "all_linear",
+      "quantization": "4bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T10:44:13.945670",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 68062468,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.97
+      },
+      "metrics": {
+        "accuracy": 0.915,
+        "f1": 0.915,
+        "training_loss": 0.2563,
+        "training_time_hours": 0.8734,
+        "peak_gpu_memory_gb": 0.46,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_all_8bit_seed42": {
+      "experiment_id": "phase6_sst2_all_8bit_seed42",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 42,
+      "timestamp": "2025-10-30T11:47:56.473954",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.91,
+        "f1": 0.91,
+        "training_loss": 0.2557,
+        "training_time_hours": 1.0618,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_all_8bit_seed43": {
+      "experiment_id": "phase6_sst2_all_8bit_seed43",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 43,
+      "timestamp": "2025-10-30T12:52:47.390789",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.92,
+        "f1": 0.92,
+        "training_loss": 0.2557,
+        "training_time_hours": 1.0808,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_all_8bit_seed44": {
+      "experiment_id": "phase6_sst2_all_8bit_seed44",
+      "phase": 6,
+      "task": "sst2",
+      "combination": "all_8bit",
+      "module_type": "all_linear",
+      "quantization": "8bit",
+      "seed": 44,
+      "timestamp": "2025-10-30T13:57:34.050452",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110824708,
+        "trainable_params": 1340930,
+        "trainable_percent": 1.21
+      },
+      "metrics": {
+        "accuracy": 0.92,
+        "f1": 0.92,
+        "training_loss": 0.2563,
+        "training_time_hours": 1.0796,
+        "peak_gpu_memory_gb": 0.53,
+        "total_training_steps": 12630
+      }
+    }
+  }
+}

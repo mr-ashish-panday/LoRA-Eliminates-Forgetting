@@ -1,0 +1,331 @@
+nohup: ignoring input
+2025-11-05 20:59:59,684 - ====================================================================================================
+2025-11-05 20:59:59,684 - COMPUTATIONAL COST PROFILING
+2025-11-05 20:59:59,684 - ====================================================================================================
+2025-11-05 20:59:59,684 - Start: 2025-11-05T20:59:59.684793
+2025-11-05 20:59:59,684 - Methods: Full fine-tuning, LoRA r=8, 4-bit + LoRA
+2025-11-05 20:59:59,684 - Metrics: Training time, memory, FLOPs, inference latency
+2025-11-05 20:59:59,684 - ====================================================================================================
+2025-11-05 20:59:59,685 - 
+================================================================================
+2025-11-05 20:59:59,685 - PROFILING: FULL, Seed: 42
+2025-11-05 20:59:59,685 - ================================================================================
+2025-11-05 20:59:59,687 -   Creating full fine-tuning model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 21:00:00,553 -   Total params: 109,483,778
+2025-11-05 21:00:00,553 -   Trainable params: 109,483,778 (100.00%)
+2025-11-05 21:00:00,555 -   Forward pass: 28.03 GFLOPs
+2025-11-05 21:00:00,555 -   Training step: 84.08 GFLOPs
+2025-11-05 21:00:00,555 -   Loading MRPC dataset...
+Map:   0%|          | 0/1000 [00:00<?, ? examples/s]Map: 100%|██████████| 1000/1000 [00:00<00:00, 6024.03 examples/s]Map: 100%|██████████| 1000/1000 [00:00<00:00, 5838.21 examples/s]
+Map:   0%|          | 0/100 [00:00<?, ? examples/s]Map: 100%|██████████| 100/100 [00:00<00:00, 2922.03 examples/s]
+2025-11-05 21:00:11,243 -   Training (1 epoch for profiling)...
+  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:01<01:05,  1.06s/it]  5%|▍         | 3/63 [00:01<00:20,  2.92it/s]  8%|▊         | 5/63 [00:01<00:12,  4.66it/s] 11%|█         | 7/63 [00:01<00:09,  6.08it/s] 14%|█▍        | 9/63 [00:01<00:07,  7.32it/s] 17%|█▋        | 11/63 [00:01<00:05,  8.75it/s] 21%|██        | 13/63 [00:02<00:05,  9.78it/s] 24%|██▍       | 15/63 [00:02<00:04, 10.54it/s] 27%|██▋       | 17/63 [00:02<00:04, 10.57it/s] 30%|███       | 19/63 [00:02<00:03, 11.08it/s] 33%|███▎      | 21/63 [00:02<00:03, 11.61it/s] 37%|███▋      | 23/63 [00:02<00:03, 11.97it/s] 40%|███▉      | 25/63 [00:03<00:03, 11.75it/s] 43%|████▎     | 27/63 [00:03<00:03, 11.98it/s] 46%|████▌     | 29/63 [00:03<00:02, 11.88it/s] 49%|████▉     | 31/63 [00:03<00:02, 12.08it/s] 52%|█████▏    | 33/63 [00:03<00:02, 12.10it/s] 56%|█████▌    | 35/63 [00:03<00:02, 12.01it/s] 59%|█████▊    | 37/63 [00:04<00:02, 11.73it/s] 62%|██████▏   | 39/63 [00:04<00:01, 12.13it/s] 65%|██████▌   | 41/63 [00:04<00:01, 12.26it/s] 68%|██████▊   | 43/63 [00:04<00:01, 12.71it/s] 71%|███████▏  | 45/63 [00:04<00:01, 12.66it/s] 75%|███████▍  | 47/63 [00:04<00:01, 12.50it/s] 78%|███████▊  | 49/63 [00:05<00:01, 12.23it/s]                                                79%|███████▉  | 50/63 [00:05<00:01, 12.23it/s] 81%|████████  | 51/63 [00:05<00:00, 12.24it/s] 84%|████████▍ | 53/63 [00:05<00:00, 12.49it/s] 87%|████████▋ | 55/63 [00:05<00:00, 12.55it/s] 90%|█████████ | 57/63 [00:05<00:00, 12.71it/s] 94%|█████████▎| 59/63 [00:05<00:00, 12.93it/s] 97%|█████████▋| 61/63 [00:05<00:00, 12.68it/s]100%|██████████| 63/63 [00:06<00:00, 12.24it/s]                                               100%|██████████| 63/63 [00:06<00:00, 12.24it/s]100%|██████████| 63/63 [00:06<00:00, 10.20it/s]
+2025-11-05 21:00:17,633 -   Training time: 6.39s for 1 epoch on 1000 samples
+2025-11-05 21:00:17,633 -   Peak memory: 2.42 GB
+2025-11-05 21:00:17,633 -   Samples/sec: 156.49
+2025-11-05 21:00:17,633 -   Estimated full training: 1.17 minutes
+2025-11-05 21:00:17,633 -   Measuring inference latency...
+2025-11-05 21:00:17,635 - ❌ Error profiling full seed 42: 'sentence1'
+2025-11-05 21:00:17,636 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 301, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 232, in profile_method
+    latency = measure_inference_latency(model, val_dataset, tokenizer, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 50, in measure_inference_latency
+    sample['sentence'] if 'sentence' in sample else f"{sample['sentence1']} {sample['sentence2']}",
+                                                       ~~~~~~^^^^^^^^^^^^^
+KeyError: 'sentence1'
+
+2025-11-05 21:00:17,643 - 
+================================================================================
+2025-11-05 21:00:17,643 - PROFILING: FULL, Seed: 43
+2025-11-05 21:00:17,643 - ================================================================================
+2025-11-05 21:00:17,644 -   Creating full fine-tuning model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 21:00:18,022 -   Total params: 109,483,778
+2025-11-05 21:00:18,022 -   Trainable params: 109,483,778 (100.00%)
+2025-11-05 21:00:18,024 -   Forward pass: 28.03 GFLOPs
+2025-11-05 21:00:18,024 -   Training step: 84.08 GFLOPs
+2025-11-05 21:00:18,024 -   Loading MRPC dataset...
+{'loss': 0.6361, 'grad_norm': 4.896191596984863, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 6.1748, 'train_samples_per_second': 161.947, 'train_steps_per_second': 10.203, 'train_loss': 0.6189659966362847, 'epoch': 1.0}
+Map:   0%|          | 0/100 [00:00<?, ? examples/s]Map: 100%|██████████| 100/100 [00:00<00:00, 2969.61 examples/s]
+2025-11-05 21:00:26,446 -   Training (1 epoch for profiling)...
+  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:00<00:07,  8.75it/s]  5%|▍         | 3/63 [00:00<00:05, 10.40it/s]  8%|▊         | 5/63 [00:00<00:05, 10.67it/s] 11%|█         | 7/63 [00:00<00:05, 11.10it/s] 14%|█▍        | 9/63 [00:00<00:04, 11.35it/s] 17%|█▋        | 11/63 [00:00<00:04, 11.65it/s] 21%|██        | 13/63 [00:01<00:04, 11.56it/s] 24%|██▍       | 15/63 [00:01<00:04, 11.73it/s] 27%|██▋       | 17/63 [00:01<00:03, 11.97it/s] 30%|███       | 19/63 [00:01<00:03, 12.02it/s] 33%|███▎      | 21/63 [00:01<00:03, 12.21it/s] 37%|███▋      | 23/63 [00:01<00:03, 11.96it/s] 40%|███▉      | 25/63 [00:02<00:03, 12.22it/s] 43%|████▎     | 27/63 [00:02<00:02, 12.29it/s] 46%|████▌     | 29/63 [00:02<00:02, 12.57it/s] 49%|████▉     | 31/63 [00:02<00:02, 12.32it/s] 52%|█████▏    | 33/63 [00:02<00:02, 12.09it/s] 56%|█████▌    | 35/63 [00:02<00:02, 11.65it/s] 59%|█████▊    | 37/63 [00:03<00:02, 11.67it/s] 62%|██████▏   | 39/63 [00:03<00:02, 11.88it/s] 65%|██████▌   | 41/63 [00:03<00:01, 11.98it/s] 68%|██████▊   | 43/63 [00:03<00:01, 12.36it/s] 71%|███████▏  | 45/63 [00:03<00:01, 12.06it/s] 75%|███████▍  | 47/63 [00:03<00:01, 11.48it/s] 78%|███████▊  | 49/63 [00:04<00:01, 11.47it/s]                                                79%|███████▉  | 50/63 [00:04<00:01, 11.47it/s] 81%|████████  | 51/63 [00:04<00:01, 11.50it/s] 84%|████████▍ | 53/63 [00:04<00:00, 11.63it/s] 87%|████████▋ | 55/63 [00:04<00:00, 11.58it/s] 90%|█████████ | 57/63 [00:04<00:00, 11.99it/s] 94%|█████████▎| 59/63 [00:05<00:00, 11.74it/s] 97%|█████████▋| 61/63 [00:05<00:00, 12.14it/s]100%|██████████| 63/63 [00:05<00:00, 12.41it/s]                                               100%|██████████| 63/63 [00:05<00:00, 12.41it/s]100%|██████████| 63/63 [00:05<00:00, 11.84it/s]
+2025-11-05 21:00:32,065 -   Training time: 5.62s for 1 epoch on 1000 samples
+2025-11-05 21:00:32,065 -   Peak memory: 2.43 GB
+2025-11-05 21:00:32,065 -   Samples/sec: 177.98
+2025-11-05 21:00:32,065 -   Estimated full training: 1.03 minutes
+2025-11-05 21:00:32,065 -   Measuring inference latency...
+2025-11-05 21:00:32,068 - ❌ Error profiling full seed 43: 'sentence1'
+2025-11-05 21:00:32,069 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 301, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 232, in profile_method
+    latency = measure_inference_latency(model, val_dataset, tokenizer, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 50, in measure_inference_latency
+    sample['sentence'] if 'sentence' in sample else f"{sample['sentence1']} {sample['sentence2']}",
+                                                       ~~~~~~^^^^^^^^^^^^^
+KeyError: 'sentence1'
+
+2025-11-05 21:00:32,078 - 
+================================================================================
+2025-11-05 21:00:32,078 - PROFILING: FULL, Seed: 44
+2025-11-05 21:00:32,078 - ================================================================================
+2025-11-05 21:00:32,079 -   Creating full fine-tuning model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 21:00:32,433 -   Total params: 109,483,778
+2025-11-05 21:00:32,433 -   Trainable params: 109,483,778 (100.00%)
+2025-11-05 21:00:32,434 -   Forward pass: 28.03 GFLOPs
+2025-11-05 21:00:32,435 -   Training step: 84.08 GFLOPs
+2025-11-05 21:00:32,435 -   Loading MRPC dataset...
+2025-11-05 21:00:40,010 -   Training (1 epoch for profiling)...
+{'loss': 0.6447, 'grad_norm': 5.401339530944824, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 5.3201, 'train_samples_per_second': 187.967, 'train_steps_per_second': 11.842, 'train_loss': 0.6309555295913939, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:00<00:06,  9.51it/s]  5%|▍         | 3/63 [00:00<00:05, 10.92it/s]  8%|▊         | 5/63 [00:00<00:05, 11.48it/s] 11%|█         | 7/63 [00:00<00:04, 12.06it/s] 14%|█▍        | 9/63 [00:00<00:04, 12.20it/s] 17%|█▋        | 11/63 [00:00<00:04, 11.93it/s] 21%|██        | 13/63 [00:01<00:04, 12.02it/s] 24%|██▍       | 15/63 [00:01<00:04, 11.83it/s] 27%|██▋       | 17/63 [00:01<00:03, 11.84it/s] 30%|███       | 19/63 [00:01<00:03, 11.75it/s] 33%|███▎      | 21/63 [00:01<00:03, 12.10it/s] 37%|███▋      | 23/63 [00:01<00:03, 12.12it/s] 40%|███▉      | 25/63 [00:02<00:03, 11.87it/s] 43%|████▎     | 27/63 [00:02<00:03, 11.62it/s] 46%|████▌     | 29/63 [00:02<00:02, 11.57it/s] 49%|████▉     | 31/63 [00:02<00:02, 11.30it/s] 52%|█████▏    | 33/63 [00:02<00:02, 11.66it/s] 56%|█████▌    | 35/63 [00:02<00:02, 11.78it/s] 59%|█████▊    | 37/63 [00:03<00:02, 11.69it/s] 62%|██████▏   | 39/63 [00:03<00:02, 11.35it/s] 65%|██████▌   | 41/63 [00:03<00:01, 11.37it/s] 68%|██████▊   | 43/63 [00:03<00:01, 11.54it/s] 71%|███████▏  | 45/63 [00:03<00:01, 11.38it/s] 75%|███████▍  | 47/63 [00:04<00:01, 11.27it/s] 78%|███████▊  | 49/63 [00:04<00:01, 11.57it/s]                                                79%|███████▉  | 50/63 [00:04<00:01, 11.57it/s] 81%|████████  | 51/63 [00:04<00:01, 11.58it/s] 84%|████████▍ | 53/63 [00:04<00:00, 11.82it/s] 87%|████████▋ | 55/63 [00:04<00:00, 12.06it/s] 90%|█████████ | 57/63 [00:04<00:00, 12.30it/s] 94%|█████████▎| 59/63 [00:05<00:00, 12.35it/s] 97%|█████████▋| 61/63 [00:05<00:00, 12.46it/s]100%|██████████| 63/63 [00:05<00:00, 12.64it/s]                                               100%|██████████| 63/63 [00:05<00:00, 12.64it/s]100%|██████████| 63/63 [00:05<00:00, 11.83it/s]
+2025-11-05 21:00:45,624 -   Training time: 5.61s for 1 epoch on 1000 samples
+2025-11-05 21:00:45,624 -   Peak memory: 2.44 GB
+2025-11-05 21:00:45,624 -   Samples/sec: 178.15
+2025-11-05 21:00:45,624 -   Estimated full training: 1.03 minutes
+2025-11-05 21:00:45,624 -   Measuring inference latency...
+2025-11-05 21:00:45,627 - ❌ Error profiling full seed 44: 'sentence1'
+2025-11-05 21:00:45,628 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 301, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 232, in profile_method
+    latency = measure_inference_latency(model, val_dataset, tokenizer, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 50, in measure_inference_latency
+    sample['sentence'] if 'sentence' in sample else f"{sample['sentence1']} {sample['sentence2']}",
+                                                       ~~~~~~^^^^^^^^^^^^^
+KeyError: 'sentence1'
+
+2025-11-05 21:00:45,636 - 
+================================================================================
+2025-11-05 21:00:45,636 - PROFILING: LORA, Seed: 42
+2025-11-05 21:00:45,636 - ================================================================================
+2025-11-05 21:00:45,636 -   Creating LoRA model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 21:00:46,043 -   Total params: 109,780,228
+2025-11-05 21:00:46,043 -   Trainable params: 296,450 (0.27%)
+2025-11-05 21:00:46,048 -   Forward pass: 28.10 GFLOPs
+2025-11-05 21:00:46,048 -   Training step: 84.31 GFLOPs
+2025-11-05 21:00:46,048 -   Loading MRPC dataset...
+2025-11-05 21:00:53,791 -   Training (1 epoch for profiling)...
+{'loss': 0.6359, 'grad_norm': 4.331076145172119, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 5.3264, 'train_samples_per_second': 187.743, 'train_steps_per_second': 11.828, 'train_loss': 0.6200981140136719, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]  3%|▎         | 2/63 [00:00<00:05, 10.64it/s]  6%|▋         | 4/63 [00:00<00:05, 10.64it/s] 10%|▉         | 6/63 [00:00<00:05, 10.71it/s] 13%|█▎        | 8/63 [00:00<00:05, 10.97it/s] 16%|█▌        | 10/63 [00:00<00:04, 11.16it/s] 19%|█▉        | 12/63 [00:01<00:04, 11.26it/s] 22%|██▏       | 14/63 [00:01<00:04, 11.42it/s] 25%|██▌       | 16/63 [00:01<00:04, 11.52it/s] 29%|██▊       | 18/63 [00:01<00:03, 11.38it/s] 32%|███▏      | 20/63 [00:01<00:03, 11.70it/s] 35%|███▍      | 22/63 [00:01<00:03, 11.71it/s] 38%|███▊      | 24/63 [00:02<00:03, 11.80it/s] 41%|████▏     | 26/63 [00:02<00:03, 11.42it/s] 44%|████▍     | 28/63 [00:02<00:03, 11.47it/s] 48%|████▊     | 30/63 [00:02<00:02, 11.23it/s] 51%|█████     | 32/63 [00:02<00:02, 11.24it/s] 54%|█████▍    | 34/63 [00:03<00:02, 11.00it/s] 57%|█████▋    | 36/63 [00:03<00:02, 11.08it/s] 60%|██████    | 38/63 [00:03<00:02, 11.72it/s] 63%|██████▎   | 40/63 [00:03<00:01, 11.56it/s] 67%|██████▋   | 42/63 [00:03<00:01, 11.52it/s] 70%|██████▉   | 44/63 [00:03<00:01, 11.56it/s] 73%|███████▎  | 46/63 [00:04<00:01, 11.41it/s] 76%|███████▌  | 48/63 [00:04<00:01, 11.74it/s] 79%|███████▉  | 50/63 [00:04<00:01, 11.59it/s]                                                79%|███████▉  | 50/63 [00:04<00:01, 11.59it/s] 83%|████████▎ | 52/63 [00:04<00:00, 11.46it/s] 86%|████████▌ | 54/63 [00:04<00:00, 11.30it/s] 89%|████████▉ | 56/63 [00:04<00:00, 11.42it/s] 92%|█████████▏| 58/63 [00:05<00:00, 11.98it/s] 95%|█████████▌| 60/63 [00:05<00:00, 12.01it/s] 98%|█████████▊| 62/63 [00:05<00:00, 11.85it/s]                                               100%|██████████| 63/63 [00:05<00:00, 11.85it/s]100%|██████████| 63/63 [00:05<00:00, 11.48it/s]
+2025-11-05 21:00:59,563 -   Training time: 5.77s for 1 epoch on 1000 samples
+2025-11-05 21:00:59,563 -   Peak memory: 1.33 GB
+2025-11-05 21:00:59,563 -   Samples/sec: 173.26
+2025-11-05 21:00:59,563 -   Estimated full training: 1.06 minutes
+2025-11-05 21:00:59,563 -   Measuring inference latency...
+2025-11-05 21:00:59,566 - ❌ Error profiling lora seed 42: 'sentence1'
+2025-11-05 21:00:59,567 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 301, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 232, in profile_method
+    latency = measure_inference_latency(model, val_dataset, tokenizer, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 50, in measure_inference_latency
+    sample['sentence'] if 'sentence' in sample else f"{sample['sentence1']} {sample['sentence2']}",
+                                                       ~~~~~~^^^^^^^^^^^^^
+KeyError: 'sentence1'
+
+2025-11-05 21:00:59,575 - 
+================================================================================
+2025-11-05 21:00:59,575 - PROFILING: LORA, Seed: 43
+2025-11-05 21:00:59,575 - ================================================================================
+2025-11-05 21:00:59,575 -   Creating LoRA model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 21:01:00,003 -   Total params: 109,780,228
+2025-11-05 21:01:00,004 -   Trainable params: 296,450 (0.27%)
+2025-11-05 21:01:00,006 -   Forward pass: 28.10 GFLOPs
+2025-11-05 21:01:00,006 -   Training step: 84.31 GFLOPs
+2025-11-05 21:01:00,006 -   Loading MRPC dataset...
+2025-11-05 21:01:10,062 -   Training (1 epoch for profiling)...
+{'loss': 0.6667, 'grad_norm': 1.369128942489624, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 5.4895, 'train_samples_per_second': 182.166, 'train_steps_per_second': 11.476, 'train_loss': 0.6634727356925844, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]  3%|▎         | 2/63 [00:00<00:05, 11.67it/s]  6%|▋         | 4/63 [00:00<00:04, 12.23it/s] 10%|▉         | 6/63 [00:00<00:05, 11.32it/s] 13%|█▎        | 8/63 [00:00<00:04, 11.40it/s] 16%|█▌        | 10/63 [00:00<00:04, 10.99it/s] 19%|█▉        | 12/63 [00:01<00:04, 11.28it/s] 22%|██▏       | 14/63 [00:01<00:04, 11.32it/s] 25%|██▌       | 16/63 [00:01<00:04, 11.26it/s] 29%|██▊       | 18/63 [00:01<00:03, 11.37it/s] 32%|███▏      | 20/63 [00:01<00:03, 11.24it/s] 35%|███▍      | 22/63 [00:01<00:03, 11.19it/s] 38%|███▊      | 24/63 [00:02<00:03, 10.97it/s] 41%|████▏     | 26/63 [00:02<00:03, 11.49it/s] 44%|████▍     | 28/63 [00:02<00:03, 11.50it/s] 48%|████▊     | 30/63 [00:02<00:02, 11.52it/s] 51%|█████     | 32/63 [00:02<00:02, 11.78it/s] 54%|█████▍    | 34/63 [00:02<00:02, 11.91it/s] 57%|█████▋    | 36/63 [00:03<00:02, 11.80it/s] 60%|██████    | 38/63 [00:03<00:02, 12.06it/s] 63%|██████▎   | 40/63 [00:03<00:01, 11.96it/s] 67%|██████▋   | 42/63 [00:03<00:01, 11.79it/s] 70%|██████▉   | 44/63 [00:03<00:01, 11.70it/s] 73%|███████▎  | 46/63 [00:03<00:01, 13.08it/s] 76%|███████▌  | 48/63 [00:04<00:01, 14.26it/s] 79%|███████▉  | 50/63 [00:04<00:00, 15.24it/s]                                                79%|███████▉  | 50/63 [00:04<00:00, 15.24it/s] 83%|████████▎ | 52/63 [00:04<00:00, 16.00it/s] 86%|████████▌ | 54/63 [00:04<00:00, 16.52it/s] 89%|████████▉ | 56/63 [00:04<00:00, 16.98it/s] 92%|█████████▏| 58/63 [00:04<00:00, 17.12it/s] 95%|█████████▌| 60/63 [00:04<00:00, 17.12it/s] 98%|█████████▊| 62/63 [00:04<00:00, 17.15it/s]                                               100%|██████████| 63/63 [00:04<00:00, 17.15it/s]100%|██████████| 63/63 [00:04<00:00, 12.89it/s]
+2025-11-05 21:01:15,216 -   Training time: 5.15s for 1 epoch on 1000 samples
+2025-11-05 21:01:15,216 -   Peak memory: 1.33 GB
+2025-11-05 21:01:15,216 -   Samples/sec: 194.03
+2025-11-05 21:01:15,216 -   Estimated full training: 0.95 minutes
+2025-11-05 21:01:15,216 -   Measuring inference latency...
+2025-11-05 21:01:15,219 - ❌ Error profiling lora seed 43: 'sentence1'
+2025-11-05 21:01:15,220 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 301, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 232, in profile_method
+    latency = measure_inference_latency(model, val_dataset, tokenizer, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 50, in measure_inference_latency
+    sample['sentence'] if 'sentence' in sample else f"{sample['sentence1']} {sample['sentence2']}",
+                                                       ~~~~~~^^^^^^^^^^^^^
+KeyError: 'sentence1'
+
+2025-11-05 21:01:15,227 - 
+================================================================================
+2025-11-05 21:01:15,227 - PROFILING: LORA, Seed: 44
+2025-11-05 21:01:15,227 - ================================================================================
+2025-11-05 21:01:15,227 -   Creating LoRA model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 21:01:15,661 -   Total params: 109,780,228
+2025-11-05 21:01:15,662 -   Trainable params: 296,450 (0.27%)
+2025-11-05 21:01:15,663 -   Forward pass: 28.10 GFLOPs
+2025-11-05 21:01:15,664 -   Training step: 84.31 GFLOPs
+2025-11-05 21:01:15,664 -   Loading MRPC dataset...
+2025-11-05 21:01:23,427 -   Training (1 epoch for profiling)...
+{'loss': 0.6605, 'grad_norm': 1.6916178464889526, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 4.8889, 'train_samples_per_second': 204.544, 'train_steps_per_second': 12.886, 'train_loss': 0.6549653552827381, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:00<00:06,  9.44it/s]  5%|▍         | 3/63 [00:00<00:06,  9.84it/s]  8%|▊         | 5/63 [00:00<00:05, 10.17it/s] 11%|█         | 7/63 [00:00<00:05, 10.29it/s] 14%|█▍        | 9/63 [00:00<00:05, 10.10it/s] 17%|█▋        | 11/63 [00:01<00:04, 10.54it/s] 21%|██        | 13/63 [00:01<00:04, 10.35it/s] 24%|██▍       | 15/63 [00:01<00:04, 10.45it/s] 27%|██▋       | 17/63 [00:01<00:04, 10.18it/s] 30%|███       | 19/63 [00:01<00:04, 10.70it/s] 33%|███▎      | 21/63 [00:01<00:03, 11.23it/s] 37%|███▋      | 23/63 [00:02<00:03, 10.94it/s] 40%|███▉      | 25/63 [00:02<00:03, 10.41it/s] 43%|████▎     | 27/63 [00:02<00:03, 10.42it/s] 46%|████▌     | 29/63 [00:02<00:03, 10.56it/s] 49%|████▉     | 31/63 [00:02<00:03, 10.52it/s] 52%|█████▏    | 33/63 [00:03<00:02, 10.96it/s] 56%|█████▌    | 35/63 [00:03<00:02, 11.10it/s] 59%|█████▊    | 37/63 [00:03<00:02, 11.02it/s] 62%|██████▏   | 39/63 [00:03<00:02, 11.06it/s] 65%|██████▌   | 41/63 [00:03<00:01, 11.18it/s] 68%|██████▊   | 43/63 [00:04<00:01, 11.33it/s] 71%|███████▏  | 45/63 [00:04<00:01, 11.07it/s] 75%|███████▍  | 47/63 [00:04<00:01, 11.18it/s] 78%|███████▊  | 49/63 [00:04<00:01, 11.05it/s]                                                79%|███████▉  | 50/63 [00:04<00:01, 11.05it/s] 81%|████████  | 51/63 [00:04<00:01, 11.24it/s] 84%|████████▍ | 53/63 [00:04<00:00, 11.32it/s] 87%|████████▋ | 55/63 [00:05<00:00, 11.23it/s] 90%|█████████ | 57/63 [00:05<00:00, 11.37it/s] 94%|█████████▎| 59/63 [00:05<00:00, 11.55it/s] 97%|█████████▋| 61/63 [00:05<00:00, 11.41it/s]100%|██████████| 63/63 [00:05<00:00, 11.62it/s]                                               100%|██████████| 63/63 [00:05<00:00, 11.62it/s]100%|██████████| 63/63 [00:05<00:00, 10.92it/s]
+2025-11-05 21:01:29,483 -   Training time: 6.06s for 1 epoch on 1000 samples
+2025-11-05 21:01:29,483 -   Peak memory: 1.33 GB
+2025-11-05 21:01:29,483 -   Samples/sec: 165.15
+2025-11-05 21:01:29,483 -   Estimated full training: 1.11 minutes
+2025-11-05 21:01:29,483 -   Measuring inference latency...
+2025-11-05 21:01:29,486 - ❌ Error profiling lora seed 44: 'sentence1'
+2025-11-05 21:01:29,487 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 301, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 232, in profile_method
+    latency = measure_inference_latency(model, val_dataset, tokenizer, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 50, in measure_inference_latency
+    sample['sentence'] if 'sentence' in sample else f"{sample['sentence1']} {sample['sentence2']}",
+                                                       ~~~~~~^^^^^^^^^^^^^
+KeyError: 'sentence1'
+
+2025-11-05 21:01:29,494 - 
+================================================================================
+2025-11-05 21:01:29,495 - PROFILING: 4BIT, Seed: 42
+2025-11-05 21:01:29,495 - ================================================================================
+2025-11-05 21:01:29,495 -   Creating 4-bit quantized LoRA model...
+2025-11-05 21:01:29,495 - ❌ Error profiling 4bit seed 42: No package metadata was found for bitsandbytes
+2025-11-05 21:01:29,516 - Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 301, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 131, in profile_method
+    bnb_config = BitsAndBytesConfig(
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/utils/quantization_config.py", line 510, in __init__
+    self.post_init()
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/utils/quantization_config.py", line 568, in post_init
+    if self.load_in_4bit and not version.parse(importlib.metadata.version("bitsandbytes")) >= version.parse(
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 889, in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bitsandbytes
+
+2025-11-05 21:01:29,516 - 
+================================================================================
+2025-11-05 21:01:29,516 - PROFILING: 4BIT, Seed: 43
+2025-11-05 21:01:29,516 - ================================================================================
+2025-11-05 21:01:29,516 -   Creating 4-bit quantized LoRA model...
+2025-11-05 21:01:29,517 - ❌ Error profiling 4bit seed 43: No package metadata was found for bitsandbytes
+2025-11-05 21:01:29,518 - Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 301, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 131, in profile_method
+    bnb_config = BitsAndBytesConfig(
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/utils/quantization_config.py", line 510, in __init__
+    self.post_init()
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/utils/quantization_config.py", line 568, in post_init
+    if self.load_in_4bit and not version.parse(importlib.metadata.version("bitsandbytes")) >= version.parse(
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 889, in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bitsandbytes
+
+2025-11-05 21:01:29,519 - 
+================================================================================
+2025-11-05 21:01:29,519 - PROFILING: 4BIT, Seed: 44
+2025-11-05 21:01:29,519 - ================================================================================
+2025-11-05 21:01:29,519 -   Creating 4-bit quantized LoRA model...
+2025-11-05 21:01:29,520 - ❌ Error profiling 4bit seed 44: No package metadata was found for bitsandbytes
+2025-11-05 21:01:29,522 - Traceback (most recent call last):
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 301, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 131, in profile_method
+    bnb_config = BitsAndBytesConfig(
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/utils/quantization_config.py", line 510, in __init__
+    self.post_init()
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/utils/quantization_config.py", line 568, in post_init
+    if self.load_in_4bit and not version.parse(importlib.metadata.version("bitsandbytes")) >= version.parse(
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 889, in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 862, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 399, in from_name
+    raise PackageNotFoundError(name)
+importlib.metadata.PackageNotFoundError: No package metadata was found for bitsandbytes
+
+2025-11-05 21:01:29,522 - 
+====================================================================================================
+2025-11-05 21:01:29,522 - PROFILING COMPLETE!
+2025-11-05 21:01:29,522 - ====================================================================================================
+2025-11-05 21:01:29,522 - Total time: 0.02h
+2025-11-05 21:01:29,522 - 
+SUMMARY:
+2025-11-05 21:01:29,523 - ====================================================================================================
+{'loss': 0.679, 'grad_norm': 1.1768558025360107, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 5.7696, 'train_samples_per_second': 173.322, 'train_steps_per_second': 10.919, 'train_loss': 0.6722041538783482, 'epoch': 1.0}

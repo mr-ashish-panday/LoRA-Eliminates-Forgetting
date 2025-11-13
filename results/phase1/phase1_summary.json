@@ -1,0 +1,1263 @@
+{
+  "phase": 1,
+  "total_experiments": 48,
+  "successful_experiments": 48,
+  "failed_experiments": 0,
+  "total_time_hours": 4.3,
+  "lora_ranks_tested": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "results": {
+    "rte_r4_seed42": {
+      "experiment_id": "phase1_rte_r4_seed42",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 4,
+      "seed": 42,
+      "timestamp": "2025-10-28T11:34:31.961251",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.46,
+        "f1": 0.46,
+        "training_loss": 0.6995,
+        "training_time_hours": 0.0159,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r4_seed43": {
+      "experiment_id": "phase1_rte_r4_seed43",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 4,
+      "seed": 43,
+      "timestamp": "2025-10-28T11:35:28.226551",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.595,
+        "f1": 0.595,
+        "training_loss": 0.7009,
+        "training_time_hours": 0.0156,
+        "peak_gpu_memory_gb": 1.31,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r4_seed44": {
+      "experiment_id": "phase1_rte_r4_seed44",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 4,
+      "seed": 44,
+      "timestamp": "2025-10-28T11:36:26.534430",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.42,
+        "f1": 0.42,
+        "training_loss": 0.6975,
+        "training_time_hours": 0.0162,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r8_seed42": {
+      "experiment_id": "phase1_rte_r8_seed42",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 8,
+      "seed": 42,
+      "timestamp": "2025-10-28T11:37:23.330265",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.46,
+        "f1": 0.46,
+        "training_loss": 0.6994,
+        "training_time_hours": 0.0158,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r8_seed43": {
+      "experiment_id": "phase1_rte_r8_seed43",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 8,
+      "seed": 43,
+      "timestamp": "2025-10-28T11:38:07.351526",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.605,
+        "f1": 0.605,
+        "training_loss": 0.7006,
+        "training_time_hours": 0.0122,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r8_seed44": {
+      "experiment_id": "phase1_rte_r8_seed44",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 8,
+      "seed": 44,
+      "timestamp": "2025-10-28T11:38:59.179634",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.42,
+        "f1": 0.42,
+        "training_loss": 0.6974,
+        "training_time_hours": 0.0144,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r16_seed42": {
+      "experiment_id": "phase1_rte_r16_seed42",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 16,
+      "seed": 42,
+      "timestamp": "2025-10-28T11:39:51.984407",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.47,
+        "f1": 0.47,
+        "training_loss": 0.699,
+        "training_time_hours": 0.0147,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r16_seed43": {
+      "experiment_id": "phase1_rte_r16_seed43",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 16,
+      "seed": 43,
+      "timestamp": "2025-10-28T11:40:48.883251",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.61,
+        "f1": 0.61,
+        "training_loss": 0.7003,
+        "training_time_hours": 0.0158,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r16_seed44": {
+      "experiment_id": "phase1_rte_r16_seed44",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 16,
+      "seed": 44,
+      "timestamp": "2025-10-28T11:41:39.727006",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.43,
+        "f1": 0.43,
+        "training_loss": 0.697,
+        "training_time_hours": 0.0141,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r32_seed42": {
+      "experiment_id": "phase1_rte_r32_seed42",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 32,
+      "seed": 42,
+      "timestamp": "2025-10-28T11:42:38.960390",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.485,
+        "f1": 0.485,
+        "training_loss": 0.6986,
+        "training_time_hours": 0.0164,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r32_seed43": {
+      "experiment_id": "phase1_rte_r32_seed43",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 32,
+      "seed": 43,
+      "timestamp": "2025-10-28T11:43:37.488734",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.595,
+        "f1": 0.595,
+        "training_loss": 0.6995,
+        "training_time_hours": 0.0163,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 468
+      }
+    },
+    "rte_r32_seed44": {
+      "experiment_id": "phase1_rte_r32_seed44",
+      "phase": 1,
+      "task": "rte",
+      "lora_rank": 32,
+      "seed": 44,
+      "timestamp": "2025-10-28T11:44:28.531301",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.4,
+        "f1": 0.4,
+        "training_loss": 0.6966,
+        "training_time_hours": 0.0142,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 468
+      }
+    },
+    "mrpc_r4_seed42": {
+      "experiment_id": "phase1_mrpc_r4_seed42",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 4,
+      "seed": 42,
+      "timestamp": "2025-10-28T11:45:43.551879",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.627,
+        "training_time_hours": 0.0208,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r4_seed43": {
+      "experiment_id": "phase1_mrpc_r4_seed43",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 4,
+      "seed": 43,
+      "timestamp": "2025-10-28T11:47:02.127881",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6356,
+        "training_time_hours": 0.0218,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r4_seed44": {
+      "experiment_id": "phase1_mrpc_r4_seed44",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 4,
+      "seed": 44,
+      "timestamp": "2025-10-28T11:48:18.045392",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6272,
+        "training_time_hours": 0.0211,
+        "peak_gpu_memory_gb": 1.31,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r8_seed42": {
+      "experiment_id": "phase1_mrpc_r8_seed42",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 8,
+      "seed": 42,
+      "timestamp": "2025-10-28T11:49:30.016633",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6228,
+        "training_time_hours": 0.02,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r8_seed43": {
+      "experiment_id": "phase1_mrpc_r8_seed43",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 8,
+      "seed": 43,
+      "timestamp": "2025-10-28T11:50:49.276329",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6349,
+        "training_time_hours": 0.022,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r8_seed44": {
+      "experiment_id": "phase1_mrpc_r8_seed44",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 8,
+      "seed": 44,
+      "timestamp": "2025-10-28T11:51:57.590337",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6223,
+        "training_time_hours": 0.019,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r16_seed42": {
+      "experiment_id": "phase1_mrpc_r16_seed42",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 16,
+      "seed": 42,
+      "timestamp": "2025-10-28T11:53:12.375143",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6161,
+        "training_time_hours": 0.0208,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r16_seed43": {
+      "experiment_id": "phase1_mrpc_r16_seed43",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 16,
+      "seed": 43,
+      "timestamp": "2025-10-28T11:54:24.081264",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6337,
+        "training_time_hours": 0.0199,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r16_seed44": {
+      "experiment_id": "phase1_mrpc_r16_seed44",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 16,
+      "seed": 44,
+      "timestamp": "2025-10-28T11:55:40.792828",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6149,
+        "training_time_hours": 0.0213,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r32_seed42": {
+      "experiment_id": "phase1_mrpc_r32_seed42",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 32,
+      "seed": 42,
+      "timestamp": "2025-10-28T11:57:00.268609",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.715,
+        "f1": 0.715,
+        "training_loss": 0.5978,
+        "training_time_hours": 0.0221,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r32_seed43": {
+      "experiment_id": "phase1_mrpc_r32_seed43",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 32,
+      "seed": 43,
+      "timestamp": "2025-10-28T11:59:11.333624",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6317,
+        "training_time_hours": 0.0364,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_r32_seed44": {
+      "experiment_id": "phase1_mrpc_r32_seed44",
+      "phase": 1,
+      "task": "mrpc",
+      "lora_rank": 32,
+      "seed": 44,
+      "timestamp": "2025-10-28T12:00:24.306231",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.7,
+        "f1": 0.7,
+        "training_loss": 0.6032,
+        "training_time_hours": 0.0203,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 690
+      }
+    },
+    "cola_r4_seed42": {
+      "experiment_id": "phase1_cola_r4_seed42",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 4,
+      "seed": 42,
+      "timestamp": "2025-10-28T12:02:58.613447",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.65,
+        "f1": 0.65,
+        "training_loss": 0.6005,
+        "training_time_hours": 0.0429,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r4_seed43": {
+      "experiment_id": "phase1_cola_r4_seed43",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 4,
+      "seed": 43,
+      "timestamp": "2025-10-28T12:05:12.075890",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.645,
+        "f1": 0.645,
+        "training_loss": 0.599,
+        "training_time_hours": 0.0371,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r4_seed44": {
+      "experiment_id": "phase1_cola_r4_seed44",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 4,
+      "seed": 44,
+      "timestamp": "2025-10-28T12:07:40.580360",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.645,
+        "f1": 0.645,
+        "training_loss": 0.6014,
+        "training_time_hours": 0.0412,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r8_seed42": {
+      "experiment_id": "phase1_cola_r8_seed42",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 8,
+      "seed": 42,
+      "timestamp": "2025-10-28T12:10:01.435121",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.67,
+        "f1": 0.67,
+        "training_loss": 0.5877,
+        "training_time_hours": 0.0391,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r8_seed43": {
+      "experiment_id": "phase1_cola_r8_seed43",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 8,
+      "seed": 43,
+      "timestamp": "2025-10-28T12:12:26.716203",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.655,
+        "f1": 0.655,
+        "training_loss": 0.5909,
+        "training_time_hours": 0.0403,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r8_seed44": {
+      "experiment_id": "phase1_cola_r8_seed44",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 8,
+      "seed": 44,
+      "timestamp": "2025-10-28T12:15:01.850979",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.67,
+        "f1": 0.67,
+        "training_loss": 0.5853,
+        "training_time_hours": 0.0431,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r16_seed42": {
+      "experiment_id": "phase1_cola_r16_seed42",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 16,
+      "seed": 42,
+      "timestamp": "2025-10-28T12:17:25.484531",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.71,
+        "f1": 0.71,
+        "training_loss": 0.5626,
+        "training_time_hours": 0.0399,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r16_seed43": {
+      "experiment_id": "phase1_cola_r16_seed43",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 16,
+      "seed": 43,
+      "timestamp": "2025-10-28T12:19:53.589991",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.7,
+        "f1": 0.7,
+        "training_loss": 0.5691,
+        "training_time_hours": 0.0411,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r16_seed44": {
+      "experiment_id": "phase1_cola_r16_seed44",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 16,
+      "seed": 44,
+      "timestamp": "2025-10-28T12:22:20.811056",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.71,
+        "f1": 0.71,
+        "training_loss": 0.5627,
+        "training_time_hours": 0.0409,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r32_seed42": {
+      "experiment_id": "phase1_cola_r32_seed42",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 32,
+      "seed": 42,
+      "timestamp": "2025-10-28T12:24:41.781832",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.735,
+        "f1": 0.735,
+        "training_loss": 0.5371,
+        "training_time_hours": 0.0392,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r32_seed43": {
+      "experiment_id": "phase1_cola_r32_seed43",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 32,
+      "seed": 43,
+      "timestamp": "2025-10-28T12:26:53.197299",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.725,
+        "f1": 0.725,
+        "training_loss": 0.5474,
+        "training_time_hours": 0.0365,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_r32_seed44": {
+      "experiment_id": "phase1_cola_r32_seed44",
+      "phase": 1,
+      "task": "cola",
+      "lora_rank": 32,
+      "seed": 44,
+      "timestamp": "2025-10-28T12:29:06.299948",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.735,
+        "f1": 0.735,
+        "training_loss": 0.5306,
+        "training_time_hours": 0.037,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 1605
+      }
+    },
+    "sst2_r4_seed42": {
+      "experiment_id": "phase1_sst2_r4_seed42",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 4,
+      "seed": 42,
+      "timestamp": "2025-10-28T12:46:09.451924",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.88,
+        "f1": 0.88,
+        "training_loss": 0.3174,
+        "training_time_hours": 0.2842,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r4_seed43": {
+      "experiment_id": "phase1_sst2_r4_seed43",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 4,
+      "seed": 43,
+      "timestamp": "2025-10-28T13:02:34.586146",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.87,
+        "f1": 0.87,
+        "training_loss": 0.3225,
+        "training_time_hours": 0.2736,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r4_seed44": {
+      "experiment_id": "phase1_sst2_r4_seed44",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 4,
+      "seed": 44,
+      "timestamp": "2025-10-28T13:19:15.194658",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109632772,
+        "trainable_params": 148994,
+        "trainable_percent": 0.14
+      },
+      "metrics": {
+        "accuracy": 0.875,
+        "f1": 0.875,
+        "training_loss": 0.3228,
+        "training_time_hours": 0.2779,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r8_seed42": {
+      "experiment_id": "phase1_sst2_r8_seed42",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 8,
+      "seed": 42,
+      "timestamp": "2025-10-28T13:35:50.234482",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.885,
+        "f1": 0.885,
+        "training_loss": 0.3012,
+        "training_time_hours": 0.2764,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r8_seed43": {
+      "experiment_id": "phase1_sst2_r8_seed43",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 8,
+      "seed": 43,
+      "timestamp": "2025-10-28T13:54:13.956030",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.89,
+        "f1": 0.89,
+        "training_loss": 0.3059,
+        "training_time_hours": 0.3066,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r8_seed44": {
+      "experiment_id": "phase1_sst2_r8_seed44",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 8,
+      "seed": 44,
+      "timestamp": "2025-10-28T14:11:13.868714",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27
+      },
+      "metrics": {
+        "accuracy": 0.895,
+        "f1": 0.895,
+        "training_loss": 0.3022,
+        "training_time_hours": 0.2833,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r16_seed42": {
+      "experiment_id": "phase1_sst2_r16_seed42",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 16,
+      "seed": 42,
+      "timestamp": "2025-10-28T14:27:47.496119",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.895,
+        "f1": 0.895,
+        "training_loss": 0.2869,
+        "training_time_hours": 0.276,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r16_seed43": {
+      "experiment_id": "phase1_sst2_r16_seed43",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 16,
+      "seed": 43,
+      "timestamp": "2025-10-28T14:44:14.828713",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.895,
+        "f1": 0.895,
+        "training_loss": 0.2904,
+        "training_time_hours": 0.2743,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r16_seed44": {
+      "experiment_id": "phase1_sst2_r16_seed44",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 16,
+      "seed": 44,
+      "timestamp": "2025-10-28T15:01:11.549345",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110075140,
+        "trainable_params": 591362,
+        "trainable_percent": 0.54
+      },
+      "metrics": {
+        "accuracy": 0.89,
+        "f1": 0.89,
+        "training_loss": 0.2887,
+        "training_time_hours": 0.2824,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r32_seed42": {
+      "experiment_id": "phase1_sst2_r32_seed42",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 32,
+      "seed": 42,
+      "timestamp": "2025-10-28T15:18:18.302615",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.905,
+        "f1": 0.905,
+        "training_loss": 0.2722,
+        "training_time_hours": 0.2852,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r32_seed43": {
+      "experiment_id": "phase1_sst2_r32_seed43",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 32,
+      "seed": 43,
+      "timestamp": "2025-10-28T15:35:09.336733",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.885,
+        "f1": 0.885,
+        "training_loss": 0.2758,
+        "training_time_hours": 0.2808,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_r32_seed44": {
+      "experiment_id": "phase1_sst2_r32_seed44",
+      "phase": 1,
+      "task": "sst2",
+      "lora_rank": 32,
+      "seed": 44,
+      "timestamp": "2025-10-28T15:51:25.547757",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 110664964,
+        "trainable_params": 1181186,
+        "trainable_percent": 1.07
+      },
+      "metrics": {
+        "accuracy": 0.915,
+        "f1": 0.915,
+        "training_loss": 0.2724,
+        "training_time_hours": 0.2712,
+        "peak_gpu_memory_gb": 1.33,
+        "total_training_steps": 12630
+      }
+    }
+  }
+}

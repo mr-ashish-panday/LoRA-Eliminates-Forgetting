@@ -1,0 +1,47 @@
+{
+  "experiment_id": "phase7_lora_seed43",
+  "phase": 7,
+  "method": "lora",
+  "seed": 43,
+  "timestamp": "2025-10-29T02:11:25.428487",
+  "task_sequence": [
+    "rte",
+    "mrpc",
+    "cola",
+    "sst2"
+  ],
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.605,
+      "after_mrpc": 0.46,
+      "after_cola": 0.45,
+      "after_sst2": 0.45
+    },
+    "mrpc": {
+      "after_mrpc": 0.685,
+      "after_cola": 0.685,
+      "after_sst2": 0.685
+    },
+    "cola": {
+      "after_cola": 0.66,
+      "after_sst2": 0.675
+    },
+    "sst2": {
+      "after_sst2": 0.51
+    }
+  },
+  "forgetting_metrics": {
+    "avg_forgetting": 0.0467,
+    "max_forgetting": 0.155,
+    "forgetting_per_task": {
+      "rte": 0.155,
+      "mrpc": 0.0,
+      "cola": -0.015
+    },
+    "final_avg_accuracy": 0.58,
+    "initial_avg_accuracy": 0.615
+  },
+  "metrics": {
+    "total_time_hours": 0.2176
+  }
+}

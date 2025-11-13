@@ -1,0 +1,11 @@
+{
+  "experiment_id": "phase8_cola_to_rte_seed43",
+  "train_task": "cola",
+  "test_task": "rte",
+  "seed": 43,
+  "metrics": {
+    "accuracy": 0.45,
+    "training_time_hours": 0.1146,
+    "peak_gpu_memory_gb": 0.46
+  }
+}

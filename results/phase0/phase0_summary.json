@@ -1,0 +1,236 @@
+{
+  "total_experiments": 12,
+  "total_time_hours": 1.14,
+  "successful_experiments": 12,
+  "failed_experiments": 0,
+  "results": {
+    "rte_42": {
+      "experiment_id": "phase0_rte_seed42",
+      "phase": 0,
+      "task": "rte",
+      "seed": 42,
+      "timestamp": "2025-10-28T09:46:51.749276",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.58,
+        "f1": 0.58,
+        "training_time_hours": 0.0174,
+        "peak_gpu_memory_gb": 2.42,
+        "total_training_steps": 468
+      }
+    },
+    "rte_43": {
+      "experiment_id": "phase0_rte_seed43",
+      "phase": 0,
+      "task": "rte",
+      "seed": 43,
+      "timestamp": "2025-10-28T09:47:49.681219",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.66,
+        "f1": 0.66,
+        "training_time_hours": 0.0161,
+        "peak_gpu_memory_gb": 2.43,
+        "total_training_steps": 468
+      }
+    },
+    "rte_44": {
+      "experiment_id": "phase0_rte_seed44",
+      "phase": 0,
+      "task": "rte",
+      "seed": 44,
+      "timestamp": "2025-10-28T09:48:47.017706",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.63,
+        "f1": 0.63,
+        "training_time_hours": 0.0159,
+        "peak_gpu_memory_gb": 2.42,
+        "total_training_steps": 468
+      }
+    },
+    "mrpc_42": {
+      "experiment_id": "phase0_mrpc_seed42",
+      "phase": 0,
+      "task": "mrpc",
+      "seed": 42,
+      "timestamp": "2025-10-28T09:50:13.900494",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.87,
+        "f1": 0.87,
+        "training_time_hours": 0.0241,
+        "peak_gpu_memory_gb": 2.43,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_43": {
+      "experiment_id": "phase0_mrpc_seed43",
+      "phase": 0,
+      "task": "mrpc",
+      "seed": 43,
+      "timestamp": "2025-10-28T09:51:23.520219",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.875,
+        "f1": 0.875,
+        "training_time_hours": 0.0193,
+        "peak_gpu_memory_gb": 2.42,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_44": {
+      "experiment_id": "phase0_mrpc_seed44",
+      "phase": 0,
+      "task": "mrpc",
+      "seed": 44,
+      "timestamp": "2025-10-28T09:52:32.533973",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.87,
+        "f1": 0.87,
+        "training_time_hours": 0.0192,
+        "peak_gpu_memory_gb": 2.42,
+        "total_training_steps": 690
+      }
+    },
+    "cola_42": {
+      "experiment_id": "phase0_cola_seed42",
+      "phase": 0,
+      "task": "cola",
+      "seed": 42,
+      "timestamp": "2025-10-28T09:55:07.066998",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.82,
+        "f1": 0.82,
+        "training_time_hours": 0.0429,
+        "peak_gpu_memory_gb": 2.43,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_43": {
+      "experiment_id": "phase0_cola_seed43",
+      "phase": 0,
+      "task": "cola",
+      "seed": 43,
+      "timestamp": "2025-10-28T09:57:35.967420",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.815,
+        "f1": 0.815,
+        "training_time_hours": 0.0414,
+        "peak_gpu_memory_gb": 2.42,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_44": {
+      "experiment_id": "phase0_cola_seed44",
+      "phase": 0,
+      "task": "cola",
+      "seed": 44,
+      "timestamp": "2025-10-28T10:00:06.710606",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.805,
+        "f1": 0.805,
+        "training_time_hours": 0.0419,
+        "peak_gpu_memory_gb": 2.42,
+        "total_training_steps": 1605
+      }
+    },
+    "sst2_42": {
+      "experiment_id": "phase0_sst2_seed42",
+      "phase": 0,
+      "task": "sst2",
+      "seed": 42,
+      "timestamp": "2025-10-28T10:18:06.000220",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.92,
+        "f1": 0.92,
+        "training_time_hours": 0.2998,
+        "peak_gpu_memory_gb": 2.43,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_43": {
+      "experiment_id": "phase0_sst2_seed43",
+      "phase": 0,
+      "task": "sst2",
+      "seed": 43,
+      "timestamp": "2025-10-28T10:36:10.357531",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.935,
+        "f1": 0.935,
+        "training_time_hours": 0.3012,
+        "peak_gpu_memory_gb": 2.43,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_44": {
+      "experiment_id": "phase0_sst2_seed44",
+      "phase": 0,
+      "task": "sst2",
+      "seed": 44,
+      "timestamp": "2025-10-28T10:54:18.029845",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "metrics": {
+        "accuracy": 0.94,
+        "f1": 0.94,
+        "training_time_hours": 0.3021,
+        "peak_gpu_memory_gb": 2.43,
+        "total_training_steps": 12630
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "experiment_id": "phase3_sst2_progressive_seed44",
+  "phase": 3,
+  "task": "sst2",
+  "strategy": "progressive",
+  "strategy_description": "progressive_r12",
+  "seed": 44,
+  "timestamp": "2025-10-29T11:46:45.602369",
+  "dataset_info": {
+    "train_samples": 67349,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 109927684,
+    "trainable_params": 443906,
+    "trainable_percent": 0.4,
+    "lora_rank": 12
+  },
+  "metrics": {
+    "accuracy": 0.895,
+    "f1": 0.895,
+    "training_loss": 0.2936,
+    "training_time_hours": 0.2839,
+    "peak_gpu_memory_gb": 1.32,
+    "total_training_steps": 12630
+  }
+}

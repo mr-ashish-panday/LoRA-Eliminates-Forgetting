@@ -1,0 +1,28 @@
+{
+  "experiment_id": "phase6_cola_qv_4bit_seed42",
+  "phase": 6,
+  "task": "cola",
+  "combination": "qv_4bit",
+  "module_type": "query+value",
+  "quantization": "4bit",
+  "seed": 42,
+  "timestamp": "2025-10-30T02:12:15.931884",
+  "dataset_info": {
+    "train_samples": 8551,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 67017988,
+    "trainable_params": 296450,
+    "trainable_percent": 0.44
+  },
+  "metrics": {
+    "accuracy": 0.675,
+    "f1": 0.675,
+    "training_loss": 0.5804,
+    "training_time_hours": 0.0903,
+    "peak_gpu_memory_gb": 0.4,
+    "total_training_steps": 1605
+  }
+}

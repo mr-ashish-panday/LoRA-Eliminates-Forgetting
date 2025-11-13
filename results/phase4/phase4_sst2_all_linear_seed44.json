@@ -1,0 +1,28 @@
+{
+  "experiment_id": "phase4_sst2_all_linear_seed44",
+  "phase": 4,
+  "task": "sst2",
+  "module_type": "all_linear",
+  "module_description": "all_attention_linear",
+  "seed": 44,
+  "timestamp": "2025-10-30T00:29:06.241703",
+  "dataset_info": {
+    "train_samples": 67349,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 110824708,
+    "trainable_params": 1340930,
+    "trainable_percent": 1.21,
+    "expected_params": 741125
+  },
+  "metrics": {
+    "accuracy": 0.915,
+    "f1": 0.915,
+    "training_loss": 0.2502,
+    "training_time_hours": 0.4701,
+    "peak_gpu_memory_gb": 1.76,
+    "total_training_steps": 12630
+  }
+}

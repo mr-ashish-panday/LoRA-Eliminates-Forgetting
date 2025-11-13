@@ -1,0 +1,28 @@
+{
+  "experiment_id": "phase3_cola_uniform_seed42",
+  "phase": 3,
+  "task": "cola",
+  "strategy": "uniform",
+  "strategy_description": "uniform_r8",
+  "seed": 42,
+  "timestamp": "2025-10-29T10:50:24.168528",
+  "dataset_info": {
+    "train_samples": 8551,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 109780228,
+    "trainable_params": 296450,
+    "trainable_percent": 0.27,
+    "lora_rank": 8
+  },
+  "metrics": {
+    "accuracy": 0.67,
+    "f1": 0.67,
+    "training_loss": 0.5877,
+    "training_time_hours": 0.0431,
+    "peak_gpu_memory_gb": 1.32,
+    "total_training_steps": 1605
+  }
+}

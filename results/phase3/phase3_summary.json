@@ -1,0 +1,685 @@
+{
+  "phase": 3,
+  "total_experiments": 24,
+  "successful_experiments": 24,
+  "failed_experiments": 0,
+  "total_time_hours": 2.2,
+  "strategies_tested": [
+    "progressive",
+    "uniform"
+  ],
+  "results": {
+    "rte_progressive_seed42": {
+      "experiment_id": "phase3_rte_progressive_seed42",
+      "phase": 3,
+      "task": "rte",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 42,
+      "timestamp": "2025-10-29T10:28:22.243059",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.46,
+        "f1": 0.46,
+        "training_loss": 0.6992,
+        "training_time_hours": 0.0159,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_progressive_seed43": {
+      "experiment_id": "phase3_rte_progressive_seed43",
+      "phase": 3,
+      "task": "rte",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 43,
+      "timestamp": "2025-10-29T10:29:19.664695",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.605,
+        "f1": 0.605,
+        "training_loss": 0.7005,
+        "training_time_hours": 0.0159,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_progressive_seed44": {
+      "experiment_id": "phase3_rte_progressive_seed44",
+      "phase": 3,
+      "task": "rte",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 44,
+      "timestamp": "2025-10-29T10:30:15.304408",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.435,
+        "f1": 0.435,
+        "training_loss": 0.6972,
+        "training_time_hours": 0.0154,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_uniform_seed42": {
+      "experiment_id": "phase3_rte_uniform_seed42",
+      "phase": 3,
+      "task": "rte",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 42,
+      "timestamp": "2025-10-29T10:31:10.317928",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.46,
+        "f1": 0.46,
+        "training_loss": 0.6994,
+        "training_time_hours": 0.0153,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_uniform_seed43": {
+      "experiment_id": "phase3_rte_uniform_seed43",
+      "phase": 3,
+      "task": "rte",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 43,
+      "timestamp": "2025-10-29T10:32:03.480401",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.605,
+        "f1": 0.605,
+        "training_loss": 0.7006,
+        "training_time_hours": 0.0148,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "rte_uniform_seed44": {
+      "experiment_id": "phase3_rte_uniform_seed44",
+      "phase": 3,
+      "task": "rte",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 44,
+      "timestamp": "2025-10-29T10:32:59.697933",
+      "dataset_info": {
+        "train_samples": 2490,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.42,
+        "f1": 0.42,
+        "training_loss": 0.6974,
+        "training_time_hours": 0.0156,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 468
+      }
+    },
+    "mrpc_progressive_seed42": {
+      "experiment_id": "phase3_mrpc_progressive_seed42",
+      "phase": 3,
+      "task": "mrpc",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 42,
+      "timestamp": "2025-10-29T10:34:17.624055",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6195,
+        "training_time_hours": 0.0216,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_progressive_seed43": {
+      "experiment_id": "phase3_mrpc_progressive_seed43",
+      "phase": 3,
+      "task": "mrpc",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 43,
+      "timestamp": "2025-10-29T10:35:32.939706",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6343,
+        "training_time_hours": 0.0209,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_progressive_seed44": {
+      "experiment_id": "phase3_mrpc_progressive_seed44",
+      "phase": 3,
+      "task": "mrpc",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 44,
+      "timestamp": "2025-10-29T10:36:44.255053",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6188,
+        "training_time_hours": 0.0198,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_uniform_seed42": {
+      "experiment_id": "phase3_mrpc_uniform_seed42",
+      "phase": 3,
+      "task": "mrpc",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 42,
+      "timestamp": "2025-10-29T10:37:54.055072",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6228,
+        "training_time_hours": 0.0194,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_uniform_seed43": {
+      "experiment_id": "phase3_mrpc_uniform_seed43",
+      "phase": 3,
+      "task": "mrpc",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 43,
+      "timestamp": "2025-10-29T10:39:09.023348",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6349,
+        "training_time_hours": 0.0208,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "mrpc_uniform_seed44": {
+      "experiment_id": "phase3_mrpc_uniform_seed44",
+      "phase": 3,
+      "task": "mrpc",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 44,
+      "timestamp": "2025-10-29T10:40:18.293865",
+      "dataset_info": {
+        "train_samples": 3668,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.6223,
+        "training_time_hours": 0.0192,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 690
+      }
+    },
+    "cola_progressive_seed42": {
+      "experiment_id": "phase3_cola_progressive_seed42",
+      "phase": 3,
+      "task": "cola",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 42,
+      "timestamp": "2025-10-29T10:42:43.955330",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.5762,
+        "training_time_hours": 0.0405,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_progressive_seed43": {
+      "experiment_id": "phase3_cola_progressive_seed43",
+      "phase": 3,
+      "task": "cola",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 43,
+      "timestamp": "2025-10-29T10:45:14.616086",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.66,
+        "f1": 0.66,
+        "training_loss": 0.5847,
+        "training_time_hours": 0.0418,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_progressive_seed44": {
+      "experiment_id": "phase3_cola_progressive_seed44",
+      "phase": 3,
+      "task": "cola",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 44,
+      "timestamp": "2025-10-29T10:47:49.093382",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.685,
+        "f1": 0.685,
+        "training_loss": 0.5754,
+        "training_time_hours": 0.0429,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_uniform_seed42": {
+      "experiment_id": "phase3_cola_uniform_seed42",
+      "phase": 3,
+      "task": "cola",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 42,
+      "timestamp": "2025-10-29T10:50:24.168528",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.67,
+        "f1": 0.67,
+        "training_loss": 0.5877,
+        "training_time_hours": 0.0431,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_uniform_seed43": {
+      "experiment_id": "phase3_cola_uniform_seed43",
+      "phase": 3,
+      "task": "cola",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 43,
+      "timestamp": "2025-10-29T10:52:40.359083",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.655,
+        "f1": 0.655,
+        "training_loss": 0.5909,
+        "training_time_hours": 0.0378,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "cola_uniform_seed44": {
+      "experiment_id": "phase3_cola_uniform_seed44",
+      "phase": 3,
+      "task": "cola",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 44,
+      "timestamp": "2025-10-29T10:55:00.064656",
+      "dataset_info": {
+        "train_samples": 8551,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.67,
+        "f1": 0.67,
+        "training_loss": 0.5853,
+        "training_time_hours": 0.0388,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 1605
+      }
+    },
+    "sst2_progressive_seed42": {
+      "experiment_id": "phase3_sst2_progressive_seed42",
+      "phase": 3,
+      "task": "sst2",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 42,
+      "timestamp": "2025-10-29T11:12:20.053331",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.89,
+        "f1": 0.89,
+        "training_loss": 0.2921,
+        "training_time_hours": 0.2889,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_progressive_seed43": {
+      "experiment_id": "phase3_sst2_progressive_seed43",
+      "phase": 3,
+      "task": "sst2",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 43,
+      "timestamp": "2025-10-29T11:29:43.353643",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.89,
+        "f1": 0.89,
+        "training_loss": 0.2966,
+        "training_time_hours": 0.2898,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_progressive_seed44": {
+      "experiment_id": "phase3_sst2_progressive_seed44",
+      "phase": 3,
+      "task": "sst2",
+      "strategy": "progressive",
+      "strategy_description": "progressive_r12",
+      "seed": 44,
+      "timestamp": "2025-10-29T11:46:45.602369",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109927684,
+        "trainable_params": 443906,
+        "trainable_percent": 0.4,
+        "lora_rank": 12
+      },
+      "metrics": {
+        "accuracy": 0.895,
+        "f1": 0.895,
+        "training_loss": 0.2936,
+        "training_time_hours": 0.2839,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_uniform_seed42": {
+      "experiment_id": "phase3_sst2_uniform_seed42",
+      "phase": 3,
+      "task": "sst2",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 42,
+      "timestamp": "2025-10-29T12:04:15.620389",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.885,
+        "f1": 0.885,
+        "training_loss": 0.3012,
+        "training_time_hours": 0.2917,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_uniform_seed43": {
+      "experiment_id": "phase3_sst2_uniform_seed43",
+      "phase": 3,
+      "task": "sst2",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 43,
+      "timestamp": "2025-10-29T12:22:15.677654",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.89,
+        "f1": 0.89,
+        "training_loss": 0.3059,
+        "training_time_hours": 0.3,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    },
+    "sst2_uniform_seed44": {
+      "experiment_id": "phase3_sst2_uniform_seed44",
+      "phase": 3,
+      "task": "sst2",
+      "strategy": "uniform",
+      "strategy_description": "uniform_r8",
+      "seed": 44,
+      "timestamp": "2025-10-29T12:39:19.108461",
+      "dataset_info": {
+        "train_samples": 67349,
+        "val_samples": 200,
+        "num_labels": 2
+      },
+      "model_info": {
+        "total_params": 109780228,
+        "trainable_params": 296450,
+        "trainable_percent": 0.27,
+        "lora_rank": 8
+      },
+      "metrics": {
+        "accuracy": 0.895,
+        "f1": 0.895,
+        "training_loss": 0.3022,
+        "training_time_hours": 0.2843,
+        "peak_gpu_memory_gb": 1.32,
+        "total_training_steps": 12630
+      }
+    }
+  }
+}

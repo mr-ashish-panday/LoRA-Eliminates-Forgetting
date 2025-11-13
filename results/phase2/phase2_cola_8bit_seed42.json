@@ -1,0 +1,27 @@
+{
+  "experiment_id": "phase2_cola_8bit_seed42",
+  "phase": 2,
+  "task": "cola",
+  "quantization": "8bit",
+  "seed": 42,
+  "timestamp": "2025-10-28T19:52:55.277804",
+  "dataset_info": {
+    "train_samples": 8551,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 109780228,
+    "trainable_params": 296450,
+    "trainable_percent": 0.27,
+    "quantization_bits": 8
+  },
+  "metrics": {
+    "accuracy": 0.67,
+    "f1": 0.67,
+    "training_loss": 0.586,
+    "training_time_hours": 0.1183,
+    "peak_gpu_memory_gb": 0.48,
+    "total_training_steps": 1605
+  }
+}

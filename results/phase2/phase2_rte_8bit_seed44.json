@@ -1,0 +1,27 @@
+{
+  "experiment_id": "phase2_rte_8bit_seed44",
+  "phase": 2,
+  "task": "rte",
+  "quantization": "8bit",
+  "seed": 44,
+  "timestamp": "2025-10-28T19:12:37.804424",
+  "dataset_info": {
+    "train_samples": 2490,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 109780228,
+    "trainable_params": 296450,
+    "trainable_percent": 0.27,
+    "quantization_bits": 8
+  },
+  "metrics": {
+    "accuracy": 0.45,
+    "f1": 0.45,
+    "training_loss": 0.6976,
+    "training_time_hours": 0.0396,
+    "peak_gpu_memory_gb": 0.48,
+    "total_training_steps": 468
+  }
+}

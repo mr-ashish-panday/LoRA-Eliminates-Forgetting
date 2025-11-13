@@ -1,0 +1,635 @@
+nohup: ignoring input
+2025-11-05 22:18:53,809 - ====================================================================================================
+2025-11-05 22:18:53,809 - COMPUTATIONAL COST PROFILING
+2025-11-05 22:18:53,809 - ====================================================================================================
+2025-11-05 22:18:53,809 - Start: 2025-11-05T22:18:53.809901
+2025-11-05 22:18:53,810 - Methods: Full fine-tuning, LoRA r=8, 4-bit + LoRA
+2025-11-05 22:18:53,810 - Metrics: Training time, memory, FLOPs, inference latency
+2025-11-05 22:18:53,810 - ====================================================================================================
+2025-11-05 22:18:53,810 - 
+================================================================================
+2025-11-05 22:18:53,810 - PROFILING: FULL, Seed: 42
+2025-11-05 22:18:53,810 - ================================================================================
+2025-11-05 22:18:53,812 -   Creating full fine-tuning model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 22:18:54,419 -   Total params: 109,483,778
+2025-11-05 22:18:54,420 -   Trainable params: 109,483,778 (100.00%)
+2025-11-05 22:18:54,422 -   Forward pass: 28.03 GFLOPs
+2025-11-05 22:18:54,422 -   Training step: 84.08 GFLOPs
+2025-11-05 22:18:54,422 -   Loading MRPC dataset...
+2025-11-05 22:19:04,758 -   Training (1 epoch for profiling)...
+  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:00<00:57,  1.08it/s]  5%|▍         | 3/63 [00:01<00:18,  3.32it/s]  8%|▊         | 5/63 [00:01<00:11,  5.24it/s] 11%|█         | 7/63 [00:01<00:08,  6.86it/s] 14%|█▍        | 9/63 [00:01<00:06,  8.08it/s] 17%|█▋        | 11/63 [00:01<00:05,  9.06it/s] 21%|██        | 13/63 [00:01<00:05,  9.72it/s] 24%|██▍       | 15/63 [00:02<00:04, 10.49it/s] 27%|██▋       | 17/63 [00:02<00:04, 10.57it/s] 30%|███       | 19/63 [00:02<00:04, 10.70it/s] 33%|███▎      | 21/63 [00:02<00:03, 10.94it/s] 37%|███▋      | 23/63 [00:02<00:03, 11.35it/s] 40%|███▉      | 25/63 [00:03<00:03, 11.17it/s] 43%|████▎     | 27/63 [00:03<00:03, 11.39it/s] 46%|████▌     | 29/63 [00:03<00:02, 11.47it/s] 49%|████▉     | 31/63 [00:03<00:02, 11.59it/s] 52%|█████▏    | 33/63 [00:03<00:02, 11.50it/s] 56%|█████▌    | 35/63 [00:03<00:02, 12.13it/s] 59%|█████▊    | 37/63 [00:03<00:02, 12.13it/s] 62%|██████▏   | 39/63 [00:04<00:02, 11.90it/s] 65%|██████▌   | 41/63 [00:04<00:01, 12.20it/s] 68%|██████▊   | 43/63 [00:04<00:01, 12.49it/s] 71%|███████▏  | 45/63 [00:04<00:01, 11.72it/s] 75%|███████▍  | 47/63 [00:04<00:01, 12.15it/s] 78%|███████▊  | 49/63 [00:04<00:01, 12.02it/s]                                                79%|███████▉  | 50/63 [00:05<00:01, 12.02it/s] 81%|████████  | 51/63 [00:05<00:01, 11.53it/s] 84%|████████▍ | 53/63 [00:05<00:00, 11.88it/s] 87%|████████▋ | 55/63 [00:05<00:00, 12.23it/s] 90%|█████████ | 57/63 [00:05<00:00, 12.57it/s] 94%|█████████▎| 59/63 [00:05<00:00, 12.92it/s] 97%|█████████▋| 61/63 [00:05<00:00, 12.72it/s]100%|██████████| 63/63 [00:06<00:00, 12.77it/s]                                               100%|██████████| 63/63 [00:06<00:00, 12.77it/s]100%|██████████| 63/63 [00:06<00:00, 10.31it/s]
+2025-11-05 22:19:11,078 -   Training time: 6.32s for 1 epoch on 1000 samples
+2025-11-05 22:19:11,078 -   Peak memory: 2.42 GB
+2025-11-05 22:19:11,078 -   Samples/sec: 158.25
+2025-11-05 22:19:11,078 -   Estimated full training: 1.16 minutes
+2025-11-05 22:19:11,078 -   Measuring inference latency...
+2025-11-05 22:19:11,081 - ❌ Error profiling full seed 42: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+2025-11-05 22:19:11,085 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 314, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 244, in profile_method
+    latency = measure_inference_latency(model, val_dataset, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 59, in measure_inference_latency
+    _ = model(**inputs)
+        ^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 1482, in forward
+    outputs = self.bert(
+              ^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 936, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 179, in forward
+    inputs_embeds = self.word_embeddings(input_ids)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+
+2025-11-05 22:19:11,092 - 
+================================================================================
+2025-11-05 22:19:11,092 - PROFILING: FULL, Seed: 43
+2025-11-05 22:19:11,092 - ================================================================================
+2025-11-05 22:19:11,092 -   Creating full fine-tuning model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 22:19:11,456 -   Total params: 109,483,778
+2025-11-05 22:19:11,456 -   Trainable params: 109,483,778 (100.00%)
+2025-11-05 22:19:11,457 -   Forward pass: 28.03 GFLOPs
+2025-11-05 22:19:11,457 -   Training step: 84.08 GFLOPs
+2025-11-05 22:19:11,457 -   Loading MRPC dataset...
+2025-11-05 22:19:18,849 -   Training (1 epoch for profiling)...
+{'loss': 0.6361, 'grad_norm': 4.896191596984863, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 6.1094, 'train_samples_per_second': 163.681, 'train_steps_per_second': 10.312, 'train_loss': 0.6189659966362847, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:00<00:06,  9.56it/s]  5%|▍         | 3/63 [00:00<00:05, 11.12it/s]  8%|▊         | 5/63 [00:00<00:05, 11.04it/s] 11%|█         | 7/63 [00:00<00:04, 11.21it/s] 14%|█▍        | 9/63 [00:00<00:04, 11.10it/s] 17%|█▋        | 11/63 [00:00<00:04, 11.58it/s] 21%|██        | 13/63 [00:01<00:04, 11.42it/s] 24%|██▍       | 15/63 [00:01<00:04, 11.37it/s] 27%|██▋       | 17/63 [00:01<00:04, 11.35it/s] 30%|███       | 19/63 [00:01<00:03, 11.19it/s] 33%|███▎      | 21/63 [00:01<00:03, 11.25it/s] 37%|███▋      | 23/63 [00:02<00:03, 11.41it/s] 40%|███▉      | 25/63 [00:02<00:03, 11.31it/s] 43%|████▎     | 27/63 [00:02<00:03, 11.12it/s] 46%|████▌     | 29/63 [00:02<00:03, 11.29it/s] 49%|████▉     | 31/63 [00:02<00:02, 11.27it/s] 52%|█████▏    | 33/63 [00:02<00:02, 11.40it/s] 56%|█████▌    | 35/63 [00:03<00:02, 11.75it/s] 59%|█████▊    | 37/63 [00:03<00:02, 11.94it/s] 62%|██████▏   | 39/63 [00:03<00:01, 12.13it/s] 65%|██████▌   | 41/63 [00:03<00:01, 12.12it/s] 68%|██████▊   | 43/63 [00:03<00:01, 12.39it/s] 71%|███████▏  | 45/63 [00:03<00:01, 12.62it/s] 75%|███████▍  | 47/63 [00:04<00:01, 12.64it/s] 78%|███████▊  | 49/63 [00:04<00:01, 12.59it/s]                                                79%|███████▉  | 50/63 [00:04<00:01, 12.59it/s] 81%|████████  | 51/63 [00:04<00:01, 11.87it/s] 84%|████████▍ | 53/63 [00:04<00:00, 11.82it/s] 87%|████████▋ | 55/63 [00:04<00:00, 11.74it/s] 90%|█████████ | 57/63 [00:04<00:00, 11.58it/s] 94%|█████████▎| 59/63 [00:05<00:00, 11.74it/s] 97%|█████████▋| 61/63 [00:05<00:00, 11.63it/s]100%|██████████| 63/63 [00:05<00:00, 11.26it/s]                                               100%|██████████| 63/63 [00:05<00:00, 11.26it/s]100%|██████████| 63/63 [00:05<00:00, 11.58it/s]
+2025-11-05 22:19:24,568 -   Training time: 5.72s for 1 epoch on 1000 samples
+2025-11-05 22:19:24,568 -   Peak memory: 2.43 GB
+2025-11-05 22:19:24,568 -   Samples/sec: 174.85
+2025-11-05 22:19:24,568 -   Estimated full training: 1.05 minutes
+2025-11-05 22:19:24,569 -   Measuring inference latency...
+2025-11-05 22:19:24,572 - ❌ Error profiling full seed 43: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+2025-11-05 22:19:24,575 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 314, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 244, in profile_method
+    latency = measure_inference_latency(model, val_dataset, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 59, in measure_inference_latency
+    _ = model(**inputs)
+        ^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 1482, in forward
+    outputs = self.bert(
+              ^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 936, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 179, in forward
+    inputs_embeds = self.word_embeddings(input_ids)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+
+2025-11-05 22:19:24,583 - 
+================================================================================
+2025-11-05 22:19:24,583 - PROFILING: FULL, Seed: 44
+2025-11-05 22:19:24,583 - ================================================================================
+2025-11-05 22:19:24,583 -   Creating full fine-tuning model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 22:19:24,960 -   Total params: 109,483,778
+2025-11-05 22:19:24,960 -   Trainable params: 109,483,778 (100.00%)
+2025-11-05 22:19:24,961 -   Forward pass: 28.03 GFLOPs
+2025-11-05 22:19:24,961 -   Training step: 84.08 GFLOPs
+2025-11-05 22:19:24,961 -   Loading MRPC dataset...
+2025-11-05 22:19:32,738 -   Training (1 epoch for profiling)...
+{'loss': 0.6447, 'grad_norm': 5.401339530944824, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 5.4389, 'train_samples_per_second': 183.86, 'train_steps_per_second': 11.583, 'train_loss': 0.6309555295913939, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]  3%|▎         | 2/63 [00:00<00:06, 10.13it/s]  6%|▋         | 4/63 [00:00<00:05, 10.55it/s] 10%|▉         | 6/63 [00:00<00:05, 10.95it/s] 13%|█▎        | 8/63 [00:00<00:04, 11.31it/s] 16%|█▌        | 10/63 [00:00<00:04, 11.03it/s] 19%|█▉        | 12/63 [00:01<00:04, 11.40it/s] 22%|██▏       | 14/63 [00:01<00:04, 11.28it/s] 25%|██▌       | 16/63 [00:01<00:04, 11.50it/s] 29%|██▊       | 18/63 [00:01<00:03, 11.75it/s] 32%|███▏      | 20/63 [00:01<00:03, 11.72it/s] 35%|███▍      | 22/63 [00:01<00:03, 11.90it/s] 38%|███▊      | 24/63 [00:02<00:03, 11.79it/s] 41%|████▏     | 26/63 [00:02<00:03, 12.18it/s] 44%|████▍     | 28/63 [00:02<00:02, 12.33it/s] 48%|████▊     | 30/63 [00:02<00:02, 11.96it/s] 51%|█████     | 32/63 [00:02<00:02, 11.86it/s] 54%|█████▍    | 34/63 [00:02<00:02, 11.73it/s] 57%|█████▋    | 36/63 [00:03<00:02, 11.63it/s] 60%|██████    | 38/63 [00:03<00:02, 11.50it/s] 63%|██████▎   | 40/63 [00:03<00:02, 11.37it/s] 67%|██████▋   | 42/63 [00:03<00:01, 11.57it/s] 70%|██████▉   | 44/63 [00:03<00:01, 11.48it/s] 73%|███████▎  | 46/63 [00:03<00:01, 11.35it/s] 76%|███████▌  | 48/63 [00:04<00:01, 11.74it/s] 79%|███████▉  | 50/63 [00:04<00:01, 11.83it/s]                                                79%|███████▉  | 50/63 [00:04<00:01, 11.83it/s] 83%|████████▎ | 52/63 [00:04<00:00, 11.72it/s] 86%|████████▌ | 54/63 [00:04<00:00, 11.40it/s] 89%|████████▉ | 56/63 [00:04<00:00, 11.60it/s] 92%|█████████▏| 58/63 [00:05<00:00, 11.41it/s] 95%|█████████▌| 60/63 [00:05<00:00, 11.74it/s] 98%|█████████▊| 62/63 [00:05<00:00, 11.11it/s]                                               100%|██████████| 63/63 [00:05<00:00, 11.11it/s]100%|██████████| 63/63 [00:05<00:00, 11.52it/s]
+2025-11-05 22:19:38,566 -   Training time: 5.83s for 1 epoch on 1000 samples
+2025-11-05 22:19:38,566 -   Peak memory: 2.44 GB
+2025-11-05 22:19:38,566 -   Samples/sec: 171.60
+2025-11-05 22:19:38,566 -   Estimated full training: 1.07 minutes
+2025-11-05 22:19:38,566 -   Measuring inference latency...
+2025-11-05 22:19:38,569 - ❌ Error profiling full seed 44: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+2025-11-05 22:19:38,570 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 314, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 244, in profile_method
+    latency = measure_inference_latency(model, val_dataset, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 59, in measure_inference_latency
+    _ = model(**inputs)
+        ^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 1482, in forward
+    outputs = self.bert(
+              ^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 936, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 179, in forward
+    inputs_embeds = self.word_embeddings(input_ids)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+
+2025-11-05 22:19:38,579 - 
+================================================================================
+2025-11-05 22:19:38,579 - PROFILING: LORA, Seed: 42
+2025-11-05 22:19:38,579 - ================================================================================
+2025-11-05 22:19:38,579 -   Creating LoRA model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 22:19:42,472 -   Total params: 109,780,228
+2025-11-05 22:19:42,472 -   Trainable params: 296,450 (0.27%)
+2025-11-05 22:19:42,474 -   Forward pass: 28.10 GFLOPs
+2025-11-05 22:19:42,475 -   Training step: 84.31 GFLOPs
+2025-11-05 22:19:42,475 -   Loading MRPC dataset...
+2025-11-05 22:19:50,008 -   Training (1 epoch for profiling)...
+{'loss': 0.6359, 'grad_norm': 4.331076145172119, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 5.4685, 'train_samples_per_second': 182.865, 'train_steps_per_second': 11.521, 'train_loss': 0.6200981140136719, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:00<00:06,  9.88it/s]  3%|▎         | 2/63 [00:00<00:06,  9.91it/s]  6%|▋         | 4/63 [00:00<00:05, 10.20it/s] 10%|▉         | 6/63 [00:00<00:04, 12.37it/s] 13%|█▎        | 8/63 [00:00<00:04, 11.68it/s] 16%|█▌        | 10/63 [00:00<00:04, 11.57it/s] 19%|█▉        | 12/63 [00:01<00:04, 11.39it/s] 22%|██▏       | 14/63 [00:01<00:04, 11.89it/s] 25%|██▌       | 16/63 [00:01<00:03, 11.90it/s] 29%|██▊       | 18/63 [00:01<00:03, 11.56it/s] 32%|███▏      | 20/63 [00:01<00:03, 12.76it/s] 35%|███▍      | 22/63 [00:01<00:02, 13.85it/s] 38%|███▊      | 24/63 [00:01<00:02, 14.77it/s] 41%|████▏     | 26/63 [00:02<00:02, 15.32it/s] 44%|████▍     | 28/63 [00:02<00:02, 15.79it/s] 48%|████▊     | 30/63 [00:02<00:02, 16.21it/s] 51%|█████     | 32/63 [00:02<00:01, 16.51it/s] 54%|█████▍    | 34/63 [00:02<00:01, 16.75it/s] 57%|█████▋    | 36/63 [00:02<00:01, 16.92it/s] 60%|██████    | 38/63 [00:02<00:01, 15.75it/s] 63%|██████▎   | 40/63 [00:02<00:01, 13.98it/s] 67%|██████▋   | 42/63 [00:03<00:01, 12.81it/s] 70%|██████▉   | 44/63 [00:03<00:01, 12.28it/s] 73%|███████▎  | 46/63 [00:03<00:01, 11.85it/s] 76%|███████▌  | 48/63 [00:03<00:01, 12.13it/s] 79%|███████▉  | 50/63 [00:03<00:01, 12.07it/s]                                                79%|███████▉  | 50/63 [00:03<00:01, 12.07it/s] 83%|████████▎ | 52/63 [00:03<00:00, 11.76it/s] 86%|████████▌ | 54/63 [00:04<00:00, 11.78it/s] 89%|████████▉ | 56/63 [00:04<00:00, 11.81it/s] 92%|█████████▏| 58/63 [00:04<00:00, 11.99it/s] 95%|█████████▌| 60/63 [00:04<00:00, 11.84it/s] 98%|█████████▊| 62/63 [00:04<00:00, 11.83it/s]                                               100%|██████████| 63/63 [00:04<00:00, 11.83it/s]100%|██████████| 63/63 [00:04<00:00, 12.79it/s]
+2025-11-05 22:19:55,318 -   Training time: 5.31s for 1 epoch on 1000 samples
+2025-11-05 22:19:55,318 -   Peak memory: 1.33 GB
+2025-11-05 22:19:55,318 -   Samples/sec: 188.32
+2025-11-05 22:19:55,318 -   Estimated full training: 0.97 minutes
+2025-11-05 22:19:55,318 -   Measuring inference latency...
+2025-11-05 22:19:55,323 - ❌ Error profiling lora seed 42: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+2025-11-05 22:19:55,328 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 314, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 244, in profile_method
+    latency = measure_inference_latency(model, val_dataset, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 59, in measure_inference_latency
+    _ = model(**inputs)
+        ^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/peft/peft_model.py", line 1652, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 222, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 1482, in forward
+    outputs = self.bert(
+              ^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 936, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 179, in forward
+    inputs_embeds = self.word_embeddings(input_ids)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+
+2025-11-05 22:19:55,335 - 
+================================================================================
+2025-11-05 22:19:55,335 - PROFILING: LORA, Seed: 43
+2025-11-05 22:19:55,336 - ================================================================================
+2025-11-05 22:19:55,336 -   Creating LoRA model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 22:19:55,781 -   Total params: 109,780,228
+2025-11-05 22:19:55,781 -   Trainable params: 296,450 (0.27%)
+2025-11-05 22:19:55,783 -   Forward pass: 28.10 GFLOPs
+2025-11-05 22:19:55,783 -   Training step: 84.31 GFLOPs
+2025-11-05 22:19:55,783 -   Loading MRPC dataset...
+2025-11-05 22:20:03,460 -   Training (1 epoch for profiling)...
+{'loss': 0.6667, 'grad_norm': 1.369128942489624, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 4.9258, 'train_samples_per_second': 203.014, 'train_steps_per_second': 12.79, 'train_loss': 0.6634727356925844, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]  3%|▎         | 2/63 [00:00<00:05, 11.93it/s]  6%|▋         | 4/63 [00:00<00:04, 11.91it/s] 10%|▉         | 6/63 [00:00<00:05, 10.99it/s] 13%|█▎        | 8/63 [00:00<00:05, 10.30it/s] 16%|█▌        | 10/63 [00:00<00:05, 10.43it/s] 19%|█▉        | 12/63 [00:01<00:04, 10.41it/s] 22%|██▏       | 14/63 [00:01<00:04, 10.29it/s] 25%|██▌       | 16/63 [00:01<00:04, 10.30it/s] 29%|██▊       | 18/63 [00:01<00:04, 10.10it/s] 32%|███▏      | 20/63 [00:01<00:04, 10.44it/s] 35%|███▍      | 22/63 [00:02<00:03, 10.68it/s] 38%|███▊      | 24/63 [00:02<00:03, 10.86it/s] 41%|████▏     | 26/63 [00:02<00:03, 10.61it/s] 44%|████▍     | 28/63 [00:02<00:03, 10.34it/s] 48%|████▊     | 30/63 [00:02<00:03, 10.48it/s] 51%|█████     | 32/63 [00:03<00:02, 10.80it/s] 54%|█████▍    | 34/63 [00:03<00:02, 11.11it/s] 57%|█████▋    | 36/63 [00:03<00:02, 11.27it/s] 60%|██████    | 38/63 [00:03<00:02, 11.07it/s] 63%|██████▎   | 40/63 [00:03<00:02, 11.02it/s] 67%|██████▋   | 42/63 [00:03<00:01, 11.23it/s] 70%|██████▉   | 44/63 [00:04<00:01, 11.30it/s] 73%|███████▎  | 46/63 [00:04<00:01, 10.84it/s] 76%|███████▌  | 48/63 [00:04<00:01, 10.47it/s] 79%|███████▉  | 50/63 [00:04<00:01, 10.39it/s]                                                79%|███████▉  | 50/63 [00:04<00:01, 10.39it/s] 83%|████████▎ | 52/63 [00:04<00:01, 10.29it/s] 86%|████████▌ | 54/63 [00:05<00:00, 10.61it/s] 89%|████████▉ | 56/63 [00:05<00:00, 10.66it/s] 92%|█████████▏| 58/63 [00:05<00:00, 10.55it/s] 95%|█████████▌| 60/63 [00:05<00:00, 10.44it/s] 98%|█████████▊| 62/63 [00:05<00:00, 10.65it/s]                                               100%|██████████| 63/63 [00:05<00:00, 10.65it/s]100%|██████████| 63/63 [00:05<00:00, 10.68it/s]
+2025-11-05 22:20:09,683 -   Training time: 6.22s for 1 epoch on 1000 samples
+2025-11-05 22:20:09,683 -   Peak memory: 1.33 GB
+2025-11-05 22:20:09,683 -   Samples/sec: 160.71
+2025-11-05 22:20:09,691 -   Estimated full training: 1.14 minutes
+2025-11-05 22:20:09,691 -   Measuring inference latency...
+2025-11-05 22:20:09,695 - ❌ Error profiling lora seed 43: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+2025-11-05 22:20:09,697 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 314, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 244, in profile_method
+    latency = measure_inference_latency(model, val_dataset, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 59, in measure_inference_latency
+    _ = model(**inputs)
+        ^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/peft/peft_model.py", line 1652, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 222, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 1482, in forward
+    outputs = self.bert(
+              ^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 936, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 179, in forward
+    inputs_embeds = self.word_embeddings(input_ids)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+
+2025-11-05 22:20:09,704 - 
+================================================================================
+2025-11-05 22:20:09,704 - PROFILING: LORA, Seed: 44
+2025-11-05 22:20:09,704 - ================================================================================
+2025-11-05 22:20:09,704 -   Creating LoRA model...
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 22:20:10,137 -   Total params: 109,780,228
+2025-11-05 22:20:10,137 -   Trainable params: 296,450 (0.27%)
+2025-11-05 22:20:10,140 -   Forward pass: 28.10 GFLOPs
+2025-11-05 22:20:10,140 -   Training step: 84.31 GFLOPs
+2025-11-05 22:20:10,140 -   Loading MRPC dataset...
+2025-11-05 22:20:17,561 -   Training (1 epoch for profiling)...
+{'loss': 0.6605, 'grad_norm': 1.6916178464889526, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 5.8975, 'train_samples_per_second': 169.563, 'train_steps_per_second': 10.682, 'train_loss': 0.6549653552827381, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]  2%|▏         | 1/63 [00:00<00:06,  9.21it/s]  5%|▍         | 3/63 [00:00<00:05, 10.48it/s]  8%|▊         | 5/63 [00:00<00:05, 11.14it/s] 11%|█         | 7/63 [00:00<00:04, 11.37it/s] 14%|█▍        | 9/63 [00:00<00:04, 11.53it/s] 17%|█▋        | 11/63 [00:00<00:04, 11.74it/s] 21%|██        | 13/63 [00:01<00:04, 11.47it/s] 24%|██▍       | 15/63 [00:01<00:04, 11.45it/s] 27%|██▋       | 17/63 [00:01<00:04, 11.27it/s] 30%|███       | 19/63 [00:01<00:03, 11.13it/s] 33%|███▎      | 21/63 [00:01<00:03, 11.08it/s] 37%|███▋      | 23/63 [00:02<00:03, 11.05it/s] 40%|███▉      | 25/63 [00:02<00:03, 11.24it/s] 43%|████▎     | 27/63 [00:02<00:03, 11.32it/s] 46%|████▌     | 29/63 [00:02<00:02, 11.75it/s] 49%|████▉     | 31/63 [00:02<00:02, 11.94it/s] 52%|█████▏    | 33/63 [00:02<00:02, 12.15it/s] 56%|█████▌    | 35/63 [00:03<00:02, 11.71it/s] 59%|█████▊    | 37/63 [00:03<00:02, 11.26it/s] 62%|██████▏   | 39/63 [00:03<00:02, 11.02it/s] 65%|██████▌   | 41/63 [00:03<00:01, 11.16it/s] 68%|██████▊   | 43/63 [00:03<00:01, 11.15it/s] 71%|███████▏  | 45/63 [00:03<00:01, 11.39it/s] 75%|███████▍  | 47/63 [00:04<00:01, 11.48it/s] 78%|███████▊  | 49/63 [00:04<00:01, 11.58it/s]                                                79%|███████▉  | 50/63 [00:04<00:01, 11.58it/s] 81%|████████  | 51/63 [00:04<00:01, 11.39it/s] 84%|████████▍ | 53/63 [00:04<00:00, 11.48it/s] 87%|████████▋ | 55/63 [00:04<00:00, 11.86it/s] 90%|█████████ | 57/63 [00:04<00:00, 12.07it/s] 94%|█████████▎| 59/63 [00:05<00:00, 11.68it/s] 97%|█████████▋| 61/63 [00:05<00:00, 11.55it/s]100%|██████████| 63/63 [00:05<00:00, 11.62it/s]                                               100%|██████████| 63/63 [00:05<00:00, 11.62it/s]100%|██████████| 63/63 [00:05<00:00, 11.45it/s]
+2025-11-05 22:20:23,376 -   Training time: 5.81s for 1 epoch on 1000 samples
+2025-11-05 22:20:23,376 -   Peak memory: 1.33 GB
+2025-11-05 22:20:23,377 -   Samples/sec: 171.97
+2025-11-05 22:20:23,377 -   Estimated full training: 1.07 minutes
+2025-11-05 22:20:23,377 -   Measuring inference latency...
+2025-11-05 22:20:23,382 - ❌ Error profiling lora seed 44: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+2025-11-05 22:20:23,385 - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 314, in main
+    result = profile_method(method, seed)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 244, in profile_method
+    latency = measure_inference_latency(model, val_dataset, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/computational_profiling.py", line 59, in measure_inference_latency
+    _ = model(**inputs)
+        ^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 819, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 807, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/peft/peft_model.py", line 1652, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 222, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 1482, in forward
+    outputs = self.bert(
+              ^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 936, in forward
+    embedding_output = self.embeddings(
+                       ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/transformers/models/bert/modeling_bert.py", line 179, in forward
+    inputs_embeds = self.word_embeddings(input_ids)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/modules/sparse.py", line 192, in forward
+    return F.embedding(
+           ^^^^^^^^^^^^
+  File "/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2542, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Expected all tensors to be on the same device, but got index is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA__index_select)
+
+2025-11-05 22:20:23,392 - 
+================================================================================
+2025-11-05 22:20:23,392 - PROFILING: 4BIT, Seed: 42
+2025-11-05 22:20:23,392 - ================================================================================
+2025-11-05 22:20:23,393 -   Creating 4-bit quantized LoRA model...
+2025-11-05 22:20:23,800 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 22:20:24,380 -   Total params: 67,017,988
+2025-11-05 22:20:24,380 -   Trainable params: 296,450 (0.44%)
+2025-11-05 22:20:24,383 -   Forward pass: 17.16 GFLOPs
+2025-11-05 22:20:24,384 -   Training step: 51.47 GFLOPs
+2025-11-05 22:20:24,384 -   Loading MRPC dataset...
+2025-11-05 22:20:31,977 -   Training (1 epoch for profiling)...
+{'loss': 0.679, 'grad_norm': 1.1768558025360107, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 5.5049, 'train_samples_per_second': 181.657, 'train_steps_per_second': 11.444, 'train_loss': 0.6722041538783482, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+  2%|▏         | 1/63 [00:00<00:13,  4.55it/s]  3%|▎         | 2/63 [00:00<00:11,  5.40it/s]  5%|▍         | 3/63 [00:00<00:10,  5.63it/s]  6%|▋         | 4/63 [00:00<00:10,  5.87it/s]  8%|▊         | 5/63 [00:00<00:09,  5.95it/s] 10%|▉         | 6/63 [00:01<00:09,  6.06it/s] 11%|█         | 7/63 [00:01<00:09,  6.10it/s] 13%|█▎        | 8/63 [00:01<00:08,  6.17it/s] 14%|█▍        | 9/63 [00:01<00:08,  6.18it/s] 16%|█▌        | 10/63 [00:01<00:08,  6.21it/s] 17%|█▋        | 11/63 [00:01<00:08,  6.23it/s] 19%|█▉        | 12/63 [00:01<00:08,  6.25it/s] 21%|██        | 13/63 [00:02<00:07,  6.25it/s] 22%|██▏       | 14/63 [00:02<00:07,  6.25it/s] 24%|██▍       | 15/63 [00:02<00:07,  6.26it/s] 25%|██▌       | 16/63 [00:02<00:07,  6.27it/s] 27%|██▋       | 17/63 [00:02<00:07,  6.27it/s] 29%|██▊       | 18/63 [00:02<00:07,  6.27it/s] 30%|███       | 19/63 [00:03<00:07,  6.16it/s] 32%|███▏      | 20/63 [00:03<00:06,  6.19it/s] 33%|███▎      | 21/63 [00:03<00:06,  6.20it/s] 35%|███▍      | 22/63 [00:03<00:06,  6.22it/s] 37%|███▋      | 23/63 [00:03<00:06,  6.24it/s] 38%|███▊      | 24/63 [00:03<00:06,  6.25it/s] 40%|███▉      | 25/63 [00:04<00:06,  6.26it/s] 41%|████▏     | 26/63 [00:04<00:05,  6.23it/s] 43%|████▎     | 27/63 [00:04<00:05,  6.23it/s] 44%|████▍     | 28/63 [00:04<00:05,  6.26it/s] 46%|████▌     | 29/63 [00:04<00:05,  6.24it/s] 48%|████▊     | 30/63 [00:04<00:05,  6.26it/s] 49%|████▉     | 31/63 [00:05<00:05,  6.19it/s] 51%|█████     | 32/63 [00:05<00:04,  6.23it/s] 52%|█████▏    | 33/63 [00:05<00:04,  6.24it/s] 54%|█████▍    | 34/63 [00:05<00:04,  6.26it/s] 56%|█████▌    | 35/63 [00:05<00:04,  6.25it/s] 57%|█████▋    | 36/63 [00:05<00:04,  6.21it/s] 59%|█████▊    | 37/63 [00:06<00:04,  6.21it/s] 60%|██████    | 38/63 [00:06<00:04,  6.16it/s] 62%|██████▏   | 39/63 [00:06<00:03,  6.16it/s] 63%|██████▎   | 40/63 [00:06<00:03,  6.17it/s] 65%|██████▌   | 41/63 [00:06<00:03,  6.20it/s] 67%|██████▋   | 42/63 [00:06<00:03,  6.22it/s] 68%|██████▊   | 43/63 [00:06<00:03,  6.22it/s] 70%|██████▉   | 44/63 [00:07<00:03,  6.15it/s] 71%|███████▏  | 45/63 [00:07<00:02,  6.19it/s] 73%|███████▎  | 46/63 [00:07<00:02,  6.21it/s] 75%|███████▍  | 47/63 [00:07<00:02,  6.19it/s] 76%|███████▌  | 48/63 [00:07<00:02,  6.21it/s] 78%|███████▊  | 49/63 [00:07<00:02,  6.22it/s] 79%|███████▉  | 50/63 [00:08<00:02,  6.24it/s]                                                79%|███████▉  | 50/63 [00:08<00:02,  6.24it/s] 81%|████████  | 51/63 [00:08<00:01,  6.25it/s] 83%|████████▎ | 52/63 [00:08<00:01,  6.26it/s] 84%|████████▍ | 53/63 [00:08<00:01,  6.27it/s] 86%|████████▌ | 54/63 [00:08<00:01,  6.27it/s] 87%|████████▋ | 55/63 [00:08<00:01,  6.27it/s] 89%|████████▉ | 56/63 [00:09<00:01,  6.26it/s] 90%|█████████ | 57/63 [00:09<00:00,  6.27it/s] 92%|█████████▏| 58/63 [00:09<00:00,  6.28it/s] 94%|█████████▎| 59/63 [00:09<00:00,  6.24it/s] 95%|█████████▌| 60/63 [00:09<00:00,  6.21it/s] 97%|█████████▋| 61/63 [00:09<00:00,  6.21it/s] 98%|█████████▊| 62/63 [00:10<00:00,  6.24it/s]100%|██████████| 63/63 [00:10<00:00,  6.26it/s]                                               100%|██████████| 63/63 [00:10<00:00,  6.26it/s]100%|██████████| 63/63 [00:10<00:00,  6.19it/s]
+2025-11-05 22:20:42,484 -   Training time: 10.51s for 1 epoch on 1000 samples
+2025-11-05 22:20:42,484 -   Peak memory: 0.62 GB
+2025-11-05 22:20:42,484 -   Samples/sec: 95.18
+2025-11-05 22:20:42,484 -   Estimated full training: 1.93 minutes
+2025-11-05 22:20:42,484 -   Measuring inference latency...
+2025-11-05 22:20:47,609 -   Inference latency (mean): 50.42 ms
+2025-11-05 22:20:47,610 -   Inference latency (p95): 56.14 ms
+2025-11-05 22:20:47,610 -   Inference throughput: 19.83 samples/sec
+2025-11-05 22:20:47,610 -   ✅ 4BIT profiling complete!
+2025-11-05 22:20:47,620 - 
+================================================================================
+2025-11-05 22:20:47,620 - PROFILING: 4BIT, Seed: 43
+2025-11-05 22:20:47,620 - ================================================================================
+2025-11-05 22:20:47,620 -   Creating 4-bit quantized LoRA model...
+2025-11-05 22:20:47,987 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 22:20:48,544 -   Total params: 67,017,988
+2025-11-05 22:20:48,545 -   Trainable params: 296,450 (0.44%)
+2025-11-05 22:20:48,547 -   Forward pass: 17.16 GFLOPs
+2025-11-05 22:20:48,547 -   Training step: 51.47 GFLOPs
+2025-11-05 22:20:48,547 -   Loading MRPC dataset...
+2025-11-05 22:20:55,661 -   Training (1 epoch for profiling)...
+{'loss': 0.6543, 'grad_norm': 2.569089651107788, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 10.1785, 'train_samples_per_second': 98.247, 'train_steps_per_second': 6.19, 'train_loss': 0.6497095501612103, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+  2%|▏         | 1/63 [00:00<00:13,  4.43it/s]  3%|▎         | 2/63 [00:00<00:12,  4.74it/s]  5%|▍         | 3/63 [00:00<00:12,  4.64it/s]  6%|▋         | 4/63 [00:00<00:12,  4.62it/s]  8%|▊         | 5/63 [00:01<00:12,  4.60it/s] 10%|▉         | 6/63 [00:01<00:12,  4.62it/s] 11%|█         | 7/63 [00:01<00:11,  4.77it/s] 13%|█▎        | 8/63 [00:01<00:11,  4.61it/s] 14%|█▍        | 9/63 [00:01<00:11,  4.78it/s] 16%|█▌        | 10/63 [00:02<00:11,  4.76it/s] 17%|█▋        | 11/63 [00:02<00:10,  4.78it/s] 19%|█▉        | 12/63 [00:02<00:10,  4.78it/s] 21%|██        | 13/63 [00:02<00:10,  4.78it/s] 22%|██▏       | 14/63 [00:02<00:10,  4.82it/s] 24%|██▍       | 15/63 [00:03<00:10,  4.76it/s] 25%|██▌       | 16/63 [00:03<00:09,  4.91it/s] 27%|██▋       | 17/63 [00:03<00:09,  4.98it/s] 29%|██▊       | 18/63 [00:03<00:09,  4.94it/s] 30%|███       | 19/63 [00:03<00:08,  5.01it/s] 32%|███▏      | 20/63 [00:04<00:08,  5.06it/s] 33%|███▎      | 21/63 [00:04<00:08,  4.94it/s] 35%|███▍      | 22/63 [00:04<00:08,  4.90it/s] 37%|███▋      | 23/63 [00:04<00:08,  4.86it/s] 38%|███▊      | 24/63 [00:04<00:07,  4.97it/s] 40%|███▉      | 25/63 [00:05<00:07,  5.00it/s] 41%|████▏     | 26/63 [00:05<00:07,  5.06it/s] 43%|████▎     | 27/63 [00:05<00:07,  4.98it/s] 44%|████▍     | 28/63 [00:05<00:06,  5.09it/s] 46%|████▌     | 29/63 [00:05<00:06,  5.07it/s] 48%|████▊     | 30/63 [00:06<00:06,  5.14it/s] 49%|████▉     | 31/63 [00:06<00:06,  5.07it/s] 51%|█████     | 32/63 [00:06<00:06,  4.99it/s] 52%|█████▏    | 33/63 [00:06<00:06,  4.97it/s] 54%|█████▍    | 34/63 [00:06<00:05,  4.97it/s] 56%|█████▌    | 35/63 [00:07<00:05,  4.95it/s] 57%|█████▋    | 36/63 [00:07<00:05,  4.87it/s] 59%|█████▊    | 37/63 [00:07<00:05,  4.97it/s] 60%|██████    | 38/63 [00:07<00:04,  5.01it/s] 62%|██████▏   | 39/63 [00:07<00:04,  4.90it/s] 63%|██████▎   | 40/63 [00:08<00:04,  4.90it/s] 65%|██████▌   | 41/63 [00:08<00:04,  5.02it/s] 67%|██████▋   | 42/63 [00:08<00:04,  4.93it/s] 68%|██████▊   | 43/63 [00:08<00:03,  5.01it/s] 70%|██████▉   | 44/63 [00:08<00:03,  5.07it/s] 71%|███████▏  | 45/63 [00:09<00:03,  5.12it/s] 73%|███████▎  | 46/63 [00:09<00:03,  5.18it/s] 75%|███████▍  | 47/63 [00:09<00:03,  5.12it/s] 76%|███████▌  | 48/63 [00:09<00:03,  4.91it/s] 78%|███████▊  | 49/63 [00:09<00:02,  4.88it/s] 79%|███████▉  | 50/63 [00:10<00:02,  4.89it/s]                                                79%|███████▉  | 50/63 [00:10<00:02,  4.89it/s] 81%|████████  | 51/63 [00:10<00:02,  4.95it/s] 83%|████████▎ | 52/63 [00:10<00:02,  5.06it/s] 84%|████████▍ | 53/63 [00:10<00:02,  5.00it/s] 86%|████████▌ | 54/63 [00:10<00:01,  4.96it/s] 87%|████████▋ | 55/63 [00:11<00:01,  4.84it/s] 89%|████████▉ | 56/63 [00:11<00:01,  4.74it/s] 90%|█████████ | 57/63 [00:11<00:01,  4.63it/s] 92%|█████████▏| 58/63 [00:11<00:01,  4.61it/s] 94%|█████████▎| 59/63 [00:12<00:00,  4.67it/s] 95%|█████████▌| 60/63 [00:12<00:00,  4.68it/s] 97%|█████████▋| 61/63 [00:12<00:00,  4.46it/s] 98%|█████████▊| 62/63 [00:12<00:00,  4.52it/s]100%|██████████| 63/63 [00:12<00:00,  4.59it/s]                                               100%|██████████| 63/63 [00:12<00:00,  4.59it/s]100%|██████████| 63/63 [00:12<00:00,  4.86it/s]
+2025-11-05 22:21:08,914 -   Training time: 13.25s for 1 epoch on 1000 samples
+2025-11-05 22:21:08,914 -   Peak memory: 0.38 GB
+2025-11-05 22:21:08,914 -   Samples/sec: 75.46
+2025-11-05 22:21:08,914 -   Estimated full training: 2.43 minutes
+2025-11-05 22:21:08,914 -   Measuring inference latency...
+2025-11-05 22:21:15,050 -   Inference latency (mean): 60.26 ms
+2025-11-05 22:21:15,051 -   Inference latency (p95): 70.70 ms
+2025-11-05 22:21:15,051 -   Inference throughput: 16.59 samples/sec
+2025-11-05 22:21:15,051 -   ✅ 4BIT profiling complete!
+2025-11-05 22:21:15,063 - 
+================================================================================
+2025-11-05 22:21:15,063 - PROFILING: 4BIT, Seed: 44
+2025-11-05 22:21:15,063 - ================================================================================
+2025-11-05 22:21:15,064 -   Creating 4-bit quantized LoRA model...
+2025-11-05 22:21:15,445 - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-11-05 22:21:16,047 -   Total params: 67,017,988
+2025-11-05 22:21:16,048 -   Trainable params: 296,450 (0.44%)
+2025-11-05 22:21:16,051 -   Forward pass: 17.16 GFLOPs
+2025-11-05 22:21:16,051 -   Training step: 51.47 GFLOPs
+2025-11-05 22:21:16,051 -   Loading MRPC dataset...
+2025-11-05 22:21:23,199 -   Training (1 epoch for profiling)...
+{'loss': 0.7258, 'grad_norm': 1.4230706691741943, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 12.9589, 'train_samples_per_second': 77.167, 'train_steps_per_second': 4.862, 'train_loss': 0.711426750062004, 'epoch': 1.0}
+  0%|          | 0/63 [00:00<?, ?it/s]/home/ashish/paper9_reasoning_compression/venv/lib/python3.12/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+  2%|▏         | 1/63 [00:00<00:13,  4.61it/s]  3%|▎         | 2/63 [00:00<00:12,  4.93it/s]  5%|▍         | 3/63 [00:00<00:12,  4.92it/s]  6%|▋         | 4/63 [00:00<00:12,  4.91it/s]  8%|▊         | 5/63 [00:01<00:12,  4.76it/s] 10%|▉         | 6/63 [00:01<00:12,  4.58it/s] 11%|█         | 7/63 [00:01<00:12,  4.56it/s] 13%|█▎        | 8/63 [00:01<00:11,  4.61it/s] 14%|█▍        | 9/63 [00:01<00:11,  4.56it/s] 16%|█▌        | 10/63 [00:02<00:11,  4.64it/s] 17%|█▋        | 11/63 [00:02<00:11,  4.63it/s] 19%|█▉        | 12/63 [00:02<00:11,  4.60it/s] 21%|██        | 13/63 [00:02<00:11,  4.54it/s] 22%|██▏       | 14/63 [00:02<00:10,  4.79it/s] 24%|██▍       | 15/63 [00:03<00:09,  4.81it/s] 25%|██▌       | 16/63 [00:03<00:09,  4.71it/s] 27%|██▋       | 17/63 [00:03<00:09,  4.67it/s] 29%|██▊       | 18/63 [00:03<00:09,  4.84it/s] 30%|███       | 19/63 [00:04<00:09,  4.88it/s] 32%|███▏      | 20/63 [00:04<00:08,  4.85it/s] 33%|███▎      | 21/63 [00:04<00:08,  4.85it/s] 35%|███▍      | 22/63 [00:04<00:08,  5.04it/s] 37%|███▋      | 23/63 [00:04<00:07,  5.08it/s] 38%|███▊      | 24/63 [00:05<00:07,  5.12it/s] 40%|███▉      | 25/63 [00:05<00:07,  5.18it/s] 41%|████▏     | 26/63 [00:05<00:06,  5.31it/s] 43%|████▎     | 27/63 [00:05<00:06,  5.34it/s] 44%|████▍     | 28/63 [00:05<00:06,  5.05it/s] 46%|████▌     | 29/63 [00:05<00:07,  4.86it/s] 48%|████▊     | 30/63 [00:06<00:06,  4.90it/s] 49%|████▉     | 31/63 [00:06<00:06,  4.89it/s] 51%|█████     | 32/63 [00:06<00:06,  4.95it/s] 52%|█████▏    | 33/63 [00:06<00:06,  4.98it/s] 54%|█████▍    | 34/63 [00:06<00:05,  5.06it/s] 56%|█████▌    | 35/63 [00:07<00:05,  5.09it/s] 57%|█████▋    | 36/63 [00:07<00:05,  5.09it/s] 59%|█████▊    | 37/63 [00:07<00:05,  5.09it/s] 60%|██████    | 38/63 [00:07<00:04,  5.11it/s] 62%|██████▏   | 39/63 [00:07<00:04,  5.06it/s] 63%|██████▎   | 40/63 [00:08<00:04,  5.39it/s] 65%|██████▌   | 41/63 [00:08<00:03,  5.66it/s] 67%|██████▋   | 42/63 [00:08<00:03,  5.86it/s] 68%|██████▊   | 43/63 [00:08<00:03,  6.01it/s] 70%|██████▉   | 44/63 [00:08<00:03,  6.11it/s] 71%|███████▏  | 45/63 [00:08<00:02,  6.16it/s] 73%|███████▎  | 46/63 [00:09<00:02,  6.16it/s] 75%|███████▍  | 47/63 [00:09<00:02,  6.22it/s] 76%|███████▌  | 48/63 [00:09<00:02,  6.28it/s] 78%|███████▊  | 49/63 [00:09<00:02,  6.32it/s] 79%|███████▉  | 50/63 [00:09<00:02,  6.36it/s]                                                79%|███████▉  | 50/63 [00:09<00:02,  6.36it/s] 81%|████████  | 51/63 [00:09<00:01,  6.35it/s] 83%|████████▎ | 52/63 [00:10<00:01,  6.38it/s] 84%|████████▍ | 53/63 [00:10<00:01,  6.38it/s] 86%|████████▌ | 54/63 [00:10<00:01,  6.38it/s] 87%|████████▋ | 55/63 [00:10<00:01,  6.37it/s] 89%|████████▉ | 56/63 [00:10<00:01,  6.30it/s] 90%|█████████ | 57/63 [00:10<00:00,  6.29it/s] 92%|█████████▏| 58/63 [00:10<00:00,  6.31it/s] 94%|█████████▎| 59/63 [00:11<00:00,  6.32it/s] 95%|█████████▌| 60/63 [00:11<00:00,  6.34it/s] 97%|█████████▋| 61/63 [00:11<00:00,  6.34it/s] 98%|█████████▊| 62/63 [00:11<00:00,  6.37it/s]100%|██████████| 63/63 [00:11<00:00,  6.40it/s]                                               100%|██████████| 63/63 [00:11<00:00,  6.40it/s]100%|██████████| 63/63 [00:11<00:00,  5.36it/s]
+2025-11-05 22:21:35,285 -   Training time: 12.09s for 1 epoch on 1000 samples
+2025-11-05 22:21:35,285 -   Peak memory: 0.38 GB
+2025-11-05 22:21:35,285 -   Samples/sec: 82.75
+2025-11-05 22:21:35,285 -   Estimated full training: 2.22 minutes
+2025-11-05 22:21:35,285 -   Measuring inference latency...
+2025-11-05 22:21:40,416 -   Inference latency (mean): 50.49 ms
+2025-11-05 22:21:40,417 -   Inference latency (p95): 57.09 ms
+2025-11-05 22:21:40,417 -   Inference throughput: 19.80 samples/sec
+2025-11-05 22:21:40,417 -   ✅ 4BIT profiling complete!
+2025-11-05 22:21:40,430 - 
+====================================================================================================
+2025-11-05 22:21:40,430 - PROFILING COMPLETE!
+2025-11-05 22:21:40,430 - ====================================================================================================
+2025-11-05 22:21:40,430 - Total time: 0.05h
+2025-11-05 22:21:40,431 - 
+SUMMARY:
+2025-11-05 22:21:40,431 - 
+4BIT:
+2025-11-05 22:21:40,431 -   Training: 11.95s ± 1.12s
+2025-11-05 22:21:40,431 -   Memory: 0.46 GB ± 0.11 GB
+2025-11-05 22:21:40,431 -   Inference: 53.72 ms ± 4.62 ms
+2025-11-05 22:21:40,431 -   Throughput: 18.74 samples/sec
+2025-11-05 22:21:40,431 -   Trainable params: 296,450
+2025-11-05 22:21:40,431 - ====================================================================================================
+{'loss': 0.6943, 'grad_norm': 1.3215793371200562, 'learning_rate': 1.9600000000000002e-05, 'epoch': 0.79}
+{'train_runtime': 11.7486, 'train_samples_per_second': 85.116, 'train_steps_per_second': 5.362, 'train_loss': 0.6867339119078621, 'epoch': 1.0}

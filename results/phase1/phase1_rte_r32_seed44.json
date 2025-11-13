@@ -1,0 +1,26 @@
+{
+  "experiment_id": "phase1_rte_r32_seed44",
+  "phase": 1,
+  "task": "rte",
+  "lora_rank": 32,
+  "seed": 44,
+  "timestamp": "2025-10-28T11:44:28.531301",
+  "dataset_info": {
+    "train_samples": 2490,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 110664964,
+    "trainable_params": 1181186,
+    "trainable_percent": 1.07
+  },
+  "metrics": {
+    "accuracy": 0.4,
+    "f1": 0.4,
+    "training_loss": 0.6966,
+    "training_time_hours": 0.0142,
+    "peak_gpu_memory_gb": 1.33,
+    "total_training_steps": 468
+  }
+}

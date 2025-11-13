@@ -1,0 +1,19 @@
+{
+  "experiment_id": "phase0_mrpc_seed42",
+  "phase": 0,
+  "task": "mrpc",
+  "seed": 42,
+  "timestamp": "2025-10-28T09:50:13.900494",
+  "dataset_info": {
+    "train_samples": 3668,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "metrics": {
+    "accuracy": 0.87,
+    "f1": 0.87,
+    "training_time_hours": 0.0241,
+    "peak_gpu_memory_gb": 2.43,
+    "total_training_steps": 690
+  }
+}

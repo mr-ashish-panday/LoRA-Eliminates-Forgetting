@@ -1,0 +1,19 @@
+{
+  "experiment_id": "phase0_sst2_seed42",
+  "phase": 0,
+  "task": "sst2",
+  "seed": 42,
+  "timestamp": "2025-10-28T10:18:06.000220",
+  "dataset_info": {
+    "train_samples": 67349,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "metrics": {
+    "accuracy": 0.92,
+    "f1": 0.92,
+    "training_time_hours": 0.2998,
+    "peak_gpu_memory_gb": 2.43,
+    "total_training_steps": 12630
+  }
+}

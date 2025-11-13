@@ -1,0 +1,28 @@
+{
+  "experiment_id": "phase4_cola_all_linear_seed43",
+  "phase": 4,
+  "task": "cola",
+  "module_type": "all_linear",
+  "module_description": "all_attention_linear",
+  "seed": 43,
+  "timestamp": "2025-10-29T21:07:11.937485",
+  "dataset_info": {
+    "train_samples": 8551,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 110824708,
+    "trainable_params": 1340930,
+    "trainable_percent": 1.21,
+    "expected_params": 741125
+  },
+  "metrics": {
+    "accuracy": 0.73,
+    "f1": 0.73,
+    "training_loss": 0.5398,
+    "training_time_hours": 0.0688,
+    "peak_gpu_memory_gb": 1.76,
+    "total_training_steps": 1605
+  }
+}

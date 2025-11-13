@@ -1,0 +1,30 @@
+{
+  "freeze_percentage": 0.95,
+  "seed": 44,
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.585,
+      "after_mrpc": 0.475,
+      "after_cola": 0.45,
+      "after_sst2": 0.47
+    },
+    "mrpc": {
+      "after_mrpc": 0.725,
+      "after_cola": 0.705,
+      "after_sst2": 0.435
+    },
+    "cola": {
+      "after_cola": 0.72,
+      "after_sst2": 0.535
+    },
+    "sst2": {
+      "after_sst2": 0.9
+    }
+  },
+  "avg_forgetting": 0.1967,
+  "forgetting_per_task": {
+    "rte": 0.115,
+    "mrpc": 0.29,
+    "cola": 0.185
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "experiment_id": "phase0_cola_seed42",
+  "phase": 0,
+  "task": "cola",
+  "seed": 42,
+  "timestamp": "2025-10-28T09:55:07.066998",
+  "dataset_info": {
+    "train_samples": 8551,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "metrics": {
+    "accuracy": 0.82,
+    "f1": 0.82,
+    "training_time_hours": 0.0429,
+    "peak_gpu_memory_gb": 2.43,
+    "total_training_steps": 1605
+  }
+}

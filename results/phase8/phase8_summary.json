@@ -1,0 +1,161 @@
+{
+  "phase": 8,
+  "total_experiments": 14,
+  "total_time_hours": 5.8,
+  "results": {
+    "mrpc_to_rte_seed42": {
+      "experiment_id": "phase8_mrpc_to_rte_seed42",
+      "train_task": "mrpc",
+      "test_task": "rte",
+      "seed": 42,
+      "metrics": {
+        "accuracy": 0.47,
+        "training_time_hours": 0.053,
+        "peak_gpu_memory_gb": 0.45
+      }
+    },
+    "mrpc_to_rte_seed43": {
+      "experiment_id": "phase8_mrpc_to_rte_seed43",
+      "train_task": "mrpc",
+      "test_task": "rte",
+      "seed": 43,
+      "metrics": {
+        "accuracy": 0.46,
+        "training_time_hours": 0.054,
+        "peak_gpu_memory_gb": 0.45
+      }
+    },
+    "mrpc_to_cola_seed42": {
+      "experiment_id": "phase8_mrpc_to_cola_seed42",
+      "train_task": "mrpc",
+      "test_task": "cola",
+      "seed": 42,
+      "metrics": {
+        "accuracy": 0.555,
+        "training_time_hours": 0.0536,
+        "peak_gpu_memory_gb": 0.45
+      }
+    },
+    "mrpc_to_cola_seed43": {
+      "experiment_id": "phase8_mrpc_to_cola_seed43",
+      "train_task": "mrpc",
+      "test_task": "cola",
+      "seed": 43,
+      "metrics": {
+        "accuracy": 0.615,
+        "training_time_hours": 0.053,
+        "peak_gpu_memory_gb": 0.46
+      }
+    },
+    "cola_to_rte_seed42": {
+      "experiment_id": "phase8_cola_to_rte_seed42",
+      "train_task": "cola",
+      "test_task": "rte",
+      "seed": 42,
+      "metrics": {
+        "accuracy": 0.45,
+        "training_time_hours": 0.1155,
+        "peak_gpu_memory_gb": 0.45
+      }
+    },
+    "cola_to_rte_seed43": {
+      "experiment_id": "phase8_cola_to_rte_seed43",
+      "train_task": "cola",
+      "test_task": "rte",
+      "seed": 43,
+      "metrics": {
+        "accuracy": 0.45,
+        "training_time_hours": 0.1146,
+        "peak_gpu_memory_gb": 0.46
+      }
+    },
+    "cola_to_mrpc_seed42": {
+      "experiment_id": "phase8_cola_to_mrpc_seed42",
+      "train_task": "cola",
+      "test_task": "mrpc",
+      "seed": 42,
+      "metrics": {
+        "accuracy": 0.685,
+        "training_time_hours": 0.1093,
+        "peak_gpu_memory_gb": 0.45
+      }
+    },
+    "cola_to_mrpc_seed43": {
+      "experiment_id": "phase8_cola_to_mrpc_seed43",
+      "train_task": "cola",
+      "test_task": "mrpc",
+      "seed": 43,
+      "metrics": {
+        "accuracy": 0.685,
+        "training_time_hours": 0.1146,
+        "peak_gpu_memory_gb": 0.46
+      }
+    },
+    "sst2_to_rte_seed42": {
+      "experiment_id": "phase8_sst2_to_rte_seed42",
+      "train_task": "sst2",
+      "test_task": "rte",
+      "seed": 42,
+      "metrics": {
+        "accuracy": 0.425,
+        "training_time_hours": 0.8671,
+        "peak_gpu_memory_gb": 0.45
+      }
+    },
+    "sst2_to_rte_seed43": {
+      "experiment_id": "phase8_sst2_to_rte_seed43",
+      "train_task": "sst2",
+      "test_task": "rte",
+      "seed": 43,
+      "metrics": {
+        "accuracy": 0.455,
+        "training_time_hours": 0.8681,
+        "peak_gpu_memory_gb": 0.46
+      }
+    },
+    "sst2_to_mrpc_seed42": {
+      "experiment_id": "phase8_sst2_to_mrpc_seed42",
+      "train_task": "sst2",
+      "test_task": "mrpc",
+      "seed": 42,
+      "metrics": {
+        "accuracy": 0.405,
+        "training_time_hours": 0.8615,
+        "peak_gpu_memory_gb": 0.45
+      }
+    },
+    "sst2_to_mrpc_seed43": {
+      "experiment_id": "phase8_sst2_to_mrpc_seed43",
+      "train_task": "sst2",
+      "test_task": "mrpc",
+      "seed": 43,
+      "metrics": {
+        "accuracy": 0.35,
+        "training_time_hours": 0.8535,
+        "peak_gpu_memory_gb": 0.46
+      }
+    },
+    "sst2_to_cola_seed42": {
+      "experiment_id": "phase8_sst2_to_cola_seed42",
+      "train_task": "sst2",
+      "test_task": "cola",
+      "seed": 42,
+      "metrics": {
+        "accuracy": 0.53,
+        "training_time_hours": 0.8399,
+        "peak_gpu_memory_gb": 0.45
+      }
+    },
+    "sst2_to_cola_seed43": {
+      "experiment_id": "phase8_sst2_to_cola_seed43",
+      "train_task": "sst2",
+      "test_task": "cola",
+      "seed": 43,
+      "metrics": {
+        "accuracy": 0.535,
+        "training_time_hours": 0.8412,
+        "peak_gpu_memory_gb": 0.46
+      }
+    }
+  }
+}

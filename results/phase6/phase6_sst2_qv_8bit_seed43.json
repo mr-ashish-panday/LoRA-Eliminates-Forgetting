@@ -1,0 +1,28 @@
+{
+  "experiment_id": "phase6_sst2_qv_8bit_seed43",
+  "phase": 6,
+  "task": "sst2",
+  "combination": "qv_8bit",
+  "module_type": "query+value",
+  "quantization": "8bit",
+  "seed": 43,
+  "timestamp": "2025-10-30T07:16:10.545783",
+  "dataset_info": {
+    "train_samples": 67349,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 109780228,
+    "trainable_params": 296450,
+    "trainable_percent": 0.27
+  },
+  "metrics": {
+    "accuracy": 0.89,
+    "f1": 0.89,
+    "training_loss": 0.3091,
+    "training_time_hours": 0.8683,
+    "peak_gpu_memory_gb": 0.48,
+    "total_training_steps": 12630
+  }
+}

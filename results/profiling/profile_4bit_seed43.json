@@ -1,0 +1,30 @@
+{
+  "method": "4bit",
+  "method_description": "4-bit + LoRA r=8",
+  "seed": 43,
+  "timestamp": "2025-11-05T22:21:15.051347",
+  "parameters": {
+    "total": 67017988,
+    "trainable": 296450,
+    "trainable_percent": 0.44
+  },
+  "flops": {
+    "forward_gflops": 17.16,
+    "training_gflops": 51.47
+  },
+  "training": {
+    "time_seconds_per_epoch": 13.25,
+    "samples_per_second": 75.46,
+    "estimated_full_training_minutes": 2.43,
+    "peak_memory_gb": 0.38,
+    "training_loss": 0.7114
+  },
+  "inference": {
+    "latency_mean_ms": 60.26,
+    "latency_std_ms": 5.24,
+    "latency_p50_ms": 59.02,
+    "latency_p95_ms": 70.7,
+    "latency_p99_ms": 72.64,
+    "throughput_samples_per_sec": 16.59
+  }
+}

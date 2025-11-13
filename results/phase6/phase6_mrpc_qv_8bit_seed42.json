@@ -1,0 +1,28 @@
+{
+  "experiment_id": "phase6_mrpc_qv_8bit_seed42",
+  "phase": 6,
+  "task": "mrpc",
+  "combination": "qv_8bit",
+  "module_type": "query+value",
+  "quantization": "8bit",
+  "seed": 42,
+  "timestamp": "2025-10-30T01:37:24.661711",
+  "dataset_info": {
+    "train_samples": 3668,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 109780228,
+    "trainable_params": 296450,
+    "trainable_percent": 0.27
+  },
+  "metrics": {
+    "accuracy": 0.685,
+    "f1": 0.685,
+    "training_loss": 0.6325,
+    "training_time_hours": 0.0564,
+    "peak_gpu_memory_gb": 0.48,
+    "total_training_steps": 690
+  }
+}

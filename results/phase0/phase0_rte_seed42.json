@@ -1,0 +1,19 @@
+{
+  "experiment_id": "phase0_rte_seed42",
+  "phase": 0,
+  "task": "rte",
+  "seed": 42,
+  "timestamp": "2025-10-28T09:46:51.749276",
+  "dataset_info": {
+    "train_samples": 2490,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "metrics": {
+    "accuracy": 0.58,
+    "f1": 0.58,
+    "training_time_hours": 0.0174,
+    "peak_gpu_memory_gb": 2.42,
+    "total_training_steps": 468
+  }
+}

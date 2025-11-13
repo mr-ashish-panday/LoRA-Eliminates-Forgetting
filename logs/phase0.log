@@ -1,0 +1,120 @@
+nohup: ignoring input
+2025-10-28 02:47:18,562 - ================================================================================
+2025-10-28 02:47:18,562 - PHASE 0: BASELINE TRAINING
+2025-10-28 02:47:18,562 - ================================================================================
+2025-10-28 02:47:18,562 - 
+[1/12] Task: rte, Seed: 42
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Map:   0%|          | 0/200 [00:00<?, ? examples/s]Map: 100%|██████████| 200/200 [00:00<00:00, 4751.65 examples/s]
+2025-10-28 02:47:30,277 -   Training...
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:15,  1.58it/s] 12%|█▏        | 3/26 [00:00<00:05,  4.42it/s] 19%|█▉        | 5/26 [00:00<00:03,  6.69it/s] 27%|██▋       | 7/26 [00:01<00:02,  8.31it/s] 35%|███▍      | 9/26 [00:01<00:01, 10.00it/s] 42%|████▏     | 11/26 [00:01<00:01, 10.82it/s] 50%|█████     | 13/26 [00:01<00:01, 11.18it/s] 58%|█████▊    | 15/26 [00:01<00:00, 11.71it/s] 65%|██████▌   | 17/26 [00:01<00:00, 11.96it/s] 73%|███████▎  | 19/26 [00:02<00:00, 12.01it/s]                                                77%|███████▋  | 20/26 [00:02<00:00, 12.01it/s] 81%|████████  | 21/26 [00:02<00:00, 11.81it/s] 88%|████████▊ | 23/26 [00:02<00:00, 11.75it/s] 96%|█████████▌| 25/26 [00:02<00:00, 12.05it/s]                                               100%|██████████| 26/26 [00:02<00:00, 12.05it/s]100%|██████████| 26/26 [00:02<00:00,  9.87it/s]
+2025-10-28 02:47:34,381 -   ✅ acc=0.520, mem=2.42GB, time=0.004h
+2025-10-28 02:47:34,410 - 
+[2/12] Task: rte, Seed: 43
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-10-28 02:47:41,592 -   Training...
+{'loss': 0.6927, 'grad_norm': 3.3783206939697266, 'learning_rate': 6.153846153846155e-06, 'epoch': 1.54}
+{'train_runtime': 2.6352, 'train_samples_per_second': 151.793, 'train_steps_per_second': 9.867, 'train_loss': 0.6844975398137019, 'epoch': 2.0}
+  0%|          | 0/26 [00:00<?, ?it/s]  8%|▊         | 2/26 [00:00<00:02, 10.95it/s] 15%|█▌        | 4/26 [00:00<00:01, 11.51it/s] 23%|██▎       | 6/26 [00:00<00:01, 12.32it/s] 31%|███       | 8/26 [00:00<00:01, 12.50it/s] 38%|███▊      | 10/26 [00:00<00:01, 12.75it/s] 46%|████▌     | 12/26 [00:00<00:01, 12.06it/s] 54%|█████▍    | 14/26 [00:01<00:00, 12.09it/s] 62%|██████▏   | 16/26 [00:01<00:00, 12.13it/s] 69%|██████▉   | 18/26 [00:01<00:00, 12.21it/s] 77%|███████▋  | 20/26 [00:01<00:00, 12.14it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 12.14it/s] 85%|████████▍ | 22/26 [00:01<00:00, 12.38it/s] 92%|█████████▏| 24/26 [00:01<00:00, 12.32it/s]100%|██████████| 26/26 [00:02<00:00, 11.95it/s]                                               100%|██████████| 26/26 [00:02<00:00, 11.95it/s]100%|██████████| 26/26 [00:02<00:00, 12.09it/s]
+2025-10-28 02:47:45,077 -   ✅ acc=0.720, mem=2.43GB, time=0.003h
+2025-10-28 02:47:45,105 - 
+[3/12] Task: rte, Seed: 44
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-10-28 02:47:52,193 -   Training...
+{'loss': 0.6632, 'grad_norm': 6.13259744644165, 'learning_rate': 6.153846153846155e-06, 'epoch': 1.54}
+{'train_runtime': 2.1502, 'train_samples_per_second': 186.033, 'train_steps_per_second': 12.092, 'train_loss': 0.6609045175405649, 'epoch': 2.0}
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:02,  9.28it/s] 12%|█▏        | 3/26 [00:00<00:01, 11.74it/s] 19%|█▉        | 5/26 [00:00<00:01, 12.43it/s] 27%|██▋       | 7/26 [00:00<00:01, 12.88it/s] 35%|███▍      | 9/26 [00:00<00:01, 12.72it/s] 42%|████▏     | 11/26 [00:00<00:01, 12.90it/s] 50%|█████     | 13/26 [00:01<00:01, 12.93it/s] 58%|█████▊    | 15/26 [00:01<00:00, 12.77it/s] 65%|██████▌   | 17/26 [00:01<00:00, 12.64it/s] 73%|███████▎  | 19/26 [00:01<00:00, 12.79it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 12.79it/s] 81%|████████  | 21/26 [00:01<00:00, 12.84it/s] 88%|████████▊ | 23/26 [00:01<00:00, 12.75it/s] 96%|█████████▌| 25/26 [00:01<00:00, 12.28it/s]                                               100%|██████████| 26/26 [00:02<00:00, 12.28it/s]100%|██████████| 26/26 [00:02<00:00, 12.51it/s]
+2025-10-28 02:47:55,624 -   ✅ acc=0.520, mem=2.43GB, time=0.003h
+2025-10-28 02:47:55,653 - 
+[4/12] Task: mrpc, Seed: 42
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{'loss': 0.6891, 'grad_norm': 3.0996387004852295, 'learning_rate': 5.384615384615385e-06, 'epoch': 1.54}
+{'train_runtime': 2.0794, 'train_samples_per_second': 192.363, 'train_steps_per_second': 12.504, 'train_loss': 0.6830121553861178, 'epoch': 2.0}
+Map:   0%|          | 0/200 [00:00<?, ? examples/s]Map: 100%|██████████| 200/200 [00:00<00:00, 5690.28 examples/s]
+2025-10-28 02:48:03,686 -   Training...
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:03,  7.57it/s] 12%|█▏        | 3/26 [00:00<00:02,  9.97it/s] 19%|█▉        | 5/26 [00:00<00:01, 10.73it/s] 27%|██▋       | 7/26 [00:00<00:01, 10.59it/s] 35%|███▍      | 9/26 [00:00<00:01, 10.51it/s] 42%|████▏     | 11/26 [00:01<00:01, 10.82it/s] 50%|█████     | 13/26 [00:01<00:01, 11.24it/s] 58%|█████▊    | 15/26 [00:01<00:00, 11.73it/s] 65%|██████▌   | 17/26 [00:01<00:00, 11.44it/s] 73%|███████▎  | 19/26 [00:01<00:00, 11.59it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 11.59it/s] 81%|████████  | 21/26 [00:01<00:00, 11.44it/s] 88%|████████▊ | 23/26 [00:02<00:00, 11.66it/s] 96%|█████████▌| 25/26 [00:02<00:00, 11.84it/s]                                               100%|██████████| 26/26 [00:02<00:00, 11.84it/s]100%|██████████| 26/26 [00:02<00:00, 11.29it/s]
+2025-10-28 02:48:07,288 -   ✅ acc=0.600, mem=2.42GB, time=0.003h
+2025-10-28 02:48:07,315 - 
+[5/12] Task: mrpc, Seed: 43
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-10-28 02:48:13,555 -   Training...
+{'loss': 0.5821, 'grad_norm': 2.671180248260498, 'learning_rate': 5.384615384615385e-06, 'epoch': 1.54}
+{'train_runtime': 2.304, 'train_samples_per_second': 173.611, 'train_steps_per_second': 11.285, 'train_loss': 0.5868938152606671, 'epoch': 2.0}
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:02,  9.28it/s] 12%|█▏        | 3/26 [00:00<00:02, 11.36it/s] 19%|█▉        | 5/26 [00:00<00:01, 11.55it/s] 27%|██▋       | 7/26 [00:00<00:01, 11.88it/s] 35%|███▍      | 9/26 [00:00<00:01, 12.45it/s] 42%|████▏     | 11/26 [00:00<00:01, 12.42it/s] 50%|█████     | 13/26 [00:01<00:01, 12.26it/s] 58%|█████▊    | 15/26 [00:01<00:00, 12.33it/s] 65%|██████▌   | 17/26 [00:01<00:00, 12.43it/s] 73%|███████▎  | 19/26 [00:01<00:00, 12.07it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 12.07it/s] 81%|████████  | 21/26 [00:01<00:00, 12.30it/s] 88%|████████▊ | 23/26 [00:01<00:00, 12.19it/s] 96%|█████████▌| 25/26 [00:02<00:00, 11.83it/s]                                               100%|██████████| 26/26 [00:02<00:00, 11.83it/s]100%|██████████| 26/26 [00:02<00:00, 12.00it/s]
+2025-10-28 02:48:17,009 -   ✅ acc=0.600, mem=2.42GB, time=0.003h
+2025-10-28 02:48:17,036 - 
+[6/12] Task: mrpc, Seed: 44
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-10-28 02:48:24,167 -   Training...
+{'loss': 0.6101, 'grad_norm': 3.199009418487549, 'learning_rate': 6.923076923076923e-06, 'epoch': 1.54}
+{'train_runtime': 2.1676, 'train_samples_per_second': 184.533, 'train_steps_per_second': 11.995, 'train_loss': 0.629246344933143, 'epoch': 2.0}
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:02,  8.70it/s] 12%|█▏        | 3/26 [00:00<00:02, 11.01it/s] 19%|█▉        | 5/26 [00:00<00:01, 11.53it/s] 27%|██▋       | 7/26 [00:00<00:01, 11.72it/s] 35%|███▍      | 9/26 [00:00<00:01, 11.77it/s] 42%|████▏     | 11/26 [00:00<00:01, 11.65it/s] 50%|█████     | 13/26 [00:01<00:01, 11.14it/s] 58%|█████▊    | 15/26 [00:01<00:00, 11.46it/s] 65%|██████▌   | 17/26 [00:01<00:00, 11.41it/s] 73%|███████▎  | 19/26 [00:01<00:00, 11.18it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 11.18it/s] 81%|████████  | 21/26 [00:01<00:00, 10.99it/s] 88%|████████▊ | 23/26 [00:02<00:00, 11.44it/s] 96%|█████████▌| 25/26 [00:02<00:00, 11.31it/s]                                               100%|██████████| 26/26 [00:02<00:00, 11.31it/s]100%|██████████| 26/26 [00:02<00:00, 11.26it/s]
+2025-10-28 02:48:27,775 -   ✅ acc=0.600, mem=2.43GB, time=0.003h
+2025-10-28 02:48:27,803 - 
+[7/12] Task: cola, Seed: 42
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{'loss': 0.5949, 'grad_norm': 2.954744338989258, 'learning_rate': 5.384615384615385e-06, 'epoch': 1.54}
+{'train_runtime': 2.3094, 'train_samples_per_second': 173.208, 'train_steps_per_second': 11.259, 'train_loss': 0.6019812363844651, 'epoch': 2.0}
+Map:   0%|          | 0/200 [00:00<?, ? examples/s]Map: 100%|██████████| 200/200 [00:00<00:00, 4489.80 examples/s]
+2025-10-28 02:48:35,707 -   Training...
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:03,  7.39it/s] 12%|█▏        | 3/26 [00:00<00:02,  9.69it/s] 19%|█▉        | 5/26 [00:00<00:02, 10.30it/s] 27%|██▋       | 7/26 [00:00<00:01, 10.88it/s] 35%|███▍      | 9/26 [00:00<00:01, 10.74it/s] 42%|████▏     | 11/26 [00:01<00:01, 10.95it/s] 50%|█████     | 13/26 [00:01<00:01, 10.85it/s] 58%|█████▊    | 15/26 [00:01<00:01, 10.54it/s] 65%|██████▌   | 17/26 [00:01<00:00, 11.25it/s] 73%|███████▎  | 19/26 [00:01<00:00, 12.43it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 12.43it/s] 81%|████████  | 21/26 [00:01<00:00, 13.32it/s] 88%|████████▊ | 23/26 [00:01<00:00, 14.08it/s] 96%|█████████▌| 25/26 [00:02<00:00, 14.72it/s]                                               100%|██████████| 26/26 [00:02<00:00, 14.72it/s]100%|██████████| 26/26 [00:02<00:00, 12.17it/s]
+2025-10-28 02:48:39,074 -   ✅ acc=0.700, mem=2.43GB, time=0.003h
+2025-10-28 02:48:39,103 - 
+[8/12] Task: cola, Seed: 43
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-10-28 02:48:46,321 -   Training...
+{'loss': 0.6517, 'grad_norm': 7.267496585845947, 'learning_rate': 5.384615384615385e-06, 'epoch': 1.54}
+{'train_runtime': 2.1382, 'train_samples_per_second': 187.069, 'train_steps_per_second': 12.159, 'train_loss': 0.6445905245267428, 'epoch': 2.0}
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:03,  8.11it/s] 12%|█▏        | 3/26 [00:00<00:02, 10.06it/s] 19%|█▉        | 5/26 [00:00<00:01, 10.58it/s] 27%|██▋       | 7/26 [00:00<00:01, 10.73it/s] 35%|███▍      | 9/26 [00:00<00:01, 11.12it/s] 42%|████▏     | 11/26 [00:01<00:01, 11.22it/s] 50%|█████     | 13/26 [00:01<00:01, 11.31it/s] 58%|█████▊    | 15/26 [00:01<00:00, 11.22it/s] 65%|██████▌   | 17/26 [00:01<00:00, 11.57it/s] 73%|███████▎  | 19/26 [00:01<00:00, 11.81it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 11.81it/s] 81%|████████  | 21/26 [00:01<00:00, 11.47it/s] 88%|████████▊ | 23/26 [00:02<00:00, 11.19it/s] 96%|█████████▌| 25/26 [00:02<00:00, 11.33it/s]                                               100%|██████████| 26/26 [00:02<00:00, 11.33it/s]100%|██████████| 26/26 [00:02<00:00, 11.20it/s]
+2025-10-28 02:48:49,965 -   ✅ acc=0.700, mem=2.43GB, time=0.003h
+2025-10-28 02:48:49,994 - 
+[9/12] Task: cola, Seed: 44
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-10-28 02:48:57,541 -   Training...
+{'loss': 0.6525, 'grad_norm': 8.917074203491211, 'learning_rate': 5.384615384615385e-06, 'epoch': 1.54}
+{'train_runtime': 2.3229, 'train_samples_per_second': 172.197, 'train_steps_per_second': 11.193, 'train_loss': 0.6471827580378606, 'epoch': 2.0}
+  0%|          | 0/26 [00:00<?, ?it/s]  8%|▊         | 2/26 [00:00<00:01, 13.29it/s] 15%|█▌        | 4/26 [00:00<00:01, 14.47it/s] 23%|██▎       | 6/26 [00:00<00:01, 15.19it/s] 31%|███       | 8/26 [00:00<00:01, 15.53it/s] 38%|███▊      | 10/26 [00:00<00:01, 15.76it/s] 46%|████▌     | 12/26 [00:00<00:00, 15.91it/s] 54%|█████▍    | 14/26 [00:00<00:00, 15.94it/s] 62%|██████▏   | 16/26 [00:01<00:00, 15.98it/s] 69%|██████▉   | 18/26 [00:01<00:00, 16.00it/s] 77%|███████▋  | 20/26 [00:01<00:00, 15.99it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 15.99it/s] 85%|████████▍ | 22/26 [00:01<00:00, 15.15it/s] 92%|█████████▏| 24/26 [00:01<00:00, 15.34it/s]100%|██████████| 26/26 [00:01<00:00, 15.66it/s]                                               100%|██████████| 26/26 [00:01<00:00, 15.66it/s]100%|██████████| 26/26 [00:01<00:00, 15.50it/s]
+2025-10-28 02:49:00,521 -   ✅ acc=0.700, mem=2.42GB, time=0.003h
+2025-10-28 02:49:00,550 - 
+[10/12] Task: sst2, Seed: 42
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{'loss': 0.6468, 'grad_norm': 9.183204650878906, 'learning_rate': 5.384615384615385e-06, 'epoch': 1.54}
+{'train_runtime': 1.6776, 'train_samples_per_second': 238.442, 'train_steps_per_second': 15.499, 'train_loss': 0.6365156907301682, 'epoch': 2.0}
+Map:   0%|          | 0/200 [00:00<?, ? examples/s]Map: 100%|██████████| 200/200 [00:00<00:00, 4146.52 examples/s]
+2025-10-28 02:49:08,393 -   Training...
+  0%|          | 0/26 [00:00<?, ?it/s]  8%|▊         | 2/26 [00:00<00:01, 13.10it/s] 15%|█▌        | 4/26 [00:00<00:01, 14.47it/s] 23%|██▎       | 6/26 [00:00<00:01, 12.06it/s] 31%|███       | 8/26 [00:00<00:01, 11.87it/s] 38%|███▊      | 10/26 [00:00<00:01, 11.96it/s] 46%|████▌     | 12/26 [00:00<00:01, 13.04it/s] 54%|█████▍    | 14/26 [00:01<00:00, 13.88it/s] 62%|██████▏   | 16/26 [00:01<00:00, 14.45it/s] 69%|██████▉   | 18/26 [00:01<00:00, 14.87it/s] 77%|███████▋  | 20/26 [00:01<00:00, 15.18it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 15.18it/s] 85%|████████▍ | 22/26 [00:01<00:00, 15.39it/s] 92%|█████████▏| 24/26 [00:01<00:00, 15.57it/s]100%|██████████| 26/26 [00:01<00:00, 15.82it/s]                                               100%|██████████| 26/26 [00:01<00:00, 15.82it/s]100%|██████████| 26/26 [00:01<00:00, 14.24it/s]
+2025-10-28 02:49:11,767 -   ✅ acc=0.880, mem=2.42GB, time=0.003h
+2025-10-28 02:49:11,796 - 
+[11/12] Task: sst2, Seed: 43
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-10-28 02:49:18,932 -   Training...
+{'loss': 0.6487, 'grad_norm': 3.594576358795166, 'learning_rate': 5.384615384615385e-06, 'epoch': 1.54}
+{'train_runtime': 1.8256, 'train_samples_per_second': 219.111, 'train_steps_per_second': 14.242, 'train_loss': 0.641507075383113, 'epoch': 2.0}
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:02,  9.90it/s] 12%|█▏        | 3/26 [00:00<00:02, 11.01it/s] 19%|█▉        | 5/26 [00:00<00:01, 11.47it/s] 27%|██▋       | 7/26 [00:00<00:01, 11.12it/s] 35%|███▍      | 9/26 [00:00<00:01, 11.35it/s] 42%|████▏     | 11/26 [00:00<00:01, 10.92it/s] 50%|█████     | 13/26 [00:01<00:01, 10.83it/s] 58%|█████▊    | 15/26 [00:01<00:01, 10.34it/s] 65%|██████▌   | 17/26 [00:01<00:00, 11.12it/s] 73%|███████▎  | 19/26 [00:01<00:00, 11.54it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 11.54it/s] 81%|████████  | 21/26 [00:01<00:00, 11.71it/s] 88%|████████▊ | 23/26 [00:02<00:00, 11.76it/s] 96%|█████████▌| 25/26 [00:02<00:00, 11.37it/s]                                               100%|██████████| 26/26 [00:02<00:00, 11.37it/s]100%|██████████| 26/26 [00:02<00:00, 11.25it/s]
+2025-10-28 02:49:22,698 -   ✅ acc=0.860, mem=2.42GB, time=0.003h
+2025-10-28 02:49:22,726 - 
+[12/12] Task: sst2, Seed: 44
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at bert-base-uncased and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2025-10-28 02:49:29,359 -   Training...
+{'loss': 0.6803, 'grad_norm': 2.9954795837402344, 'learning_rate': 5.384615384615385e-06, 'epoch': 1.54}
+{'train_runtime': 2.3116, 'train_samples_per_second': 173.041, 'train_steps_per_second': 11.248, 'train_loss': 0.6656758235051081, 'epoch': 2.0}
+  0%|          | 0/26 [00:00<?, ?it/s]  4%|▍         | 1/26 [00:00<00:02,  8.76it/s] 12%|█▏        | 3/26 [00:00<00:02, 10.96it/s] 19%|█▉        | 5/26 [00:00<00:01, 11.35it/s] 27%|██▋       | 7/26 [00:00<00:01, 11.28it/s] 35%|███▍      | 9/26 [00:00<00:01, 11.74it/s] 42%|████▏     | 11/26 [00:00<00:01, 12.21it/s] 50%|█████     | 13/26 [00:01<00:01, 12.27it/s] 58%|█████▊    | 15/26 [00:01<00:00, 12.43it/s] 65%|██████▌   | 17/26 [00:01<00:00, 12.38it/s] 73%|███████▎  | 19/26 [00:01<00:00, 12.17it/s]                                                77%|███████▋  | 20/26 [00:01<00:00, 12.17it/s] 81%|████████  | 21/26 [00:01<00:00, 11.71it/s] 88%|████████▊ | 23/26 [00:01<00:00, 11.49it/s] 96%|█████████▌| 25/26 [00:02<00:00, 11.55it/s]                                               100%|██████████| 26/26 [00:02<00:00, 11.55it/s]100%|██████████| 26/26 [00:02<00:00, 11.70it/s]
+2025-10-28 02:49:32,930 -   ✅ acc=0.780, mem=2.42GB, time=0.003h
+2025-10-28 02:49:32,960 - 
+================================================================================
+2025-10-28 02:49:32,960 - COMPLETED! Time: 0.04h, Results: 12/12
+2025-10-28 02:49:32,960 - ================================================================================
+{'loss': 0.6547, 'grad_norm': 3.3229782581329346, 'learning_rate': 5.384615384615385e-06, 'epoch': 1.54}
+{'train_runtime': 2.2226, 'train_samples_per_second': 179.966, 'train_steps_per_second': 11.698, 'train_loss': 0.6473048283503606, 'epoch': 2.0}

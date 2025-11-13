@@ -1,0 +1,11 @@
+{
+  "experiment_id": "phase8_cola_to_mrpc_seed42",
+  "train_task": "cola",
+  "test_task": "mrpc",
+  "seed": 42,
+  "metrics": {
+    "accuracy": 0.685,
+    "training_time_hours": 0.1093,
+    "peak_gpu_memory_gb": 0.45
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "experiment_id": "phase6_rte_qv_4bit_seed44",
+  "phase": 6,
+  "task": "rte",
+  "combination": "qv_4bit",
+  "module_type": "query+value",
+  "quantization": "4bit",
+  "seed": 44,
+  "timestamp": "2025-10-30T01:03:16.874415",
+  "dataset_info": {
+    "train_samples": 2490,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 67017988,
+    "trainable_params": 296450,
+    "trainable_percent": 0.44
+  },
+  "metrics": {
+    "accuracy": 0.475,
+    "f1": 0.475,
+    "training_loss": 0.6965,
+    "training_time_hours": 0.0306,
+    "peak_gpu_memory_gb": 0.4,
+    "total_training_steps": 468
+  }
+}

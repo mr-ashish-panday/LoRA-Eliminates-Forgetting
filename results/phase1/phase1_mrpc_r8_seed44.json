@@ -1,0 +1,26 @@
+{
+  "experiment_id": "phase1_mrpc_r8_seed44",
+  "phase": 1,
+  "task": "mrpc",
+  "lora_rank": 8,
+  "seed": 44,
+  "timestamp": "2025-10-28T11:51:57.590337",
+  "dataset_info": {
+    "train_samples": 3668,
+    "val_samples": 200,
+    "num_labels": 2
+  },
+  "model_info": {
+    "total_params": 109780228,
+    "trainable_params": 296450,
+    "trainable_percent": 0.27
+  },
+  "metrics": {
+    "accuracy": 0.685,
+    "f1": 0.685,
+    "training_loss": 0.6223,
+    "training_time_hours": 0.019,
+    "peak_gpu_memory_gb": 1.32,
+    "total_training_steps": 690
+  }
+}

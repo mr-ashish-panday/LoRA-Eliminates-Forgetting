@@ -1,0 +1,11 @@
+{
+  "experiment_id": "phase8_sst2_to_rte_seed42",
+  "train_task": "sst2",
+  "test_task": "rte",
+  "seed": 42,
+  "metrics": {
+    "accuracy": 0.425,
+    "training_time_hours": 0.8671,
+    "peak_gpu_memory_gb": 0.45
+  }
+}
