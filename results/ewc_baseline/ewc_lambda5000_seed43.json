@@ -1,0 +1,42 @@
+{
+  "method": "EWC",
+  "ewc_lambda": 5000,
+  "seed": 43,
+  "timestamp": "2026-02-28T20:05:12.625668",
+  "task_sequence": [
+    "rte",
+    "mrpc",
+    "cola",
+    "sst2"
+  ],
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.6101083032490975,
+      "after_mrpc": 0.51985559566787,
+      "after_cola": 0.4693140794223827,
+      "after_sst2": 0.4657039711191336
+    },
+    "mrpc": {
+      "after_mrpc": 0.8406862745098039,
+      "after_cola": 0.6887254901960784,
+      "after_sst2": 0.7377450980392157
+    },
+    "cola": {
+      "after_cola": 0.8245445829338447,
+      "after_sst2": 0.5819750719079578
+    },
+    "sst2": {
+      "after_sst2": 0.875
+    }
+  },
+  "avg_forgetting": 0.1633,
+  "max_forgetting": 0.2426,
+  "forgetting_per_task": {
+    "rte": 0.1444,
+    "mrpc": 0.1029,
+    "cola": 0.2426
+  },
+  "final_avg_accuracy": 0.6651,
+  "initial_avg_accuracy": 0.7876,
+  "time_hours": 0.2004
+}

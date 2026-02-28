@@ -1,0 +1,36 @@
+{
+  "config_name": "freeze_10_of_12",
+  "description": "Freeze layers 0-9, train layers 10-11 + classifier (~85% frozen)",
+  "seed": 43,
+  "frozen_percentage": 86.51,
+  "trainable_params": 14767874,
+  "total_params": 109483778,
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.5415162454873647,
+      "after_mrpc": 0.4729241877256318,
+      "after_cola": 0.4584837545126354,
+      "after_sst2": 0.4548736462093863
+    },
+    "mrpc": {
+      "after_mrpc": 0.7205882352941176,
+      "after_cola": 0.7009803921568627,
+      "after_sst2": 0.5833333333333334
+    },
+    "cola": {
+      "after_cola": 0.7708533077660594,
+      "after_sst2": 0.5656759348034516
+    },
+    "sst2": {
+      "after_sst2": 0.8589449541284404
+    }
+  },
+  "avg_forgetting": 0.143,
+  "max_forgetting": 0.2052,
+  "forgetting_per_task": {
+    "rte": 0.0866,
+    "mrpc": 0.1373,
+    "cola": 0.2052
+  },
+  "time_hours": 0.1411
+}

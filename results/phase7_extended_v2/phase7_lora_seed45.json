@@ -1,0 +1,47 @@
+{
+  "experiment_id": "phase7_ext_v2_lora_seed45",
+  "phase": "7_extended_v2",
+  "method": "lora",
+  "seed": 45,
+  "timestamp": "2026-02-27T22:50:41.558747",
+  "task_sequence": [
+    "rte",
+    "mrpc",
+    "cola",
+    "sst2"
+  ],
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.5415162454873647,
+      "after_mrpc": 0.4693140794223827,
+      "after_cola": 0.4657039711191336,
+      "after_sst2": 0.4620938628158845
+    },
+    "mrpc": {
+      "after_mrpc": 0.6838235294117647,
+      "after_cola": 0.6838235294117647,
+      "after_sst2": 0.6838235294117647
+    },
+    "cola": {
+      "after_cola": 0.6960690316395014,
+      "after_sst2": 0.713326941514861
+    },
+    "sst2": {
+      "after_sst2": 0.5217889908256881
+    }
+  },
+  "forgetting_metrics": {
+    "avg_forgetting": 0.0207,
+    "max_forgetting": 0.0794,
+    "forgetting_per_task": {
+      "rte": 0.0794,
+      "mrpc": 0.0,
+      "cola": -0.0173
+    },
+    "final_avg_accuracy": 0.5953,
+    "initial_avg_accuracy": 0.6108
+  },
+  "metrics": {
+    "total_time_hours": 0.2123
+  }
+}

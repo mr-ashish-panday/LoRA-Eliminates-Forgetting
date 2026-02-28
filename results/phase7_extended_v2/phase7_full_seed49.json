@@ -1,0 +1,47 @@
+{
+  "experiment_id": "phase7_ext_v2_full_seed49",
+  "phase": "7_extended_v2",
+  "method": "full",
+  "seed": 49,
+  "timestamp": "2026-02-27T22:37:56.933078",
+  "task_sequence": [
+    "rte",
+    "mrpc",
+    "cola",
+    "sst2"
+  ],
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.5776173285198556,
+      "after_mrpc": 0.4981949458483754,
+      "after_cola": 0.4729241877256318,
+      "after_sst2": 0.48375451263537905
+    },
+    "mrpc": {
+      "after_mrpc": 0.8455882352941176,
+      "after_cola": 0.696078431372549,
+      "after_sst2": 0.4632352941176471
+    },
+    "cola": {
+      "after_cola": 0.8264621284755513,
+      "after_sst2": 0.5723873441994247
+    },
+    "sst2": {
+      "after_sst2": 0.8807339449541285
+    }
+  },
+  "forgetting_metrics": {
+    "avg_forgetting": 0.2434,
+    "max_forgetting": 0.3824,
+    "forgetting_per_task": {
+      "rte": 0.0939,
+      "mrpc": 0.3824,
+      "cola": 0.2541
+    },
+    "final_avg_accuracy": 0.6,
+    "initial_avg_accuracy": 0.7826
+  },
+  "metrics": {
+    "total_time_hours": 0.2213
+  }
+}

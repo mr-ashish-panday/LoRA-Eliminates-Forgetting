@@ -1,0 +1,498 @@
+{
+  "phase": "7_extended_v2",
+  "description": "Extended seeds (45-49) for Full FT and LoRA",
+  "total_experiments": 10,
+  "successful_experiments": 10,
+  "failed_experiments": 0,
+  "total_time_hours": 4.99,
+  "methods_tested": [
+    "full",
+    "lora"
+  ],
+  "seeds_tested": [
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "task_sequence": [
+    "rte",
+    "mrpc",
+    "cola",
+    "sst2"
+  ],
+  "validation_set": "FULL (not 200 subset)",
+  "results": {
+    "full_seed45": {
+      "experiment_id": "phase7_ext_v2_full_seed45",
+      "phase": "7_extended_v2",
+      "method": "full",
+      "seed": 45,
+      "timestamp": "2026-02-27T20:43:47.569519",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.628158844765343,
+          "after_mrpc": 0.516245487364621,
+          "after_cola": 0.48736462093862815,
+          "after_sst2": 0.48014440433212996
+        },
+        "mrpc": {
+          "after_mrpc": 0.8553921568627451,
+          "after_cola": 0.6936274509803921,
+          "after_sst2": 0.7524509803921569
+        },
+        "cola": {
+          "after_cola": 0.8207094918504314,
+          "after_sst2": 0.7085330776605945
+        },
+        "sst2": {
+          "after_sst2": 0.8658256880733946
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.121,
+        "max_forgetting": 0.148,
+        "forgetting_per_task": {
+          "rte": 0.148,
+          "mrpc": 0.1029,
+          "cola": 0.1122
+        },
+        "final_avg_accuracy": 0.7017,
+        "initial_avg_accuracy": 0.7925
+      },
+      "metrics": {
+        "total_time_hours": 1.9914
+      }
+    },
+    "full_seed46": {
+      "experiment_id": "phase7_ext_v2_full_seed46",
+      "phase": "7_extended_v2",
+      "method": "full",
+      "seed": 46,
+      "timestamp": "2026-02-27T21:58:37.913419",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.6534296028880866,
+          "after_mrpc": 0.5126353790613718,
+          "after_cola": 0.4548736462093863,
+          "after_sst2": 0.48014440433212996
+        },
+        "mrpc": {
+          "after_mrpc": 0.8406862745098039,
+          "after_cola": 0.7058823529411765,
+          "after_sst2": 0.7034313725490197
+        },
+        "cola": {
+          "after_cola": 0.8235858101629914,
+          "after_sst2": 0.613614573346117
+        },
+        "sst2": {
+          "after_sst2": 0.8807339449541285
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.1735,
+        "max_forgetting": 0.21,
+        "forgetting_per_task": {
+          "rte": 0.1733,
+          "mrpc": 0.1373,
+          "cola": 0.21
+        },
+        "final_avg_accuracy": 0.6695,
+        "initial_avg_accuracy": 0.7996
+      },
+      "metrics": {
+        "total_time_hours": 1.2457
+      }
+    },
+    "full_seed47": {
+      "experiment_id": "phase7_ext_v2_full_seed47",
+      "phase": "7_extended_v2",
+      "method": "full",
+      "seed": 47,
+      "timestamp": "2026-02-27T22:12:05.896209",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.6101083032490975,
+          "after_mrpc": 0.48736462093862815,
+          "after_cola": 0.4620938628158845,
+          "after_sst2": 0.4620938628158845
+        },
+        "mrpc": {
+          "after_mrpc": 0.8406862745098039,
+          "after_cola": 0.6887254901960784,
+          "after_sst2": 0.5882352941176471
+        },
+        "cola": {
+          "after_cola": 0.8274209012464045,
+          "after_sst2": 0.6126558005752637
+        },
+        "sst2": {
+          "after_sst2": 0.8830275229357798
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.2051,
+        "max_forgetting": 0.2525,
+        "forgetting_per_task": {
+          "rte": 0.148,
+          "mrpc": 0.2525,
+          "cola": 0.2148
+        },
+        "final_avg_accuracy": 0.6365,
+        "initial_avg_accuracy": 0.7903
+      },
+      "metrics": {
+        "total_time_hours": 0.2244
+      }
+    },
+    "full_seed48": {
+      "experiment_id": "phase7_ext_v2_full_seed48",
+      "phase": "7_extended_v2",
+      "method": "full",
+      "seed": 48,
+      "timestamp": "2026-02-27T22:24:40.011506",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.6498194945848376,
+          "after_mrpc": 0.5054151624548736,
+          "after_cola": 0.4620938628158845,
+          "after_sst2": 0.49097472924187724
+        },
+        "mrpc": {
+          "after_mrpc": 0.8553921568627451,
+          "after_cola": 0.6985294117647058,
+          "after_sst2": 0.5441176470588235
+        },
+        "cola": {
+          "after_cola": 0.8293384467881112,
+          "after_sst2": 0.5493767976989453
+        },
+        "sst2": {
+          "after_sst2": 0.8784403669724771
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.25,
+        "max_forgetting": 0.3113,
+        "forgetting_per_task": {
+          "rte": 0.1588,
+          "mrpc": 0.3113,
+          "cola": 0.28
+        },
+        "final_avg_accuracy": 0.6157,
+        "initial_avg_accuracy": 0.8032
+      },
+      "metrics": {
+        "total_time_hours": 0.2094
+      }
+    },
+    "full_seed49": {
+      "experiment_id": "phase7_ext_v2_full_seed49",
+      "phase": "7_extended_v2",
+      "method": "full",
+      "seed": 49,
+      "timestamp": "2026-02-27T22:37:56.933078",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5776173285198556,
+          "after_mrpc": 0.4981949458483754,
+          "after_cola": 0.4729241877256318,
+          "after_sst2": 0.48375451263537905
+        },
+        "mrpc": {
+          "after_mrpc": 0.8455882352941176,
+          "after_cola": 0.696078431372549,
+          "after_sst2": 0.4632352941176471
+        },
+        "cola": {
+          "after_cola": 0.8264621284755513,
+          "after_sst2": 0.5723873441994247
+        },
+        "sst2": {
+          "after_sst2": 0.8807339449541285
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.2434,
+        "max_forgetting": 0.3824,
+        "forgetting_per_task": {
+          "rte": 0.0939,
+          "mrpc": 0.3824,
+          "cola": 0.2541
+        },
+        "final_avg_accuracy": 0.6,
+        "initial_avg_accuracy": 0.7826
+      },
+      "metrics": {
+        "total_time_hours": 0.2213
+      }
+    },
+    "lora_seed45": {
+      "experiment_id": "phase7_ext_v2_lora_seed45",
+      "phase": "7_extended_v2",
+      "method": "lora",
+      "seed": 45,
+      "timestamp": "2026-02-27T22:50:41.558747",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5415162454873647,
+          "after_mrpc": 0.4693140794223827,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.4620938628158845
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6838235294117647,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.6960690316395014,
+          "after_sst2": 0.713326941514861
+        },
+        "sst2": {
+          "after_sst2": 0.5217889908256881
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.0207,
+        "max_forgetting": 0.0794,
+        "forgetting_per_task": {
+          "rte": 0.0794,
+          "mrpc": 0.0,
+          "cola": -0.0173
+        },
+        "final_avg_accuracy": 0.5953,
+        "initial_avg_accuracy": 0.6108
+      },
+      "metrics": {
+        "total_time_hours": 0.2123
+      }
+    },
+    "lora_seed46": {
+      "experiment_id": "phase7_ext_v2_lora_seed46",
+      "phase": "7_extended_v2",
+      "method": "lora",
+      "seed": 46,
+      "timestamp": "2026-02-27T23:03:53.680854",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5306859205776173,
+          "after_mrpc": 0.4657039711191336,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.4657039711191336
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6862745098039216,
+          "after_sst2": 0.6862745098039216
+        },
+        "cola": {
+          "after_cola": 0.6999041227229147,
+          "after_sst2": 0.7219558964525408
+        },
+        "sst2": {
+          "after_sst2": 0.5217889908256881
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.0135,
+        "max_forgetting": 0.065,
+        "forgetting_per_task": {
+          "rte": 0.065,
+          "mrpc": -0.0025,
+          "cola": -0.0221
+        },
+        "final_avg_accuracy": 0.5989,
+        "initial_avg_accuracy": 0.6091
+      },
+      "metrics": {
+        "total_time_hours": 0.2199
+      }
+    },
+    "lora_seed47": {
+      "experiment_id": "phase7_ext_v2_lora_seed47",
+      "phase": "7_extended_v2",
+      "method": "lora",
+      "seed": 47,
+      "timestamp": "2026-02-27T23:17:27.504596",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.4151624548736462,
+          "after_mrpc": 0.4693140794223827,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.4620938628158845
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6838235294117647,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.6999041227229147,
+          "after_sst2": 0.7114093959731543
+        },
+        "sst2": {
+          "after_sst2": 0.5137614678899083
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": -0.0195,
+        "max_forgetting": 0.0,
+        "forgetting_per_task": {
+          "rte": -0.0469,
+          "mrpc": 0.0,
+          "cola": -0.0115
+        },
+        "final_avg_accuracy": 0.5928,
+        "initial_avg_accuracy": 0.5782
+      },
+      "metrics": {
+        "total_time_hours": 0.2258
+      }
+    },
+    "lora_seed48": {
+      "experiment_id": "phase7_ext_v2_lora_seed48",
+      "phase": "7_extended_v2",
+      "method": "lora",
+      "seed": 48,
+      "timestamp": "2026-02-27T23:31:05.729603",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.48736462093862815,
+          "after_mrpc": 0.4657039711191336,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.4657039711191336
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6838235294117647,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.700862895493768,
+          "after_sst2": 0.7181208053691275
+        },
+        "sst2": {
+          "after_sst2": 0.5160550458715596
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.0015,
+        "max_forgetting": 0.0217,
+        "forgetting_per_task": {
+          "rte": 0.0217,
+          "mrpc": 0.0,
+          "cola": -0.0173
+        },
+        "final_avg_accuracy": 0.5959,
+        "initial_avg_accuracy": 0.597
+      },
+      "metrics": {
+        "total_time_hours": 0.2269
+      }
+    },
+    "lora_seed49": {
+      "experiment_id": "phase7_ext_v2_lora_seed49",
+      "phase": "7_extended_v2",
+      "method": "lora",
+      "seed": 49,
+      "timestamp": "2026-02-27T23:43:58.542756",
+      "task_sequence": [
+        "rte",
+        "mrpc",
+        "cola",
+        "sst2"
+      ],
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5090252707581228,
+          "after_mrpc": 0.4693140794223827,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.4657039711191336
+        },
+        "mrpc": {
+          "after_mrpc": 0.6887254901960784,
+          "after_cola": 0.6838235294117647,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.6999041227229147,
+          "after_sst2": 0.713326941514861
+        },
+        "sst2": {
+          "after_sst2": 0.5114678899082569
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.0116,
+        "max_forgetting": 0.0433,
+        "forgetting_per_task": {
+          "rte": 0.0433,
+          "mrpc": 0.0049,
+          "cola": -0.0134
+        },
+        "final_avg_accuracy": 0.5936,
+        "initial_avg_accuracy": 0.6023
+      },
+      "metrics": {
+        "total_time_hours": 0.2146
+      }
+    }
+  }
+}

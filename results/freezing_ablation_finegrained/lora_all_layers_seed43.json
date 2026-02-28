@@ -1,0 +1,36 @@
+{
+  "config_name": "lora_all_layers",
+  "description": "LoRA applied to ALL layers (query+value), ~99.7% frozen (standard LoRA)",
+  "seed": 43,
+  "frozen_percentage": 99.73,
+  "trainable_params": 296450,
+  "total_params": 109780228,
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.5487364620938628,
+      "after_mrpc": 0.4729241877256318,
+      "after_cola": 0.4657039711191336,
+      "after_sst2": 0.4657039711191336
+    },
+    "mrpc": {
+      "after_mrpc": 0.6838235294117647,
+      "after_cola": 0.6862745098039216,
+      "after_sst2": 0.6813725490196079
+    },
+    "cola": {
+      "after_cola": 0.6941514860977949,
+      "after_sst2": 0.7027804410354745
+    },
+    "sst2": {
+      "after_sst2": 0.5091743119266054
+    }
+  },
+  "avg_forgetting": 0.0256,
+  "max_forgetting": 0.083,
+  "forgetting_per_task": {
+    "rte": 0.083,
+    "mrpc": 0.0025,
+    "cola": -0.0086
+  },
+  "time_hours": 0.221
+}

@@ -1,0 +1,36 @@
+{
+  "config_name": "freeze_11_partial_attn",
+  "description": "Freeze 0-10 + attention of layer 11, train only FFN of 11 + classifier (~96% frozen)",
+  "seed": 42,
+  "frozen_percentage": 95.14,
+  "trainable_params": 5316098,
+  "total_params": 109483778,
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.5740072202166066,
+      "after_mrpc": 0.4693140794223827,
+      "after_cola": 0.4693140794223827,
+      "after_sst2": 0.4729241877256318
+    },
+    "mrpc": {
+      "after_mrpc": 0.7230392156862745,
+      "after_cola": 0.696078431372549,
+      "after_sst2": 0.7009803921568627
+    },
+    "cola": {
+      "after_cola": 0.74784276126558,
+      "after_sst2": 0.716203259827421
+    },
+    "sst2": {
+      "after_sst2": 0.7201834862385321
+    }
+  },
+  "avg_forgetting": 0.0516,
+  "max_forgetting": 0.1011,
+  "forgetting_per_task": {
+    "rte": 0.1011,
+    "mrpc": 0.0221,
+    "cola": 0.0316
+  },
+  "time_hours": 0.1318
+}

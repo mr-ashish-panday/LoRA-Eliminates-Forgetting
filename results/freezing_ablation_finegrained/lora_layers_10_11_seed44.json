@@ -1,0 +1,36 @@
+{
+  "config_name": "lora_layers_10_11",
+  "description": "LoRA applied to layers 10-11 (query+value), ~99.8% frozen",
+  "seed": 44,
+  "frozen_percentage": 99.95,
+  "trainable_params": 50690,
+  "total_params": 109534468,
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.5631768953068592,
+      "after_mrpc": 0.4729241877256318,
+      "after_cola": 0.4693140794223827,
+      "after_sst2": 0.4729241877256318
+    },
+    "mrpc": {
+      "after_mrpc": 0.6838235294117647,
+      "after_cola": 0.6838235294117647,
+      "after_sst2": 0.6838235294117647
+    },
+    "cola": {
+      "after_cola": 0.6912751677852349,
+      "after_sst2": 0.6941514860977949
+    },
+    "sst2": {
+      "after_sst2": 0.5091743119266054
+    }
+  },
+  "avg_forgetting": 0.0291,
+  "max_forgetting": 0.0903,
+  "forgetting_per_task": {
+    "rte": 0.0903,
+    "mrpc": 0.0,
+    "cola": -0.0029
+  },
+  "time_hours": 0.1421
+}

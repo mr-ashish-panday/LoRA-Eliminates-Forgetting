@@ -1,0 +1,815 @@
+{
+  "experiment": "Fine-Grained Freezing Ablation",
+  "total_time_hours": 3.09,
+  "total_experiments": 21,
+  "successful": 21,
+  "phase_transition_summary": {
+    "freeze_10_of_12": {
+      "description": "Freeze layers 0-9, train layers 10-11 + classifier (~85% frozen)",
+      "frozen_percentage": 86.51,
+      "avg_forgetting_mean": 0.1482,
+      "avg_forgetting_std": 0.0073,
+      "n_seeds": 3
+    },
+    "freeze_11_of_12": {
+      "description": "Freeze layers 0-10, train layer 11 + classifier (~92% frozen)",
+      "frozen_percentage": 92.99,
+      "avg_forgetting_mean": 0.1324,
+      "avg_forgetting_std": 0.0,
+      "n_seeds": 3
+    },
+    "freeze_11_partial_attn": {
+      "description": "Freeze 0-10 + attention of layer 11, train only FFN of 11 + classifier (~96% frozen)",
+      "frozen_percentage": 95.14,
+      "avg_forgetting_mean": 0.0516,
+      "avg_forgetting_std": 0.0,
+      "n_seeds": 3
+    },
+    "freeze_all_12": {
+      "description": "Freeze ALL 12 layers, train ONLY classifier head (~99.99% frozen)",
+      "frozen_percentage": 99.46,
+      "avg_forgetting_mean": 0.0314,
+      "avg_forgetting_std": 0.0,
+      "n_seeds": 3
+    },
+    "lora_layer_11_only": {
+      "description": "LoRA applied ONLY to layer 11 (query+value), ~99.9% frozen",
+      "frozen_percentage": 99.98,
+      "avg_forgetting_mean": 0.0289,
+      "avg_forgetting_std": 0.001,
+      "n_seeds": 3
+    },
+    "lora_layers_10_11": {
+      "description": "LoRA applied to layers 10-11 (query+value), ~99.8% frozen",
+      "frozen_percentage": 99.95,
+      "avg_forgetting_mean": 0.0294,
+      "avg_forgetting_std": 0.0003,
+      "n_seeds": 3
+    },
+    "lora_all_layers": {
+      "description": "LoRA applied to ALL layers (query+value), ~99.7% frozen (standard LoRA)",
+      "frozen_percentage": 99.73,
+      "avg_forgetting_mean": 0.0256,
+      "avg_forgetting_std": 0.0003,
+      "n_seeds": 3
+    }
+  },
+  "results": {
+    "freeze_10_of_12_seed42": {
+      "config_name": "freeze_10_of_12",
+      "description": "Freeze layers 0-9, train layers 10-11 + classifier (~85% frozen)",
+      "seed": 42,
+      "frozen_percentage": 86.51,
+      "trainable_params": 14767874,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5595667870036101,
+          "after_mrpc": 0.47653429602888087,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.4259927797833935
+        },
+        "mrpc": {
+          "after_mrpc": 0.7279411764705882,
+          "after_cola": 0.6985294117647058,
+          "after_sst2": 0.5882352941176471
+        },
+        "cola": {
+          "after_cola": 0.7679769894534996,
+          "after_sst2": 0.5656759348034516
+        },
+        "sst2": {
+          "after_sst2": 0.8428899082568807
+        }
+      },
+      "avg_forgetting": 0.1585,
+      "max_forgetting": 0.2023,
+      "forgetting_per_task": {
+        "rte": 0.1336,
+        "mrpc": 0.1397,
+        "cola": 0.2023
+      },
+      "time_hours": 0.1446
+    },
+    "freeze_10_of_12_seed43": {
+      "config_name": "freeze_10_of_12",
+      "description": "Freeze layers 0-9, train layers 10-11 + classifier (~85% frozen)",
+      "seed": 43,
+      "frozen_percentage": 86.51,
+      "trainable_params": 14767874,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5415162454873647,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4584837545126354,
+          "after_sst2": 0.4548736462093863
+        },
+        "mrpc": {
+          "after_mrpc": 0.7205882352941176,
+          "after_cola": 0.7009803921568627,
+          "after_sst2": 0.5833333333333334
+        },
+        "cola": {
+          "after_cola": 0.7708533077660594,
+          "after_sst2": 0.5656759348034516
+        },
+        "sst2": {
+          "after_sst2": 0.8589449541284404
+        }
+      },
+      "avg_forgetting": 0.143,
+      "max_forgetting": 0.2052,
+      "forgetting_per_task": {
+        "rte": 0.0866,
+        "mrpc": 0.1373,
+        "cola": 0.2052
+      },
+      "time_hours": 0.1411
+    },
+    "freeze_10_of_12_seed44": {
+      "config_name": "freeze_10_of_12",
+      "description": "Freeze layers 0-9, train layers 10-11 + classifier (~85% frozen)",
+      "seed": 44,
+      "frozen_percentage": 86.51,
+      "trainable_params": 14767874,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5415162454873647,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4584837545126354,
+          "after_sst2": 0.4548736462093863
+        },
+        "mrpc": {
+          "after_mrpc": 0.7205882352941176,
+          "after_cola": 0.7009803921568627,
+          "after_sst2": 0.5833333333333334
+        },
+        "cola": {
+          "after_cola": 0.7708533077660594,
+          "after_sst2": 0.5656759348034516
+        },
+        "sst2": {
+          "after_sst2": 0.8589449541284404
+        }
+      },
+      "avg_forgetting": 0.143,
+      "max_forgetting": 0.2052,
+      "forgetting_per_task": {
+        "rte": 0.0866,
+        "mrpc": 0.1373,
+        "cola": 0.2052
+      },
+      "time_hours": 0.1387
+    },
+    "freeze_11_of_12_seed42": {
+      "config_name": "freeze_11_of_12",
+      "description": "Freeze layers 0-10, train layer 11 + classifier (~92% frozen)",
+      "seed": 42,
+      "frozen_percentage": 92.99,
+      "trainable_params": 7680002,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5703971119133574,
+          "after_mrpc": 0.45126353790613716,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.44765342960288806
+        },
+        "mrpc": {
+          "after_mrpc": 0.7181372549019608,
+          "after_cola": 0.696078431372549,
+          "after_sst2": 0.5980392156862745
+        },
+        "cola": {
+          "after_cola": 0.7603068072866731,
+          "after_sst2": 0.6059443911792906
+        },
+        "sst2": {
+          "after_sst2": 0.8428899082568807
+        }
+      },
+      "avg_forgetting": 0.1324,
+      "max_forgetting": 0.1544,
+      "forgetting_per_task": {
+        "rte": 0.1227,
+        "mrpc": 0.1201,
+        "cola": 0.1544
+      },
+      "time_hours": 0.1322
+    },
+    "freeze_11_of_12_seed43": {
+      "config_name": "freeze_11_of_12",
+      "description": "Freeze layers 0-10, train layer 11 + classifier (~92% frozen)",
+      "seed": 43,
+      "frozen_percentage": 92.99,
+      "trainable_params": 7680002,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5703971119133574,
+          "after_mrpc": 0.45126353790613716,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.44765342960288806
+        },
+        "mrpc": {
+          "after_mrpc": 0.7181372549019608,
+          "after_cola": 0.696078431372549,
+          "after_sst2": 0.5980392156862745
+        },
+        "cola": {
+          "after_cola": 0.7603068072866731,
+          "after_sst2": 0.6059443911792906
+        },
+        "sst2": {
+          "after_sst2": 0.8428899082568807
+        }
+      },
+      "avg_forgetting": 0.1324,
+      "max_forgetting": 0.1544,
+      "forgetting_per_task": {
+        "rte": 0.1227,
+        "mrpc": 0.1201,
+        "cola": 0.1544
+      },
+      "time_hours": 0.1332
+    },
+    "freeze_11_of_12_seed44": {
+      "config_name": "freeze_11_of_12",
+      "description": "Freeze layers 0-10, train layer 11 + classifier (~92% frozen)",
+      "seed": 44,
+      "frozen_percentage": 92.99,
+      "trainable_params": 7680002,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5703971119133574,
+          "after_mrpc": 0.45126353790613716,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.44765342960288806
+        },
+        "mrpc": {
+          "after_mrpc": 0.7181372549019608,
+          "after_cola": 0.696078431372549,
+          "after_sst2": 0.5980392156862745
+        },
+        "cola": {
+          "after_cola": 0.7603068072866731,
+          "after_sst2": 0.6059443911792906
+        },
+        "sst2": {
+          "after_sst2": 0.8428899082568807
+        }
+      },
+      "avg_forgetting": 0.1324,
+      "max_forgetting": 0.1544,
+      "forgetting_per_task": {
+        "rte": 0.1227,
+        "mrpc": 0.1201,
+        "cola": 0.1544
+      },
+      "time_hours": 0.1401
+    },
+    "freeze_11_partial_attn_seed42": {
+      "config_name": "freeze_11_partial_attn",
+      "description": "Freeze 0-10 + attention of layer 11, train only FFN of 11 + classifier (~96% frozen)",
+      "seed": 42,
+      "frozen_percentage": 95.14,
+      "trainable_params": 5316098,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5740072202166066,
+          "after_mrpc": 0.4693140794223827,
+          "after_cola": 0.4693140794223827,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.7230392156862745,
+          "after_cola": 0.696078431372549,
+          "after_sst2": 0.7009803921568627
+        },
+        "cola": {
+          "after_cola": 0.74784276126558,
+          "after_sst2": 0.716203259827421
+        },
+        "sst2": {
+          "after_sst2": 0.7201834862385321
+        }
+      },
+      "avg_forgetting": 0.0516,
+      "max_forgetting": 0.1011,
+      "forgetting_per_task": {
+        "rte": 0.1011,
+        "mrpc": 0.0221,
+        "cola": 0.0316
+      },
+      "time_hours": 0.1318
+    },
+    "freeze_11_partial_attn_seed43": {
+      "config_name": "freeze_11_partial_attn",
+      "description": "Freeze 0-10 + attention of layer 11, train only FFN of 11 + classifier (~96% frozen)",
+      "seed": 43,
+      "frozen_percentage": 95.14,
+      "trainable_params": 5316098,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5740072202166066,
+          "after_mrpc": 0.4693140794223827,
+          "after_cola": 0.4693140794223827,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.7230392156862745,
+          "after_cola": 0.696078431372549,
+          "after_sst2": 0.7009803921568627
+        },
+        "cola": {
+          "after_cola": 0.74784276126558,
+          "after_sst2": 0.716203259827421
+        },
+        "sst2": {
+          "after_sst2": 0.7201834862385321
+        }
+      },
+      "avg_forgetting": 0.0516,
+      "max_forgetting": 0.1011,
+      "forgetting_per_task": {
+        "rte": 0.1011,
+        "mrpc": 0.0221,
+        "cola": 0.0316
+      },
+      "time_hours": 0.1295
+    },
+    "freeze_11_partial_attn_seed44": {
+      "config_name": "freeze_11_partial_attn",
+      "description": "Freeze 0-10 + attention of layer 11, train only FFN of 11 + classifier (~96% frozen)",
+      "seed": 44,
+      "frozen_percentage": 95.14,
+      "trainable_params": 5316098,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5740072202166066,
+          "after_mrpc": 0.4693140794223827,
+          "after_cola": 0.4693140794223827,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.7230392156862745,
+          "after_cola": 0.696078431372549,
+          "after_sst2": 0.7009803921568627
+        },
+        "cola": {
+          "after_cola": 0.74784276126558,
+          "after_sst2": 0.716203259827421
+        },
+        "sst2": {
+          "after_sst2": 0.7201834862385321
+        }
+      },
+      "avg_forgetting": 0.0516,
+      "max_forgetting": 0.1011,
+      "forgetting_per_task": {
+        "rte": 0.1011,
+        "mrpc": 0.0221,
+        "cola": 0.0316
+      },
+      "time_hours": 0.1271
+    },
+    "freeze_all_12_seed42": {
+      "config_name": "freeze_all_12",
+      "description": "Freeze ALL 12 layers, train ONLY classifier head (~99.99% frozen)",
+      "seed": 42,
+      "frozen_percentage": 99.46,
+      "trainable_params": 592130,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5740072202166066,
+          "after_mrpc": 0.4693140794223827,
+          "after_cola": 0.4729241877256318,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.6985294117647058,
+          "after_cola": 0.6838235294117647,
+          "after_sst2": 0.6911764705882353
+        },
+        "cola": {
+          "after_cola": 0.7085330776605945,
+          "after_sst2": 0.7229146692233941
+        },
+        "sst2": {
+          "after_sst2": 0.5561926605504587
+        }
+      },
+      "avg_forgetting": 0.0314,
+      "max_forgetting": 0.1011,
+      "forgetting_per_task": {
+        "rte": 0.1011,
+        "mrpc": 0.0074,
+        "cola": -0.0144
+      },
+      "time_hours": 0.1251
+    },
+    "freeze_all_12_seed43": {
+      "config_name": "freeze_all_12",
+      "description": "Freeze ALL 12 layers, train ONLY classifier head (~99.99% frozen)",
+      "seed": 43,
+      "frozen_percentage": 99.46,
+      "trainable_params": 592130,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5740072202166066,
+          "after_mrpc": 0.4693140794223827,
+          "after_cola": 0.4729241877256318,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.6985294117647058,
+          "after_cola": 0.6838235294117647,
+          "after_sst2": 0.6911764705882353
+        },
+        "cola": {
+          "after_cola": 0.7085330776605945,
+          "after_sst2": 0.7229146692233941
+        },
+        "sst2": {
+          "after_sst2": 0.5561926605504587
+        }
+      },
+      "avg_forgetting": 0.0314,
+      "max_forgetting": 0.1011,
+      "forgetting_per_task": {
+        "rte": 0.1011,
+        "mrpc": 0.0074,
+        "cola": -0.0144
+      },
+      "time_hours": 0.1309
+    },
+    "freeze_all_12_seed44": {
+      "config_name": "freeze_all_12",
+      "description": "Freeze ALL 12 layers, train ONLY classifier head (~99.99% frozen)",
+      "seed": 44,
+      "frozen_percentage": 99.46,
+      "trainable_params": 592130,
+      "total_params": 109483778,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5740072202166066,
+          "after_mrpc": 0.4693140794223827,
+          "after_cola": 0.4729241877256318,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.6985294117647058,
+          "after_cola": 0.6838235294117647,
+          "after_sst2": 0.6911764705882353
+        },
+        "cola": {
+          "after_cola": 0.7085330776605945,
+          "after_sst2": 0.7229146692233941
+        },
+        "sst2": {
+          "after_sst2": 0.5561926605504587
+        }
+      },
+      "avg_forgetting": 0.0314,
+      "max_forgetting": 0.1011,
+      "forgetting_per_task": {
+        "rte": 0.1011,
+        "mrpc": 0.0074,
+        "cola": -0.0144
+      },
+      "time_hours": 0.1377
+    },
+    "lora_layer_11_only_seed42": {
+      "config_name": "lora_layer_11_only",
+      "description": "LoRA applied ONLY to layer 11 (query+value), ~99.9% frozen",
+      "seed": 42,
+      "frozen_percentage": 99.98,
+      "trainable_params": 26114,
+      "total_params": 109509892,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.555956678700361,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4693140794223827,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6862745098039216,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.6912751677852349,
+          "after_sst2": 0.6912751677852349
+        },
+        "sst2": {
+          "after_sst2": 0.5091743119266054
+        }
+      },
+      "avg_forgetting": 0.0277,
+      "max_forgetting": 0.083,
+      "forgetting_per_task": {
+        "rte": 0.083,
+        "mrpc": 0.0,
+        "cola": 0.0
+      },
+      "time_hours": 0.1384
+    },
+    "lora_layer_11_only_seed43": {
+      "config_name": "lora_layer_11_only",
+      "description": "LoRA applied ONLY to layer 11 (query+value), ~99.9% frozen",
+      "seed": 43,
+      "frozen_percentage": 99.98,
+      "trainable_params": 26114,
+      "total_params": 109509892,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5631768953068592,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4693140794223827,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6862745098039216,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.6912751677852349,
+          "after_sst2": 0.6912751677852349
+        },
+        "sst2": {
+          "after_sst2": 0.5091743119266054
+        }
+      },
+      "avg_forgetting": 0.0301,
+      "max_forgetting": 0.0903,
+      "forgetting_per_task": {
+        "rte": 0.0903,
+        "mrpc": 0.0,
+        "cola": 0.0
+      },
+      "time_hours": 0.1341
+    },
+    "lora_layer_11_only_seed44": {
+      "config_name": "lora_layer_11_only",
+      "description": "LoRA applied ONLY to layer 11 (query+value), ~99.9% frozen",
+      "seed": 44,
+      "frozen_percentage": 99.98,
+      "trainable_params": 26114,
+      "total_params": 109509892,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5595667870036101,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4693140794223827,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6862745098039216,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.6912751677852349,
+          "after_sst2": 0.6912751677852349
+        },
+        "sst2": {
+          "after_sst2": 0.5091743119266054
+        }
+      },
+      "avg_forgetting": 0.0289,
+      "max_forgetting": 0.0866,
+      "forgetting_per_task": {
+        "rte": 0.0866,
+        "mrpc": 0.0,
+        "cola": 0.0
+      },
+      "time_hours": 0.134
+    },
+    "lora_layers_10_11_seed42": {
+      "config_name": "lora_layers_10_11",
+      "description": "LoRA applied to layers 10-11 (query+value), ~99.8% frozen",
+      "seed": 42,
+      "frozen_percentage": 99.95,
+      "trainable_params": 50690,
+      "total_params": 109534468,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5631768953068592,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4693140794223827,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6862745098039216,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.6912751677852349,
+          "after_sst2": 0.6922339405560882
+        },
+        "sst2": {
+          "after_sst2": 0.5091743119266054
+        }
+      },
+      "avg_forgetting": 0.0298,
+      "max_forgetting": 0.0903,
+      "forgetting_per_task": {
+        "rte": 0.0903,
+        "mrpc": 0.0,
+        "cola": -0.001
+      },
+      "time_hours": 0.1453
+    },
+    "lora_layers_10_11_seed43": {
+      "config_name": "lora_layers_10_11",
+      "description": "LoRA applied to layers 10-11 (query+value), ~99.8% frozen",
+      "seed": 43,
+      "frozen_percentage": 99.95,
+      "trainable_params": 50690,
+      "total_params": 109534468,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5631768953068592,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4693140794223827,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6862745098039216,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.6912751677852349,
+          "after_sst2": 0.6931927133269415
+        },
+        "sst2": {
+          "after_sst2": 0.5091743119266054
+        }
+      },
+      "avg_forgetting": 0.0294,
+      "max_forgetting": 0.0903,
+      "forgetting_per_task": {
+        "rte": 0.0903,
+        "mrpc": 0.0,
+        "cola": -0.0019
+      },
+      "time_hours": 0.145
+    },
+    "lora_layers_10_11_seed44": {
+      "config_name": "lora_layers_10_11",
+      "description": "LoRA applied to layers 10-11 (query+value), ~99.8% frozen",
+      "seed": 44,
+      "frozen_percentage": 99.95,
+      "trainable_params": 50690,
+      "total_params": 109534468,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5631768953068592,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4693140794223827,
+          "after_sst2": 0.4729241877256318
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6838235294117647,
+          "after_sst2": 0.6838235294117647
+        },
+        "cola": {
+          "after_cola": 0.6912751677852349,
+          "after_sst2": 0.6941514860977949
+        },
+        "sst2": {
+          "after_sst2": 0.5091743119266054
+        }
+      },
+      "avg_forgetting": 0.0291,
+      "max_forgetting": 0.0903,
+      "forgetting_per_task": {
+        "rte": 0.0903,
+        "mrpc": 0.0,
+        "cola": -0.0029
+      },
+      "time_hours": 0.1421
+    },
+    "lora_all_layers_seed42": {
+      "config_name": "lora_all_layers",
+      "description": "LoRA applied to ALL layers (query+value), ~99.7% frozen (standard LoRA)",
+      "seed": 42,
+      "frozen_percentage": 99.73,
+      "trainable_params": 296450,
+      "total_params": 109780228,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5523465703971119,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.4657039711191336
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6862745098039216,
+          "after_sst2": 0.6813725490196079
+        },
+        "cola": {
+          "after_cola": 0.6941514860977949,
+          "after_sst2": 0.7056567593480345
+        },
+        "sst2": {
+          "after_sst2": 0.5091743119266054
+        }
+      },
+      "avg_forgetting": 0.0259,
+      "max_forgetting": 0.0866,
+      "forgetting_per_task": {
+        "rte": 0.0866,
+        "mrpc": 0.0025,
+        "cola": -0.0115
+      },
+      "time_hours": 0.2103
+    },
+    "lora_all_layers_seed43": {
+      "config_name": "lora_all_layers",
+      "description": "LoRA applied to ALL layers (query+value), ~99.7% frozen (standard LoRA)",
+      "seed": 43,
+      "frozen_percentage": 99.73,
+      "trainable_params": 296450,
+      "total_params": 109780228,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5487364620938628,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.4657039711191336
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6862745098039216,
+          "after_sst2": 0.6813725490196079
+        },
+        "cola": {
+          "after_cola": 0.6941514860977949,
+          "after_sst2": 0.7027804410354745
+        },
+        "sst2": {
+          "after_sst2": 0.5091743119266054
+        }
+      },
+      "avg_forgetting": 0.0256,
+      "max_forgetting": 0.083,
+      "forgetting_per_task": {
+        "rte": 0.083,
+        "mrpc": 0.0025,
+        "cola": -0.0086
+      },
+      "time_hours": 0.221
+    },
+    "lora_all_layers_seed44": {
+      "config_name": "lora_all_layers",
+      "description": "LoRA applied to ALL layers (query+value), ~99.7% frozen (standard LoRA)",
+      "seed": 44,
+      "frozen_percentage": 99.73,
+      "trainable_params": 296450,
+      "total_params": 109780228,
+      "accuracy_matrix": {
+        "rte": {
+          "after_rte": 0.5523465703971119,
+          "after_mrpc": 0.4729241877256318,
+          "after_cola": 0.4657039711191336,
+          "after_sst2": 0.4657039711191336
+        },
+        "mrpc": {
+          "after_mrpc": 0.6838235294117647,
+          "after_cola": 0.6862745098039216,
+          "after_sst2": 0.6813725490196079
+        },
+        "cola": {
+          "after_cola": 0.6941514860977949,
+          "after_sst2": 0.7075743048897412
+        },
+        "sst2": {
+          "after_sst2": 0.5149082568807339
+        }
+      },
+      "avg_forgetting": 0.0252,
+      "max_forgetting": 0.0866,
+      "forgetting_per_task": {
+        "rte": 0.0866,
+        "mrpc": 0.0025,
+        "cola": -0.0134
+      },
+      "time_hours": 0.2085
+    }
+  }
+}
