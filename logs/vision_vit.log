@@ -1,0 +1,303 @@
+2026-03-01 22:25:56,135 - INFO - ====================================================================================================
+2026-03-01 22:25:56,135 - INFO - EXPERIMENT 6: Vision (ViT + CIFAR/SVHN)
+2026-03-01 22:25:56,135 - INFO - Model: google/vit-base-patch16-224-in21k
+2026-03-01 22:25:56,135 - INFO - ====================================================================================================
+2026-03-01 22:25:56,135 - INFO - Verifying ViT architecture...
+2026-03-01 22:25:57,991 - INFO -   Found 12 query layers, 12 value layers
+2026-03-01 22:25:59,137 - INFO - 
+################################################################################
+2026-03-01 22:25:59,137 - INFO - Vision: full_seed42
+2026-03-01 22:25:59,137 - INFO - ################################################################################
+2026-03-01 22:25:59,138 - INFO - 
+================================================================================
+2026-03-01 22:25:59,138 - INFO - Vision Sequential: Method=full, Seed=42
+2026-03-01 22:25:59,138 - INFO - Tasks: cifar10 → svhn → cifar100
+2026-03-01 22:25:59,138 - INFO - ================================================================================
+2026-03-01 22:26:25,360 - INFO -   Loaded cifar10 test: 2000 samples, 10 classes
+2026-03-01 22:26:56,521 - INFO -   Loaded svhn test: 2000 samples, 10 classes
+2026-03-01 22:27:21,994 - INFO -   Loaded cifar100 test: 2000 samples, 20 classes
+2026-03-01 22:27:21,994 - INFO - 
+--- Training Task 1/3: cifar10 ---
+2026-03-01 22:28:07,570 - INFO -   Training samples: 5000
+2026-03-01 22:32:47,719 - INFO -   Trained in 4.7 min, Peak: 3.71GB
+2026-03-01 22:32:47,719 - INFO -   Evaluating:
+2026-03-01 22:33:44,540 - INFO -     cifar10: 0.9430 (just trained)
+2026-03-01 22:33:44,616 - INFO - 
+--- Training Task 2/3: svhn ---
+2026-03-01 22:34:27,861 - INFO -   Training samples: 5000
+2026-03-01 22:38:59,701 - INFO -   Trained in 4.5 min, Peak: 3.71GB
+2026-03-01 22:38:59,701 - INFO -   Evaluating:
+2026-03-01 22:39:56,228 - INFO -     cifar10: 0.5110 (Initial: 0.9430, Forgot: 0.4320)
+2026-03-01 22:40:54,061 - INFO -     svhn: 0.8460 (just trained)
+2026-03-01 22:40:54,138 - INFO - 
+--- Training Task 3/3: cifar100 ---
+2026-03-01 22:41:38,459 - INFO -   Training samples: 5000
+2026-03-01 22:46:25,220 - INFO -   Trained in 4.8 min, Peak: 3.71GB
+2026-03-01 22:46:25,221 - INFO -   Evaluating:
+2026-03-01 22:47:22,544 - INFO -     cifar10: 0.1760 (Initial: 0.9430, Forgot: 0.7670)
+2026-03-01 22:48:20,162 - INFO -     svhn: 0.1630 (Initial: 0.8460, Forgot: 0.6830)
+2026-03-01 22:49:17,726 - INFO -     cifar100: 0.5470 (just trained)
+2026-03-01 22:49:17,913 - INFO - 
+✅ full_seed42: Forgetting=0.7250, Accuracy=0.2953
+2026-03-01 22:49:18,124 - INFO - 
+################################################################################
+2026-03-01 22:49:18,124 - INFO - Vision: full_seed43
+2026-03-01 22:49:18,124 - INFO - ################################################################################
+2026-03-01 22:49:18,124 - INFO - 
+================================================================================
+2026-03-01 22:49:18,124 - INFO - Vision Sequential: Method=full, Seed=43
+2026-03-01 22:49:18,124 - INFO - Tasks: cifar10 → svhn → cifar100
+2026-03-01 22:49:18,125 - INFO - ================================================================================
+2026-03-01 22:49:43,151 - INFO -   Loaded cifar10 test: 2000 samples, 10 classes
+2026-03-01 22:50:05,937 - INFO -   Loaded svhn test: 2000 samples, 10 classes
+2026-03-01 22:50:26,715 - INFO -   Loaded cifar100 test: 2000 samples, 20 classes
+2026-03-01 22:50:26,715 - INFO - 
+--- Training Task 1/3: cifar10 ---
+2026-03-01 22:51:06,264 - INFO -   Training samples: 5000
+2026-03-01 22:55:51,190 - INFO -   Trained in 4.7 min, Peak: 3.71GB
+2026-03-01 22:55:51,190 - INFO -   Evaluating:
+2026-03-01 22:56:47,881 - INFO -     cifar10: 0.9390 (just trained)
+2026-03-01 22:56:47,958 - INFO - 
+--- Training Task 2/3: svhn ---
+2026-03-01 22:56:55,864 - INFO -   Training samples: 5000
+2026-03-01 23:01:31,312 - INFO -   Trained in 4.6 min, Peak: 3.71GB
+2026-03-01 23:01:31,312 - INFO -   Evaluating:
+2026-03-01 23:02:28,573 - INFO -     cifar10: 0.6485 (Initial: 0.9390, Forgot: 0.2905)
+2026-03-01 23:03:31,769 - INFO -     svhn: 0.8610 (just trained)
+2026-03-01 23:03:31,846 - INFO - 
+--- Training Task 3/3: cifar100 ---
+2026-03-01 23:03:39,314 - INFO -   Training samples: 5000
+2026-03-01 23:08:17,617 - INFO -   Trained in 4.6 min, Peak: 3.71GB
+2026-03-01 23:08:17,618 - INFO -   Evaluating:
+2026-03-01 23:09:14,986 - INFO -     cifar10: 0.1630 (Initial: 0.9390, Forgot: 0.7760)
+2026-03-01 23:10:13,028 - INFO -     svhn: 0.2920 (Initial: 0.8610, Forgot: 0.5690)
+2026-03-01 23:11:10,567 - INFO -     cifar100: 0.5630 (just trained)
+2026-03-01 23:11:10,747 - INFO - 
+✅ full_seed43: Forgetting=0.6725, Accuracy=0.3393
+2026-03-01 23:11:10,960 - INFO - 
+################################################################################
+2026-03-01 23:11:10,961 - INFO - Vision: full_seed44
+2026-03-01 23:11:10,961 - INFO - ################################################################################
+2026-03-01 23:11:10,961 - INFO - 
+================================================================================
+2026-03-01 23:11:10,961 - INFO - Vision Sequential: Method=full, Seed=44
+2026-03-01 23:11:10,961 - INFO - Tasks: cifar10 → svhn → cifar100
+2026-03-01 23:11:10,961 - INFO - ================================================================================
+2026-03-01 23:11:32,881 - INFO -   Loaded cifar10 test: 2000 samples, 10 classes
+2026-03-01 23:11:54,357 - INFO -   Loaded svhn test: 2000 samples, 10 classes
+2026-03-01 23:12:15,643 - INFO -   Loaded cifar100 test: 2000 samples, 20 classes
+2026-03-01 23:12:15,643 - INFO - 
+--- Training Task 1/3: cifar10 ---
+2026-03-01 23:13:00,784 - INFO -   Training samples: 5000
+2026-03-01 23:17:40,715 - INFO -   Trained in 4.7 min, Peak: 3.71GB
+2026-03-01 23:17:40,715 - INFO -   Evaluating:
+2026-03-01 23:18:38,165 - INFO -     cifar10: 0.9535 (just trained)
+2026-03-01 23:18:38,243 - INFO - 
+--- Training Task 2/3: svhn ---
+2026-03-01 23:18:47,090 - INFO -   Training samples: 5000
+2026-03-01 23:23:22,855 - INFO -   Trained in 4.6 min, Peak: 3.71GB
+2026-03-01 23:23:22,855 - INFO -   Evaluating:
+2026-03-01 23:24:23,915 - INFO -     cifar10: 0.6095 (Initial: 0.9535, Forgot: 0.3440)
+2026-03-01 23:25:22,670 - INFO -     svhn: 0.8430 (just trained)
+2026-03-01 23:25:22,747 - INFO - 
+--- Training Task 3/3: cifar100 ---
+2026-03-01 23:25:29,972 - INFO -   Training samples: 5000
+2026-03-01 23:29:56,159 - INFO -   Trained in 4.4 min, Peak: 3.71GB
+2026-03-01 23:29:56,159 - INFO -   Evaluating:
+2026-03-01 23:30:53,335 - INFO -     cifar10: 0.2245 (Initial: 0.9535, Forgot: 0.7290)
+2026-03-01 23:31:50,882 - INFO -     svhn: 0.3145 (Initial: 0.8430, Forgot: 0.5285)
+2026-03-01 23:32:50,079 - INFO -     cifar100: 0.5410 (just trained)
+2026-03-01 23:32:50,270 - INFO - 
+✅ full_seed44: Forgetting=0.6287, Accuracy=0.3600
+2026-03-01 23:32:50,479 - INFO - 
+################################################################################
+2026-03-01 23:32:50,480 - INFO - Vision: lora_seed42
+2026-03-01 23:32:50,480 - INFO - ################################################################################
+2026-03-01 23:32:50,480 - INFO - 
+================================================================================
+2026-03-01 23:32:50,480 - INFO - Vision Sequential: Method=lora, Seed=42
+2026-03-01 23:32:50,480 - INFO - Tasks: cifar10 → svhn → cifar100
+2026-03-01 23:32:50,480 - INFO - ================================================================================
+2026-03-01 23:32:53,513 - INFO -   ViT LoRA: 310,292 trainable / 86,124,328 total (0.36%)
+2026-03-01 23:33:03,060 - INFO -   Loaded cifar10 test: 2000 samples, 10 classes
+2026-03-01 23:33:10,901 - INFO -   Loaded svhn test: 2000 samples, 10 classes
+2026-03-01 23:33:18,029 - INFO -   Loaded cifar100 test: 2000 samples, 20 classes
+2026-03-01 23:33:18,029 - INFO - 
+--- Training Task 1/3: cifar10 ---
+2026-03-01 23:33:24,744 - INFO -   Training samples: 5000
+2026-03-01 23:33:25,846 - ERROR - ❌ lora_seed42 failed: ViTForImageClassification.forward() got an unexpected keyword argument 'input_ids'
+2026-03-01 23:33:25,904 - ERROR - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/vision_vit_experiment.py", line 325, in run_vision_experiment
+    accuracy_matrix, metrics = run_vision_sequential(
+                               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/vision_vit_experiment.py", line 224, in run_vision_sequential
+    trainer.train()
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 2122, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 2474, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 3572, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 3625, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 820, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 808, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/peft/peft_model.py", line 1379, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 188, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ViTForImageClassification.forward() got an unexpected keyword argument 'input_ids'
+
+2026-03-01 23:33:26,086 - INFO - 
+################################################################################
+2026-03-01 23:33:26,087 - INFO - Vision: lora_seed43
+2026-03-01 23:33:26,087 - INFO - ################################################################################
+2026-03-01 23:33:26,087 - INFO - 
+================================================================================
+2026-03-01 23:33:26,087 - INFO - Vision Sequential: Method=lora, Seed=43
+2026-03-01 23:33:26,087 - INFO - Tasks: cifar10 → svhn → cifar100
+2026-03-01 23:33:26,087 - INFO - ================================================================================
+2026-03-01 23:33:27,606 - INFO -   ViT LoRA: 310,292 trainable / 86,124,328 total (0.36%)
+2026-03-01 23:33:34,034 - INFO -   Loaded cifar10 test: 2000 samples, 10 classes
+2026-03-01 23:33:41,931 - INFO -   Loaded svhn test: 2000 samples, 10 classes
+2026-03-01 23:33:48,537 - INFO -   Loaded cifar100 test: 2000 samples, 20 classes
+2026-03-01 23:33:48,538 - INFO - 
+--- Training Task 1/3: cifar10 ---
+2026-03-01 23:33:54,947 - INFO -   Training samples: 5000
+2026-03-01 23:33:56,029 - ERROR - ❌ lora_seed43 failed: ViTForImageClassification.forward() got an unexpected keyword argument 'input_ids'
+2026-03-01 23:33:56,031 - ERROR - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/vision_vit_experiment.py", line 325, in run_vision_experiment
+    accuracy_matrix, metrics = run_vision_sequential(
+                               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/vision_vit_experiment.py", line 224, in run_vision_sequential
+    trainer.train()
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 2122, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 2474, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 3572, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 3625, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 820, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 808, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/peft/peft_model.py", line 1379, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 188, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ViTForImageClassification.forward() got an unexpected keyword argument 'input_ids'
+
+2026-03-01 23:33:56,207 - INFO - 
+################################################################################
+2026-03-01 23:33:56,208 - INFO - Vision: lora_seed44
+2026-03-01 23:33:56,208 - INFO - ################################################################################
+2026-03-01 23:33:56,208 - INFO - 
+================================================================================
+2026-03-01 23:33:56,208 - INFO - Vision Sequential: Method=lora, Seed=44
+2026-03-01 23:33:56,208 - INFO - Tasks: cifar10 → svhn → cifar100
+2026-03-01 23:33:56,208 - INFO - ================================================================================
+2026-03-01 23:33:57,782 - INFO -   ViT LoRA: 310,292 trainable / 86,124,328 total (0.36%)
+2026-03-01 23:34:04,895 - INFO -   Loaded cifar10 test: 2000 samples, 10 classes
+2026-03-01 23:34:13,305 - INFO -   Loaded svhn test: 2000 samples, 10 classes
+2026-03-01 23:34:20,233 - INFO -   Loaded cifar100 test: 2000 samples, 20 classes
+2026-03-01 23:34:20,233 - INFO - 
+--- Training Task 1/3: cifar10 ---
+2026-03-01 23:34:26,993 - INFO -   Training samples: 5000
+2026-03-01 23:34:28,085 - ERROR - ❌ lora_seed44 failed: ViTForImageClassification.forward() got an unexpected keyword argument 'input_ids'
+2026-03-01 23:34:28,087 - ERROR - Traceback (most recent call last):
+  File "/home/ashish/unified_peft_framework/vision_vit_experiment.py", line 325, in run_vision_experiment
+    accuracy_matrix, metrics = run_vision_sequential(
+                               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/unified_peft_framework/vision_vit_experiment.py", line 224, in run_vision_sequential
+    trainer.train()
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 2122, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 2474, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 3572, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/transformers/trainer.py", line 3625, in compute_loss
+    outputs = model(**inputs)
+              ^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 820, in forward
+    return model_forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/accelerate/utils/operations.py", line 808, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 16, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/peft/peft_model.py", line 1379, in forward
+    return self.base_model(
+           ^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ashish/paper11_code_execution_failures/venv/lib/python3.12/site-packages/peft/tuners/tuners_utils.py", line 188, in forward
+    return self.model.forward(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ViTForImageClassification.forward() got an unexpected keyword argument 'input_ids'
+

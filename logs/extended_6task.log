@@ -1,0 +1,226 @@
+2026-03-01 19:49:44,603 - INFO - ====================================================================================================
+2026-03-01 19:49:44,603 - INFO - EXPERIMENT 5: Extended 6-Task Sequence
+2026-03-01 19:49:44,603 - INFO - Sequence: RTE → MRPC → CoLA → SST-2 → QNLI → WNLI
+2026-03-01 19:49:44,603 - INFO - ====================================================================================================
+2026-03-01 19:49:45,261 - INFO - 
+################################################################################
+2026-03-01 19:49:45,261 - INFO - 6-Task: Seed 42
+2026-03-01 19:49:45,261 - INFO - ################################################################################
+2026-03-01 19:49:45,261 - INFO - 
+================================================================================
+2026-03-01 19:49:45,261 - INFO - 6-Task Sequential Training: LoRA r=8, Seed=42
+2026-03-01 19:49:45,261 - INFO - Task Order: rte → mrpc → cola → sst2 → qnli → wnli
+2026-03-01 19:49:45,261 - INFO - ================================================================================
+2026-03-01 19:49:58,508 - INFO -   Loaded rte validation: 277 samples
+2026-03-01 19:50:06,222 - INFO -   Loaded mrpc validation: 408 samples
+2026-03-01 19:50:13,513 - INFO -   Loaded cola validation: 1043 samples
+2026-03-01 19:50:20,681 - INFO -   Loaded sst2 validation: 872 samples
+2026-03-01 19:50:37,225 - INFO -   Loaded qnli validation: 5463 samples
+2026-03-01 19:50:50,725 - INFO -   Loaded wnli validation: 71 samples
+2026-03-01 19:50:50,725 - INFO - 
+--- Training Task 1/6: rte ---
+2026-03-01 19:50:57,107 - INFO -   Training samples: 2490
+2026-03-01 19:51:32,803 - INFO -   Trained in 0.6 min
+2026-03-01 19:51:32,803 - INFO -   Evaluating on all 1 tasks:
+2026-03-01 19:51:39,742 - INFO -     rte: 0.4477 (just trained)
+2026-03-01 19:51:39,768 - INFO - 
+--- Training Task 2/6: mrpc ---
+2026-03-01 19:51:47,382 - INFO -   Training samples: 3668
+2026-03-01 19:52:40,491 - INFO -   Trained in 0.9 min
+2026-03-01 19:52:40,491 - INFO -   Evaluating on all 2 tasks:
+2026-03-01 19:52:47,301 - INFO -     rte: 0.4729 (Initial: 0.4477, Forgot: -0.0253)
+2026-03-01 19:52:56,870 - INFO -     mrpc: 0.6838 (just trained)
+2026-03-01 19:52:56,897 - INFO - 
+--- Training Task 3/6: cola ---
+2026-03-01 19:53:04,353 - INFO -   Training samples: 8551
+2026-03-01 19:54:49,827 - INFO -   Trained in 1.8 min
+2026-03-01 19:54:49,827 - INFO -   Evaluating on all 3 tasks:
+2026-03-01 19:54:56,405 - INFO -     rte: 0.4729 (Initial: 0.4477, Forgot: -0.0253)
+2026-03-01 19:55:05,979 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 19:55:30,404 - INFO -     cola: 0.6980 (just trained)
+2026-03-01 19:55:30,429 - INFO - 
+--- Training Task 4/6: sst2 ---
+2026-03-01 19:55:37,392 - INFO -   Training samples: 2000
+2026-03-01 19:56:05,582 - INFO -   Trained in 0.5 min
+2026-03-01 19:56:05,582 - INFO -   Evaluating on all 4 tasks:
+2026-03-01 19:56:12,542 - INFO -     rte: 0.4729 (Initial: 0.4477, Forgot: -0.0253)
+2026-03-01 19:56:22,330 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 19:56:48,663 - INFO -     cola: 0.7105 (Initial: 0.6980, Forgot: -0.0125)
+2026-03-01 19:57:09,845 - INFO -     sst2: 0.5206 (just trained)
+2026-03-01 19:57:09,870 - INFO - 
+--- Training Task 5/6: qnli ---
+2026-03-01 19:57:16,284 - INFO -   Training samples: 2000
+2026-03-01 19:57:43,031 - INFO -   Trained in 0.4 min
+2026-03-01 19:57:43,031 - INFO -   Evaluating on all 5 tasks:
+2026-03-01 19:57:49,942 - INFO -     rte: 0.5379 (Initial: 0.4477, Forgot: -0.0903)
+2026-03-01 19:57:59,846 - INFO -     mrpc: 0.3162 (Initial: 0.6838, Forgot: 0.3676)
+2026-03-01 19:58:24,832 - INFO -     cola: 0.6318 (Initial: 0.6980, Forgot: 0.0662)
+2026-03-01 19:58:45,948 - INFO -     sst2: 0.5310 (Initial: 0.5206, Forgot: -0.0103)
+2026-03-01 20:00:56,120 - INFO -     qnli: 0.5766 (just trained)
+2026-03-01 20:00:56,144 - INFO - 
+--- Training Task 6/6: wnli ---
+2026-03-01 20:01:02,556 - INFO -   Training samples: 635
+2026-03-01 20:01:11,376 - INFO -   Trained in 0.1 min
+2026-03-01 20:01:11,376 - INFO -   Evaluating on all 6 tasks:
+2026-03-01 20:01:18,319 - INFO -     rte: 0.5126 (Initial: 0.4477, Forgot: -0.0650)
+2026-03-01 20:01:27,933 - INFO -     mrpc: 0.3260 (Initial: 0.6838, Forgot: 0.3578)
+2026-03-01 20:01:52,612 - INFO -     cola: 0.7037 (Initial: 0.6980, Forgot: -0.0058)
+2026-03-01 20:02:14,675 - INFO -     sst2: 0.5172 (Initial: 0.5206, Forgot: 0.0034)
+2026-03-01 20:04:23,737 - INFO -     qnli: 0.6229 (Initial: 0.5766, Forgot: -0.0463)
+2026-03-01 20:04:25,459 - INFO -     wnli: 0.4507 (just trained)
+2026-03-01 20:04:25,484 - INFO - 
+✅ Seed 42: Avg Forgetting=0.0488, Accuracy=0.5222
+2026-03-01 20:04:25,484 - INFO -   Forgetting trajectory:
+2026-03-01 20:04:25,484 - INFO -     after_mrpc: avg_forg=-0.0253 (over 1 prior tasks)
+2026-03-01 20:04:25,484 - INFO -     after_cola: avg_forg=-0.0126 (over 2 prior tasks)
+2026-03-01 20:04:25,485 - INFO -     after_sst2: avg_forg=-0.0126 (over 3 prior tasks)
+2026-03-01 20:04:25,485 - INFO -     after_qnli: avg_forg=0.0833 (over 4 prior tasks)
+2026-03-01 20:04:25,485 - INFO -     after_wnli: avg_forg=0.0488 (over 5 prior tasks)
+2026-03-01 20:04:25,671 - INFO - 
+################################################################################
+2026-03-01 20:04:25,671 - INFO - 6-Task: Seed 43
+2026-03-01 20:04:25,672 - INFO - ################################################################################
+2026-03-01 20:04:25,672 - INFO - 
+================================================================================
+2026-03-01 20:04:25,672 - INFO - 6-Task Sequential Training: LoRA r=8, Seed=43
+2026-03-01 20:04:25,672 - INFO - Task Order: rte → mrpc → cola → sst2 → qnli → wnli
+2026-03-01 20:04:25,672 - INFO - ================================================================================
+2026-03-01 20:04:32,691 - INFO -   Loaded rte validation: 277 samples
+2026-03-01 20:04:38,734 - INFO -   Loaded mrpc validation: 408 samples
+2026-03-01 20:04:44,441 - INFO -   Loaded cola validation: 1043 samples
+2026-03-01 20:04:49,848 - INFO -   Loaded sst2 validation: 872 samples
+2026-03-01 20:04:55,890 - INFO -   Loaded qnli validation: 5463 samples
+2026-03-01 20:05:01,544 - INFO -   Loaded wnli validation: 71 samples
+2026-03-01 20:05:01,544 - INFO - 
+--- Training Task 1/6: rte ---
+2026-03-01 20:05:08,189 - INFO -   Training samples: 2490
+2026-03-01 20:05:38,591 - INFO -   Trained in 0.5 min
+2026-03-01 20:05:38,591 - INFO -   Evaluating on all 1 tasks:
+2026-03-01 20:05:45,097 - INFO -     rte: 0.5235 (just trained)
+2026-03-01 20:05:45,123 - INFO - 
+--- Training Task 2/6: mrpc ---
+2026-03-01 20:05:56,431 - INFO -   Training samples: 3668
+2026-03-01 20:06:48,272 - INFO -   Trained in 0.9 min
+2026-03-01 20:06:48,273 - INFO -   Evaluating on all 2 tasks:
+2026-03-01 20:06:55,296 - INFO -     rte: 0.4729 (Initial: 0.5235, Forgot: 0.0505)
+2026-03-01 20:07:05,385 - INFO -     mrpc: 0.6838 (just trained)
+2026-03-01 20:07:05,413 - INFO - 
+--- Training Task 3/6: cola ---
+2026-03-01 20:07:12,507 - INFO -   Training samples: 8551
+2026-03-01 20:09:06,728 - INFO -   Trained in 1.9 min
+2026-03-01 20:09:06,728 - INFO -   Evaluating on all 3 tasks:
+2026-03-01 20:09:13,302 - INFO -     rte: 0.4729 (Initial: 0.5235, Forgot: 0.0505)
+2026-03-01 20:09:22,766 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 20:09:47,939 - INFO -     cola: 0.6913 (just trained)
+2026-03-01 20:09:47,964 - INFO - 
+--- Training Task 4/6: sst2 ---
+2026-03-01 20:09:54,665 - INFO -   Training samples: 2000
+2026-03-01 20:10:23,913 - INFO -   Trained in 0.5 min
+2026-03-01 20:10:23,913 - INFO -   Evaluating on all 4 tasks:
+2026-03-01 20:10:31,112 - INFO -     rte: 0.4729 (Initial: 0.5235, Forgot: 0.0505)
+2026-03-01 20:10:41,279 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 20:11:08,061 - INFO -     cola: 0.7028 (Initial: 0.6913, Forgot: -0.0115)
+2026-03-01 20:11:28,409 - INFO -     sst2: 0.5183 (just trained)
+2026-03-01 20:11:28,433 - INFO - 
+--- Training Task 5/6: qnli ---
+2026-03-01 20:11:34,939 - INFO -   Training samples: 2000
+2026-03-01 20:12:01,842 - INFO -   Trained in 0.4 min
+2026-03-01 20:12:01,842 - INFO -   Evaluating on all 5 tasks:
+2026-03-01 20:12:09,202 - INFO -     rte: 0.5451 (Initial: 0.5235, Forgot: -0.0217)
+2026-03-01 20:12:18,874 - INFO -     mrpc: 0.3162 (Initial: 0.6838, Forgot: 0.3676)
+2026-03-01 20:12:43,712 - INFO -     cola: 0.6903 (Initial: 0.6913, Forgot: 0.0010)
+2026-03-01 20:13:04,419 - INFO -     sst2: 0.5103 (Initial: 0.5183, Forgot: 0.0080)
+2026-03-01 20:15:17,290 - INFO -     qnli: 0.6476 (just trained)
+2026-03-01 20:15:17,315 - INFO - 
+--- Training Task 6/6: wnli ---
+2026-03-01 20:15:23,330 - INFO -   Training samples: 635
+2026-03-01 20:15:32,175 - INFO -   Trained in 0.1 min
+2026-03-01 20:15:32,175 - INFO -   Evaluating on all 6 tasks:
+2026-03-01 20:15:38,850 - INFO -     rte: 0.5668 (Initial: 0.5235, Forgot: -0.0433)
+2026-03-01 20:15:48,398 - INFO -     mrpc: 0.3088 (Initial: 0.6838, Forgot: 0.3750)
+2026-03-01 20:16:13,652 - INFO -     cola: 0.6913 (Initial: 0.6913, Forgot: 0.0000)
+2026-03-01 20:16:34,509 - INFO -     sst2: 0.5092 (Initial: 0.5183, Forgot: 0.0092)
+2026-03-01 20:18:51,752 - INFO -     qnli: 0.6575 (Initial: 0.6476, Forgot: -0.0099)
+2026-03-01 20:18:53,556 - INFO -     wnli: 0.5352 (just trained)
+2026-03-01 20:18:53,582 - INFO - 
+✅ Seed 43: Avg Forgetting=0.0662, Accuracy=0.5448
+2026-03-01 20:18:53,582 - INFO -   Forgetting trajectory:
+2026-03-01 20:18:53,582 - INFO -     after_mrpc: avg_forg=0.0505 (over 1 prior tasks)
+2026-03-01 20:18:53,582 - INFO -     after_cola: avg_forg=0.0253 (over 2 prior tasks)
+2026-03-01 20:18:53,582 - INFO -     after_sst2: avg_forg=0.0130 (over 3 prior tasks)
+2026-03-01 20:18:53,582 - INFO -     after_qnli: avg_forg=0.0887 (over 4 prior tasks)
+2026-03-01 20:18:53,582 - INFO -     after_wnli: avg_forg=0.0662 (over 5 prior tasks)
+2026-03-01 20:18:53,774 - INFO - 
+################################################################################
+2026-03-01 20:18:53,775 - INFO - 6-Task: Seed 44
+2026-03-01 20:18:53,775 - INFO - ################################################################################
+2026-03-01 20:18:53,775 - INFO - 
+================================================================================
+2026-03-01 20:18:53,775 - INFO - 6-Task Sequential Training: LoRA r=8, Seed=44
+2026-03-01 20:18:53,775 - INFO - Task Order: rte → mrpc → cola → sst2 → qnli → wnli
+2026-03-01 20:18:53,775 - INFO - ================================================================================
+2026-03-01 20:19:00,979 - INFO -   Loaded rte validation: 277 samples
+2026-03-01 20:19:06,984 - INFO -   Loaded mrpc validation: 408 samples
+2026-03-01 20:19:12,683 - INFO -   Loaded cola validation: 1043 samples
+2026-03-01 20:19:18,983 - INFO -   Loaded sst2 validation: 872 samples
+2026-03-01 20:19:25,085 - INFO -   Loaded qnli validation: 5463 samples
+2026-03-01 20:19:31,089 - INFO -   Loaded wnli validation: 71 samples
+2026-03-01 20:19:31,089 - INFO - 
+--- Training Task 1/6: rte ---
+2026-03-01 20:19:36,760 - INFO -   Training samples: 2490
+2026-03-01 20:20:12,150 - INFO -   Trained in 0.6 min
+2026-03-01 20:20:12,150 - INFO -   Evaluating on all 1 tasks:
+2026-03-01 20:20:19,062 - INFO -     rte: 0.4765 (just trained)
+2026-03-01 20:20:19,088 - INFO - 
+--- Training Task 2/6: mrpc ---
+2026-03-01 20:20:25,139 - INFO -   Training samples: 3668
+2026-03-01 20:21:14,878 - INFO -   Trained in 0.8 min
+2026-03-01 20:21:14,878 - INFO -   Evaluating on all 2 tasks:
+2026-03-01 20:21:21,494 - INFO -     rte: 0.4729 (Initial: 0.4765, Forgot: 0.0036)
+2026-03-01 20:21:31,000 - INFO -     mrpc: 0.6838 (just trained)
+2026-03-01 20:21:31,026 - INFO - 
+--- Training Task 3/6: cola ---
+2026-03-01 20:21:37,405 - INFO -   Training samples: 8551
+2026-03-01 20:23:33,760 - INFO -   Trained in 1.9 min
+2026-03-01 20:23:33,760 - INFO -   Evaluating on all 3 tasks:
+2026-03-01 20:23:40,273 - INFO -     rte: 0.4729 (Initial: 0.4765, Forgot: 0.0036)
+2026-03-01 20:23:50,238 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 20:24:14,905 - INFO -     cola: 0.7076 (just trained)
+2026-03-01 20:24:14,930 - INFO - 
+--- Training Task 4/6: sst2 ---
+2026-03-01 20:24:28,756 - INFO -   Training samples: 2000
+2026-03-01 20:24:55,347 - INFO -   Trained in 0.4 min
+2026-03-01 20:24:55,347 - INFO -   Evaluating on all 4 tasks:
+2026-03-01 20:25:02,239 - INFO -     rte: 0.4729 (Initial: 0.4765, Forgot: 0.0036)
+2026-03-01 20:25:12,380 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 20:25:38,786 - INFO -     cola: 0.7296 (Initial: 0.7076, Forgot: -0.0221)
+2026-03-01 20:25:59,454 - INFO -     sst2: 0.5298 (just trained)
+2026-03-01 20:25:59,478 - INFO - 
+--- Training Task 5/6: qnli ---
+2026-03-01 20:26:05,265 - INFO -   Training samples: 2000
+2026-03-01 20:26:32,710 - INFO -   Trained in 0.5 min
+2026-03-01 20:26:32,710 - INFO -   Evaluating on all 5 tasks:
+2026-03-01 20:26:39,457 - INFO -     rte: 0.5415 (Initial: 0.4765, Forgot: -0.0650)
+2026-03-01 20:26:48,904 - INFO -     mrpc: 0.3162 (Initial: 0.6838, Forgot: 0.3676)
+2026-03-01 20:27:13,342 - INFO -     cola: 0.6750 (Initial: 0.7076, Forgot: 0.0326)
+2026-03-01 20:27:34,013 - INFO -     sst2: 0.5401 (Initial: 0.5298, Forgot: -0.0103)
+2026-03-01 20:29:49,688 - INFO -     qnli: 0.6152 (just trained)
+2026-03-01 20:29:49,712 - INFO - 
+--- Training Task 6/6: wnli ---
+2026-03-01 20:29:55,729 - INFO -   Training samples: 635
+2026-03-01 20:30:04,463 - INFO -   Trained in 0.1 min
+2026-03-01 20:30:04,464 - INFO -   Evaluating on all 6 tasks:
+2026-03-01 20:30:11,887 - INFO -     rte: 0.5343 (Initial: 0.4765, Forgot: -0.0578)
+2026-03-01 20:30:22,428 - INFO -     mrpc: 0.3137 (Initial: 0.6838, Forgot: 0.3701)
+2026-03-01 20:30:48,437 - INFO -     cola: 0.7248 (Initial: 0.7076, Forgot: -0.0173)
+2026-03-01 20:31:09,298 - INFO -     sst2: 0.5367 (Initial: 0.5298, Forgot: -0.0069)
+2026-03-01 20:33:24,574 - INFO -     qnli: 0.6438 (Initial: 0.6152, Forgot: -0.0286)
+2026-03-01 20:33:26,333 - INFO -     wnli: 0.5352 (just trained)
+2026-03-01 20:33:26,359 - INFO - 
+✅ Seed 44: Avg Forgetting=0.0519, Accuracy=0.5481
+2026-03-01 20:33:26,359 - INFO -   Forgetting trajectory:
+2026-03-01 20:33:26,359 - INFO -     after_mrpc: avg_forg=0.0036 (over 1 prior tasks)
+2026-03-01 20:33:26,359 - INFO -     after_cola: avg_forg=0.0018 (over 2 prior tasks)
+2026-03-01 20:33:26,359 - INFO -     after_sst2: avg_forg=-0.0061 (over 3 prior tasks)
+2026-03-01 20:33:26,359 - INFO -     after_qnli: avg_forg=0.0812 (over 4 prior tasks)
+2026-03-01 20:33:26,359 - INFO -     after_wnli: avg_forg=0.0519 (over 5 prior tasks)

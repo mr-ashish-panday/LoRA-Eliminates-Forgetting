@@ -1,0 +1,85 @@
+{
+  "method": "lora_r8",
+  "seed": 44,
+  "timestamp": "2026-03-01T20:33:26.358768",
+  "task_sequence": [
+    "rte",
+    "mrpc",
+    "cola",
+    "sst2",
+    "qnli",
+    "wnli"
+  ],
+  "n_tasks": 6,
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.47653429602888087,
+      "after_mrpc": 0.4729241877256318,
+      "after_cola": 0.4729241877256318,
+      "after_sst2": 0.4729241877256318,
+      "after_qnli": 0.5415162454873647,
+      "after_wnli": 0.5342960288808665
+    },
+    "mrpc": {
+      "after_mrpc": 0.6838235294117647,
+      "after_cola": 0.6838235294117647,
+      "after_sst2": 0.6838235294117647,
+      "after_qnli": 0.3161764705882353,
+      "after_wnli": 0.3137254901960784
+    },
+    "cola": {
+      "after_cola": 0.7075743048897412,
+      "after_sst2": 0.7296260786193672,
+      "after_qnli": 0.6749760306807286,
+      "after_wnli": 0.7248322147651006
+    },
+    "sst2": {
+      "after_sst2": 0.5298165137614679,
+      "after_qnli": 0.5401376146788991,
+      "after_wnli": 0.536697247706422
+    },
+    "qnli": {
+      "after_qnli": 0.6152297272560864,
+      "after_wnli": 0.6437854658612484
+    },
+    "wnli": {
+      "after_wnli": 0.5352112676056338
+    }
+  },
+  "forgetting_metrics": {
+    "avg_forgetting": 0.05192838478764501,
+    "max_forgetting": 0.3700980392156863,
+    "forgetting_per_task": {
+      "rte": -0.0578,
+      "mrpc": 0.3701,
+      "cola": -0.0173,
+      "sst2": -0.0069,
+      "qnli": -0.0286
+    },
+    "final_avg_accuracy": 0.5480912858358917,
+    "initial_avg_accuracy": 0.5913649398255957,
+    "forgetting_trajectory": {
+      "after_mrpc": {
+        "avg_forgetting": 0.0036,
+        "n_prior_tasks": 1
+      },
+      "after_cola": {
+        "avg_forgetting": 0.0018,
+        "n_prior_tasks": 2
+      },
+      "after_sst2": {
+        "avg_forgetting": -0.0061,
+        "n_prior_tasks": 3
+      },
+      "after_qnli": {
+        "avg_forgetting": 0.0812,
+        "n_prior_tasks": 4
+      },
+      "after_wnli": {
+        "avg_forgetting": 0.0519,
+        "n_prior_tasks": 5
+      }
+    }
+  },
+  "time_hours": 0.2424
+}

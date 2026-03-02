@@ -1,0 +1,277 @@
+2026-03-01 18:43:58,421 - INFO - ====================================================================================================
+2026-03-01 18:43:58,421 - INFO - EXPERIMENT 4: RoBERTa-base Replication
+2026-03-01 18:43:58,421 - INFO - Model: roberta-base
+2026-03-01 18:43:58,421 - INFO - ====================================================================================================
+2026-03-01 18:44:02,699 - INFO - 
+################################################################################
+2026-03-01 18:44:02,699 - INFO - RoBERTa: full_seed42
+2026-03-01 18:44:02,699 - INFO - ################################################################################
+2026-03-01 18:44:02,699 - INFO - 
+================================================================================
+2026-03-01 18:44:02,699 - INFO - RoBERTa Sequential Training: Method=full, Seed=42
+2026-03-01 18:44:02,699 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-03-01 18:44:02,699 - INFO - ================================================================================
+2026-03-01 18:44:47,176 - INFO -   Loaded rte validation: 277 samples
+2026-03-01 18:44:53,669 - INFO -   Loaded mrpc validation: 408 samples
+2026-03-01 18:44:59,072 - INFO -   Loaded cola validation: 1043 samples
+2026-03-01 18:45:05,460 - INFO -   Loaded sst2 validation: 872 samples
+2026-03-01 18:45:05,460 - INFO - 
+--- Training Task 1/4: rte ---
+2026-03-01 18:45:11,205 - INFO -   Training samples: 2490
+2026-03-01 18:45:50,571 - INFO -   Training completed in 0.7 min, Peak memory: 2.60GB
+2026-03-01 18:45:50,571 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 18:45:55,863 - INFO -     rte: 0.7256 (just trained)
+2026-03-01 18:45:55,898 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-03-01 18:46:02,662 - INFO -   Training samples: 3668
+2026-03-01 18:47:04,096 - INFO -   Training completed in 1.0 min, Peak memory: 2.62GB
+2026-03-01 18:47:04,096 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 18:47:09,811 - INFO -     rte: 0.5126 (Initial: 0.7256, Forgot: 0.2130)
+2026-03-01 18:47:17,263 - INFO -     mrpc: 0.8725 (just trained)
+2026-03-01 18:47:17,300 - INFO - 
+--- Training Task 3/4: cola ---
+2026-03-01 18:47:24,216 - INFO -   Training samples: 8551
+2026-03-01 18:49:36,808 - INFO -   Training completed in 2.2 min, Peak memory: 2.62GB
+2026-03-01 18:49:36,808 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 18:49:42,024 - INFO -     rte: 0.4585 (Initial: 0.7256, Forgot: 0.2671)
+2026-03-01 18:49:49,325 - INFO -     mrpc: 0.6863 (Initial: 0.8725, Forgot: 0.1863)
+2026-03-01 18:50:07,694 - INFO -     cola: 0.8255 (just trained)
+2026-03-01 18:50:07,727 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-03-01 18:50:13,346 - INFO -   Training samples: 2000
+2026-03-01 18:50:45,451 - INFO -   Training completed in 0.5 min, Peak memory: 2.62GB
+2026-03-01 18:50:45,451 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 18:50:50,738 - INFO -     rte: 0.3971 (Initial: 0.7256, Forgot: 0.3285)
+2026-03-01 18:50:58,022 - INFO -     mrpc: 0.6422 (Initial: 0.8725, Forgot: 0.2304)
+2026-03-01 18:51:16,374 - INFO -     cola: 0.5666 (Initial: 0.8255, Forgot: 0.2589)
+2026-03-01 18:51:31,783 - INFO -     sst2: 0.9117 (just trained)
+2026-03-01 18:51:31,810 - INFO - 
+✅ full_seed42: Forgetting=0.2726, Accuracy=0.6294, Time=0.12h
+2026-03-01 18:51:32,010 - INFO - 
+################################################################################
+2026-03-01 18:51:32,011 - INFO - RoBERTa: full_seed43
+2026-03-01 18:51:32,011 - INFO - ################################################################################
+2026-03-01 18:51:32,011 - INFO - 
+================================================================================
+2026-03-01 18:51:32,011 - INFO - RoBERTa Sequential Training: Method=full, Seed=43
+2026-03-01 18:51:32,011 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-03-01 18:51:32,011 - INFO - ================================================================================
+2026-03-01 18:51:38,722 - INFO -   Loaded rte validation: 277 samples
+2026-03-01 18:51:44,441 - INFO -   Loaded mrpc validation: 408 samples
+2026-03-01 18:51:49,914 - INFO -   Loaded cola validation: 1043 samples
+2026-03-01 18:51:55,607 - INFO -   Loaded sst2 validation: 872 samples
+2026-03-01 18:51:55,607 - INFO - 
+--- Training Task 1/4: rte ---
+2026-03-01 18:52:01,347 - INFO -   Training samples: 2490
+2026-03-01 18:52:45,598 - INFO -   Training completed in 0.7 min, Peak memory: 2.61GB
+2026-03-01 18:52:45,599 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 18:52:51,529 - INFO -     rte: 0.7292 (just trained)
+2026-03-01 18:52:51,564 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-03-01 18:52:57,551 - INFO -   Training samples: 3668
+2026-03-01 18:54:04,034 - INFO -   Training completed in 1.1 min, Peak memory: 2.62GB
+2026-03-01 18:54:04,035 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 18:54:09,813 - INFO -     rte: 0.5054 (Initial: 0.7292, Forgot: 0.2238)
+2026-03-01 18:54:17,910 - INFO -     mrpc: 0.8775 (just trained)
+2026-03-01 18:54:17,944 - INFO - 
+--- Training Task 3/4: cola ---
+2026-03-01 18:54:23,921 - INFO -   Training samples: 8551
+2026-03-01 19:00:55,528 - INFO -   Training completed in 6.5 min, Peak memory: 2.62GB
+2026-03-01 19:00:55,529 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:01:14,467 - INFO -     rte: 0.4693 (Initial: 0.7292, Forgot: 0.2599)
+2026-03-01 19:01:45,643 - INFO -     mrpc: 0.6863 (Initial: 0.8775, Forgot: 0.1912)
+2026-03-01 19:03:12,165 - INFO -     cola: 0.8217 (just trained)
+2026-03-01 19:03:12,209 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-03-01 19:03:19,524 - INFO -   Training samples: 2000
+2026-03-01 19:04:50,441 - INFO -   Training completed in 1.5 min, Peak memory: 2.62GB
+2026-03-01 19:04:50,442 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:05:11,584 - INFO -     rte: 0.4765 (Initial: 0.7292, Forgot: 0.2527)
+2026-03-01 19:05:42,897 - INFO -     mrpc: 0.6569 (Initial: 0.8775, Forgot: 0.2206)
+2026-03-01 19:06:58,773 - INFO -     cola: 0.6213 (Initial: 0.8217, Forgot: 0.2004)
+2026-03-01 19:08:09,369 - INFO -     sst2: 0.8979 (just trained)
+2026-03-01 19:08:09,409 - INFO - 
+✅ full_seed43: Forgetting=0.2246, Accuracy=0.6632, Time=0.28h
+2026-03-01 19:08:11,006 - INFO - 
+################################################################################
+2026-03-01 19:08:11,008 - INFO - RoBERTa: full_seed44
+2026-03-01 19:08:11,008 - INFO - ################################################################################
+2026-03-01 19:08:11,009 - INFO - 
+================================================================================
+2026-03-01 19:08:11,009 - INFO - RoBERTa Sequential Training: Method=full, Seed=44
+2026-03-01 19:08:11,009 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-03-01 19:08:11,009 - INFO - ================================================================================
+2026-03-01 19:08:19,858 - INFO -   Loaded rte validation: 277 samples
+2026-03-01 19:08:25,367 - INFO -   Loaded mrpc validation: 408 samples
+2026-03-01 19:08:30,709 - INFO -   Loaded cola validation: 1043 samples
+2026-03-01 19:08:36,208 - INFO -   Loaded sst2 validation: 872 samples
+2026-03-01 19:08:36,210 - INFO - 
+--- Training Task 1/4: rte ---
+2026-03-01 19:08:41,612 - INFO -   Training samples: 2490
+2026-03-01 19:10:37,476 - INFO -   Training completed in 1.9 min, Peak memory: 2.61GB
+2026-03-01 19:10:37,477 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:10:57,215 - INFO -     rte: 0.7329 (just trained)
+2026-03-01 19:10:57,258 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-03-01 19:11:04,370 - INFO -   Training samples: 3668
+2026-03-01 19:14:02,770 - INFO -   Training completed in 3.0 min, Peak memory: 2.62GB
+2026-03-01 19:14:02,771 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:14:25,114 - INFO -     rte: 0.4946 (Initial: 0.7329, Forgot: 0.2383)
+2026-03-01 19:14:54,690 - INFO -     mrpc: 0.8505 (just trained)
+2026-03-01 19:14:54,726 - INFO - 
+--- Training Task 3/4: cola ---
+2026-03-01 19:15:00,819 - INFO -   Training samples: 8551
+2026-03-01 19:21:39,529 - INFO -   Training completed in 6.6 min, Peak memory: 2.62GB
+2026-03-01 19:21:39,530 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:22:00,822 - INFO -     rte: 0.4729 (Initial: 0.7329, Forgot: 0.2599)
+2026-03-01 19:22:33,230 - INFO -     mrpc: 0.6863 (Initial: 0.8505, Forgot: 0.1642)
+2026-03-01 19:23:48,719 - INFO -     cola: 0.8274 (just trained)
+2026-03-01 19:23:48,763 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-03-01 19:23:55,951 - INFO -   Training samples: 2000
+2026-03-01 19:25:34,546 - INFO -   Training completed in 1.6 min, Peak memory: 2.62GB
+2026-03-01 19:25:34,547 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:25:55,345 - INFO -     rte: 0.4440 (Initial: 0.7329, Forgot: 0.2888)
+2026-03-01 19:26:22,075 - INFO -     mrpc: 0.6863 (Initial: 0.8505, Forgot: 0.1642)
+2026-03-01 19:27:42,157 - INFO -     cola: 0.5906 (Initial: 0.8274, Forgot: 0.2368)
+2026-03-01 19:28:51,462 - INFO -     sst2: 0.8899 (just trained)
+2026-03-01 19:28:51,513 - INFO - 
+✅ full_seed44: Forgetting=0.2299, Accuracy=0.6527, Time=0.34h
+2026-03-01 19:28:53,223 - INFO - 
+################################################################################
+2026-03-01 19:28:53,226 - INFO - RoBERTa: lora_seed42
+2026-03-01 19:28:53,228 - INFO - ################################################################################
+2026-03-01 19:28:53,228 - INFO - 
+================================================================================
+2026-03-01 19:28:53,228 - INFO - RoBERTa Sequential Training: Method=lora, Seed=42
+2026-03-01 19:28:53,228 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-03-01 19:28:53,228 - INFO - ================================================================================
+2026-03-01 19:28:54,577 - INFO -   LoRA: 887,042 trainable / 125,534,212 total (0.71%)
+2026-03-01 19:29:05,363 - INFO -   Loaded rte validation: 277 samples
+2026-03-01 19:29:12,152 - INFO -   Loaded mrpc validation: 408 samples
+2026-03-01 19:29:18,527 - INFO -   Loaded cola validation: 1043 samples
+2026-03-01 19:29:25,543 - INFO -   Loaded sst2 validation: 872 samples
+2026-03-01 19:29:25,544 - INFO - 
+--- Training Task 1/4: rte ---
+2026-03-01 19:29:32,259 - INFO -   Training samples: 2490
+2026-03-01 19:30:32,744 - INFO -   Training completed in 1.0 min, Peak memory: 1.39GB
+2026-03-01 19:30:32,744 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:30:39,629 - INFO -     rte: 0.4910 (just trained)
+2026-03-01 19:30:39,659 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-03-01 19:30:45,982 - INFO -   Training samples: 3668
+2026-03-01 19:31:37,892 - INFO -   Training completed in 0.9 min, Peak memory: 1.39GB
+2026-03-01 19:31:37,892 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:31:44,469 - INFO -     rte: 0.4729 (Initial: 0.4910, Forgot: 0.0181)
+2026-03-01 19:31:54,016 - INFO -     mrpc: 0.6838 (just trained)
+2026-03-01 19:31:54,044 - INFO - 
+--- Training Task 3/4: cola ---
+2026-03-01 19:32:01,354 - INFO -   Training samples: 8551
+2026-03-01 19:34:00,262 - INFO -   Training completed in 2.0 min, Peak memory: 1.39GB
+2026-03-01 19:34:00,263 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:34:06,866 - INFO -     rte: 0.4729 (Initial: 0.4910, Forgot: 0.0181)
+2026-03-01 19:34:16,733 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 19:34:41,609 - INFO -     cola: 0.6942 (just trained)
+2026-03-01 19:34:41,634 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-03-01 19:34:48,311 - INFO -   Training samples: 2000
+2026-03-01 19:35:16,038 - INFO -   Training completed in 0.5 min, Peak memory: 1.39GB
+2026-03-01 19:35:16,039 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:35:22,770 - INFO -     rte: 0.4729 (Initial: 0.4910, Forgot: 0.0181)
+2026-03-01 19:35:32,108 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 19:35:56,243 - INFO -     cola: 0.7018 (Initial: 0.6942, Forgot: -0.0077)
+2026-03-01 19:36:17,082 - INFO -     sst2: 0.5206 (just trained)
+2026-03-01 19:36:17,106 - INFO - 
+✅ lora_seed42: Forgetting=0.0035, Accuracy=0.5948, Time=0.12h
+2026-03-01 19:36:17,294 - INFO - 
+################################################################################
+2026-03-01 19:36:17,294 - INFO - RoBERTa: lora_seed43
+2026-03-01 19:36:17,294 - INFO - ################################################################################
+2026-03-01 19:36:17,295 - INFO - 
+================================================================================
+2026-03-01 19:36:17,295 - INFO - RoBERTa Sequential Training: Method=lora, Seed=43
+2026-03-01 19:36:17,295 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-03-01 19:36:17,295 - INFO - ================================================================================
+2026-03-01 19:36:17,665 - INFO -   LoRA: 887,042 trainable / 125,534,212 total (0.71%)
+2026-03-01 19:36:26,822 - INFO -   Loaded rte validation: 277 samples
+2026-03-01 19:36:34,268 - INFO -   Loaded mrpc validation: 408 samples
+2026-03-01 19:36:41,897 - INFO -   Loaded cola validation: 1043 samples
+2026-03-01 19:36:49,978 - INFO -   Loaded sst2 validation: 872 samples
+2026-03-01 19:36:49,978 - INFO - 
+--- Training Task 1/4: rte ---
+2026-03-01 19:36:57,392 - INFO -   Training samples: 2490
+2026-03-01 19:37:32,475 - INFO -   Training completed in 0.6 min, Peak memory: 1.39GB
+2026-03-01 19:37:32,476 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:37:39,162 - INFO -     rte: 0.5632 (just trained)
+2026-03-01 19:37:39,187 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-03-01 19:37:45,625 - INFO -   Training samples: 3668
+2026-03-01 19:38:36,987 - INFO -   Training completed in 0.9 min, Peak memory: 1.39GB
+2026-03-01 19:38:36,988 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:38:43,834 - INFO -     rte: 0.4729 (Initial: 0.5632, Forgot: 0.0903)
+2026-03-01 19:38:53,554 - INFO -     mrpc: 0.6838 (just trained)
+2026-03-01 19:38:53,582 - INFO - 
+--- Training Task 3/4: cola ---
+2026-03-01 19:38:59,657 - INFO -   Training samples: 8551
+2026-03-01 19:40:47,843 - INFO -   Training completed in 1.8 min, Peak memory: 1.39GB
+2026-03-01 19:40:47,843 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:40:54,622 - INFO -     rte: 0.4729 (Initial: 0.5632, Forgot: 0.0903)
+2026-03-01 19:41:04,119 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 19:41:27,873 - INFO -     cola: 0.6913 (just trained)
+2026-03-01 19:41:27,898 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-03-01 19:41:33,602 - INFO -   Training samples: 2000
+2026-03-01 19:42:00,162 - INFO -   Training completed in 0.4 min, Peak memory: 1.39GB
+2026-03-01 19:42:00,163 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:42:07,467 - INFO -     rte: 0.4729 (Initial: 0.5632, Forgot: 0.0903)
+2026-03-01 19:42:17,522 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 19:42:42,388 - INFO -     cola: 0.6980 (Initial: 0.6913, Forgot: -0.0067)
+2026-03-01 19:43:03,306 - INFO -     sst2: 0.5229 (just trained)
+2026-03-01 19:43:03,331 - INFO - 
+✅ lora_seed43: Forgetting=0.0278, Accuracy=0.5944, Time=0.11h
+2026-03-01 19:43:03,514 - INFO - 
+################################################################################
+2026-03-01 19:43:03,515 - INFO - RoBERTa: lora_seed44
+2026-03-01 19:43:03,515 - INFO - ################################################################################
+2026-03-01 19:43:03,515 - INFO - 
+================================================================================
+2026-03-01 19:43:03,515 - INFO - RoBERTa Sequential Training: Method=lora, Seed=44
+2026-03-01 19:43:03,515 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-03-01 19:43:03,515 - INFO - ================================================================================
+2026-03-01 19:43:03,874 - INFO -   LoRA: 887,042 trainable / 125,534,212 total (0.71%)
+2026-03-01 19:43:09,830 - INFO -   Loaded rte validation: 277 samples
+2026-03-01 19:43:15,250 - INFO -   Loaded mrpc validation: 408 samples
+2026-03-01 19:43:20,007 - INFO -   Loaded cola validation: 1043 samples
+2026-03-01 19:43:25,457 - INFO -   Loaded sst2 validation: 872 samples
+2026-03-01 19:43:25,457 - INFO - 
+--- Training Task 1/4: rte ---
+2026-03-01 19:43:31,168 - INFO -   Training samples: 2490
+2026-03-01 19:44:05,566 - INFO -   Training completed in 0.6 min, Peak memory: 1.39GB
+2026-03-01 19:44:05,566 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:44:12,461 - INFO -     rte: 0.5379 (just trained)
+2026-03-01 19:44:12,487 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-03-01 19:44:18,494 - INFO -   Training samples: 3668
+2026-03-01 19:45:11,318 - INFO -   Training completed in 0.9 min, Peak memory: 1.39GB
+2026-03-01 19:45:11,318 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:45:18,153 - INFO -     rte: 0.4729 (Initial: 0.5379, Forgot: 0.0650)
+2026-03-01 19:45:27,346 - INFO -     mrpc: 0.6838 (just trained)
+2026-03-01 19:45:27,373 - INFO - 
+--- Training Task 3/4: cola ---
+2026-03-01 19:45:34,090 - INFO -   Training samples: 8551
+2026-03-01 19:47:24,449 - INFO -   Training completed in 1.8 min, Peak memory: 1.39GB
+2026-03-01 19:47:24,449 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:47:30,818 - INFO -     rte: 0.4729 (Initial: 0.5379, Forgot: 0.0650)
+2026-03-01 19:47:40,145 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 19:48:03,864 - INFO -     cola: 0.6913 (just trained)
+2026-03-01 19:48:03,889 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-03-01 19:48:10,700 - INFO -   Training samples: 2000
+2026-03-01 19:48:36,625 - INFO -   Training completed in 0.4 min, Peak memory: 1.39GB
+2026-03-01 19:48:36,625 - INFO -   Evaluating on all tasks seen so far:
+2026-03-01 19:48:43,394 - INFO -     rte: 0.4729 (Initial: 0.5379, Forgot: 0.0650)
+2026-03-01 19:48:53,155 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-03-01 19:49:17,705 - INFO -     cola: 0.6932 (Initial: 0.6913, Forgot: -0.0019)
+2026-03-01 19:49:38,082 - INFO -     sst2: 0.5115 (just trained)
+2026-03-01 19:49:38,107 - INFO - 
+✅ lora_seed44: Forgetting=0.0210, Accuracy=0.5904, Time=0.11h

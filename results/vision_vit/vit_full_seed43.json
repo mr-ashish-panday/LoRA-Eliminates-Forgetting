@@ -1,0 +1,36 @@
+{
+  "model": "google/vit-base-patch16-224-in21k",
+  "method": "full",
+  "seed": 43,
+  "timestamp": "2026-03-01T23:11:10.746509",
+  "task_sequence": [
+    "cifar10",
+    "svhn",
+    "cifar100"
+  ],
+  "accuracy_matrix": {
+    "cifar10": {
+      "after_cifar10": 0.939,
+      "after_svhn": 0.6485,
+      "after_cifar100": 0.163
+    },
+    "svhn": {
+      "after_svhn": 0.861,
+      "after_cifar100": 0.292
+    },
+    "cifar100": {
+      "after_cifar100": 0.563
+    }
+  },
+  "forgetting_metrics": {
+    "avg_forgetting": 0.6725,
+    "max_forgetting": 0.776,
+    "forgetting_per_task": {
+      "cifar10": 0.776,
+      "svhn": 0.569
+    },
+    "final_avg_accuracy": 0.3393,
+    "initial_avg_accuracy": 0.7877
+  },
+  "time_hours": 0.3646
+}

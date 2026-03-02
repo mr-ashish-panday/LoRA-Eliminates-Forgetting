@@ -1,0 +1,85 @@
+{
+  "method": "lora_r8",
+  "seed": 43,
+  "timestamp": "2026-03-01T20:18:53.581431",
+  "task_sequence": [
+    "rte",
+    "mrpc",
+    "cola",
+    "sst2",
+    "qnli",
+    "wnli"
+  ],
+  "n_tasks": 6,
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.5234657039711191,
+      "after_mrpc": 0.4729241877256318,
+      "after_cola": 0.4729241877256318,
+      "after_sst2": 0.4729241877256318,
+      "after_qnli": 0.5451263537906137,
+      "after_wnli": 0.5667870036101083
+    },
+    "mrpc": {
+      "after_mrpc": 0.6838235294117647,
+      "after_cola": 0.6838235294117647,
+      "after_sst2": 0.6838235294117647,
+      "after_qnli": 0.3161764705882353,
+      "after_wnli": 0.3088235294117647
+    },
+    "cola": {
+      "after_cola": 0.6912751677852349,
+      "after_sst2": 0.7027804410354745,
+      "after_qnli": 0.6903163950143816,
+      "after_wnli": 0.6912751677852349
+    },
+    "sst2": {
+      "after_sst2": 0.518348623853211,
+      "after_qnli": 0.5103211009174312,
+      "after_wnli": 0.5091743119266054
+    },
+    "qnli": {
+      "after_qnli": 0.6476295075965587,
+      "after_wnli": 0.6575141863444993
+    },
+    "wnli": {
+      "after_wnli": 0.5352112676056338
+    }
+  },
+  "forgetting_metrics": {
+    "avg_forgetting": 0.06619366670793517,
+    "max_forgetting": 0.375,
+    "forgetting_per_task": {
+      "rte": -0.0433,
+      "mrpc": 0.375,
+      "cola": 0.0,
+      "sst2": 0.0092,
+      "qnli": -0.0099
+    },
+    "final_avg_accuracy": 0.5447975777806411,
+    "initial_avg_accuracy": 0.5999589667039205,
+    "forgetting_trajectory": {
+      "after_mrpc": {
+        "avg_forgetting": 0.0505,
+        "n_prior_tasks": 1
+      },
+      "after_cola": {
+        "avg_forgetting": 0.0253,
+        "n_prior_tasks": 2
+      },
+      "after_sst2": {
+        "avg_forgetting": 0.013,
+        "n_prior_tasks": 3
+      },
+      "after_qnli": {
+        "avg_forgetting": 0.0887,
+        "n_prior_tasks": 4
+      },
+      "after_wnli": {
+        "avg_forgetting": 0.0662,
+        "n_prior_tasks": 5
+      }
+    }
+  },
+  "time_hours": 0.2411
+}

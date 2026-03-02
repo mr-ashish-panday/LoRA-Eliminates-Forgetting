@@ -1,0 +1,491 @@
+2026-02-27 18:44:09,957 - INFO - ====================================================================================================
+2026-02-27 18:44:09,957 - INFO - PHASE 7 EXTENDED V2: Full FT and LoRA for seeds 45-49
+2026-02-27 18:44:09,957 - INFO - Using FULL validation sets for better accuracy estimates
+2026-02-27 18:44:09,957 - INFO - ====================================================================================================
+2026-02-27 18:44:09,957 - INFO - Start: 2026-02-27T18:44:09.957831
+2026-02-27 18:44:18,672 - INFO - 
+####################################################################################################
+2026-02-27 18:44:18,675 - INFO - EXPERIMENT 1/10: Method=full, Seed=45
+2026-02-27 18:44:18,676 - INFO - ####################################################################################################
+2026-02-27 18:44:18,678 - INFO - 
+================================================================================
+2026-02-27 18:44:18,678 - INFO - Sequential Training: Method=full, Seed=45
+2026-02-27 18:44:18,679 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 18:44:18,680 - INFO - ================================================================================
+2026-02-27 18:46:12,815 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 18:46:40,256 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 18:47:04,678 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 18:47:28,171 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 18:47:28,171 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 18:47:50,902 - INFO -   Training samples: 2490
+2026-02-27 19:00:17,025 - INFO -   Training completed in 12.4 min, Peak memory: 2.42GB
+2026-02-27 19:00:17,078 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 19:02:02,733 - INFO -     rte: 0.6282 (just trained)
+2026-02-27 19:02:02,784 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 19:02:27,014 - INFO -   Training samples: 3668
+2026-02-27 19:21:21,199 - INFO -   Training completed in 18.9 min, Peak memory: 2.43GB
+2026-02-27 19:21:21,200 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 19:23:44,004 - INFO -     rte: 0.5162 (Initial: 0.6282, Forgot: 0.1119)
+2026-02-27 19:26:43,472 - INFO -     mrpc: 0.8554 (just trained)
+2026-02-27 19:26:43,522 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 19:27:42,732 - INFO -   Training samples: 8551
+2026-02-27 20:06:19,691 - INFO -   Training completed in 38.6 min, Peak memory: 2.43GB
+2026-02-27 20:06:19,691 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 20:08:25,255 - INFO -     rte: 0.4874 (Initial: 0.6282, Forgot: 0.1408)
+2026-02-27 20:11:32,468 - INFO -     mrpc: 0.6936 (Initial: 0.8554, Forgot: 0.1618)
+2026-02-27 20:19:02,348 - INFO -     cola: 0.8207 (just trained)
+2026-02-27 20:19:02,393 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 20:19:31,752 - INFO -   Training samples: 2000
+2026-02-27 20:27:13,662 - INFO -   Training completed in 7.7 min, Peak memory: 2.43GB
+2026-02-27 20:27:13,663 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 20:29:15,499 - INFO -     rte: 0.4801 (Initial: 0.6282, Forgot: 0.1480)
+2026-02-27 20:31:41,960 - INFO -     mrpc: 0.7525 (Initial: 0.8554, Forgot: 0.1029)
+2026-02-27 20:39:12,959 - INFO -     cola: 0.7085 (Initial: 0.8207, Forgot: 0.1122)
+2026-02-27 20:43:46,080 - INFO -     sst2: 0.8658 (just trained)
+2026-02-27 20:43:48,089 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 20:43:48,091 - INFO -    Avg Forgetting: 0.1210
+2026-02-27 20:43:48,092 - INFO -    Final Avg Acc: 0.7017
+2026-02-27 20:43:48,093 - INFO -    Time: 1.99h
+2026-02-27 20:43:53,333 - INFO - 
+####################################################################################################
+2026-02-27 20:43:53,340 - INFO - EXPERIMENT 2/10: Method=full, Seed=46
+2026-02-27 20:43:53,342 - INFO - ####################################################################################################
+2026-02-27 20:43:53,343 - INFO - 
+================================================================================
+2026-02-27 20:43:53,344 - INFO - Sequential Training: Method=full, Seed=46
+2026-02-27 20:43:53,345 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 20:43:53,347 - INFO - ================================================================================
+2026-02-27 20:44:10,291 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 20:44:20,673 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 20:44:36,485 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 20:44:51,675 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 20:44:51,682 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 20:45:07,437 - INFO -   Training samples: 2490
+2026-02-27 20:55:38,675 - INFO -   Training completed in 10.5 min, Peak memory: 2.42GB
+2026-02-27 20:55:38,728 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 20:57:45,775 - INFO -     rte: 0.6534 (just trained)
+2026-02-27 20:57:46,336 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 20:58:02,250 - INFO -   Training samples: 3668
+2026-02-27 21:13:50,708 - INFO -   Training completed in 15.8 min, Peak memory: 2.43GB
+2026-02-27 21:13:50,709 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 21:15:29,918 - INFO -     rte: 0.5126 (Initial: 0.6534, Forgot: 0.1408)
+2026-02-27 21:19:48,236 - INFO -     mrpc: 0.8407 (just trained)
+2026-02-27 21:19:49,878 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 21:20:04,665 - INFO -   Training samples: 8551
+2026-02-27 21:54:09,538 - INFO -   Training completed in 34.1 min, Peak memory: 2.43GB
+2026-02-27 21:54:09,538 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 21:54:24,152 - INFO -     rte: 0.4549 (Initial: 0.6534, Forgot: 0.1986)
+2026-02-27 21:54:41,812 - INFO -     mrpc: 0.7059 (Initial: 0.8407, Forgot: 0.1348)
+2026-02-27 21:55:24,521 - INFO -     cola: 0.8236 (just trained)
+2026-02-27 21:55:24,551 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 21:55:32,598 - INFO -   Training samples: 2000
+2026-02-27 21:56:35,508 - INFO -   Training completed in 1.0 min, Peak memory: 2.43GB
+2026-02-27 21:56:35,508 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 21:56:47,736 - INFO -     rte: 0.4801 (Initial: 0.6534, Forgot: 0.1733)
+2026-02-27 21:57:05,872 - INFO -     mrpc: 0.7034 (Initial: 0.8407, Forgot: 0.1373)
+2026-02-27 21:58:00,819 - INFO -     cola: 0.6136 (Initial: 0.8236, Forgot: 0.2100)
+2026-02-27 21:58:37,885 - INFO -     sst2: 0.8807 (just trained)
+2026-02-27 21:58:37,914 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 21:58:37,914 - INFO -    Avg Forgetting: 0.1735
+2026-02-27 21:58:37,914 - INFO -    Final Avg Acc: 0.6695
+2026-02-27 21:58:37,914 - INFO -    Time: 1.25h
+2026-02-27 21:58:38,215 - INFO - 
+####################################################################################################
+2026-02-27 21:58:38,216 - INFO - EXPERIMENT 3/10: Method=full, Seed=47
+2026-02-27 21:58:38,216 - INFO - ####################################################################################################
+2026-02-27 21:58:38,216 - INFO - 
+================================================================================
+2026-02-27 21:58:38,216 - INFO - Sequential Training: Method=full, Seed=47
+2026-02-27 21:58:38,216 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 21:58:38,216 - INFO - ================================================================================
+2026-02-27 21:58:45,727 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 21:58:51,941 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 21:58:57,531 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 21:59:04,079 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 21:59:04,080 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 21:59:09,625 - INFO -   Training samples: 2490
+2026-02-27 22:00:35,298 - INFO -   Training completed in 1.4 min, Peak memory: 2.42GB
+2026-02-27 22:00:35,298 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:00:49,083 - INFO -     rte: 0.6101 (just trained)
+2026-02-27 22:00:49,116 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 22:00:55,609 - INFO -   Training samples: 3668
+2026-02-27 22:02:56,636 - INFO -   Training completed in 2.0 min, Peak memory: 2.42GB
+2026-02-27 22:02:56,637 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:03:11,277 - INFO -     rte: 0.4874 (Initial: 0.6101, Forgot: 0.1227)
+2026-02-27 22:03:28,850 - INFO -     mrpc: 0.8407 (just trained)
+2026-02-27 22:03:28,882 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 22:03:35,542 - INFO -   Training samples: 8551
+2026-02-27 22:08:13,960 - INFO -   Training completed in 4.6 min, Peak memory: 2.43GB
+2026-02-27 22:08:13,960 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:08:24,871 - INFO -     rte: 0.4621 (Initial: 0.6101, Forgot: 0.1480)
+2026-02-27 22:08:40,071 - INFO -     mrpc: 0.6887 (Initial: 0.8407, Forgot: 0.1520)
+2026-02-27 22:09:23,011 - INFO -     cola: 0.8274 (just trained)
+2026-02-27 22:09:23,043 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 22:09:28,958 - INFO -   Training samples: 2000
+2026-02-27 22:10:25,207 - INFO -   Training completed in 0.9 min, Peak memory: 2.43GB
+2026-02-27 22:10:25,208 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:10:38,805 - INFO -     rte: 0.4621 (Initial: 0.6101, Forgot: 0.1480)
+2026-02-27 22:10:55,683 - INFO -     mrpc: 0.5882 (Initial: 0.8407, Forgot: 0.2525)
+2026-02-27 22:11:33,430 - INFO -     cola: 0.6127 (Initial: 0.8274, Forgot: 0.2148)
+2026-02-27 22:12:05,869 - INFO -     sst2: 0.8830 (just trained)
+2026-02-27 22:12:05,896 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 22:12:05,897 - INFO -    Avg Forgetting: 0.2051
+2026-02-27 22:12:05,897 - INFO -    Final Avg Acc: 0.6365
+2026-02-27 22:12:05,897 - INFO -    Time: 0.22h
+2026-02-27 22:12:06,132 - INFO - 
+####################################################################################################
+2026-02-27 22:12:06,133 - INFO - EXPERIMENT 4/10: Method=full, Seed=48
+2026-02-27 22:12:06,133 - INFO - ####################################################################################################
+2026-02-27 22:12:06,133 - INFO - 
+================================================================================
+2026-02-27 22:12:06,133 - INFO - Sequential Training: Method=full, Seed=48
+2026-02-27 22:12:06,133 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 22:12:06,133 - INFO - ================================================================================
+2026-02-27 22:12:12,660 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 22:12:17,637 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 22:12:22,460 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 22:12:27,212 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 22:12:27,212 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 22:12:32,249 - INFO -   Training samples: 2490
+2026-02-27 22:13:54,136 - INFO -   Training completed in 1.4 min, Peak memory: 2.42GB
+2026-02-27 22:13:54,136 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:14:06,100 - INFO -     rte: 0.6498 (just trained)
+2026-02-27 22:14:06,132 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 22:14:11,428 - INFO -   Training samples: 3668
+2026-02-27 22:15:57,899 - INFO -   Training completed in 1.8 min, Peak memory: 2.43GB
+2026-02-27 22:15:57,899 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:16:10,746 - INFO -     rte: 0.5054 (Initial: 0.6498, Forgot: 0.1444)
+2026-02-27 22:16:27,331 - INFO -     mrpc: 0.8554 (just trained)
+2026-02-27 22:16:27,370 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 22:16:32,829 - INFO -   Training samples: 8551
+2026-02-27 22:20:34,486 - INFO -   Training completed in 4.0 min, Peak memory: 2.43GB
+2026-02-27 22:20:34,486 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:20:44,743 - INFO -     rte: 0.4621 (Initial: 0.6498, Forgot: 0.1877)
+2026-02-27 22:20:59,329 - INFO -     mrpc: 0.6985 (Initial: 0.8554, Forgot: 0.1569)
+2026-02-27 22:21:44,374 - INFO -     cola: 0.8293 (just trained)
+2026-02-27 22:21:44,414 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 22:21:50,302 - INFO -   Training samples: 2000
+2026-02-27 22:22:54,462 - INFO -   Training completed in 1.1 min, Peak memory: 2.43GB
+2026-02-27 22:22:54,463 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:23:06,399 - INFO -     rte: 0.4910 (Initial: 0.6498, Forgot: 0.1588)
+2026-02-27 22:23:23,102 - INFO -     mrpc: 0.5441 (Initial: 0.8554, Forgot: 0.3113)
+2026-02-27 22:24:03,032 - INFO -     cola: 0.5494 (Initial: 0.8293, Forgot: 0.2800)
+2026-02-27 22:24:39,984 - INFO -     sst2: 0.8784 (just trained)
+2026-02-27 22:24:40,012 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 22:24:40,012 - INFO -    Avg Forgetting: 0.2500
+2026-02-27 22:24:40,012 - INFO -    Final Avg Acc: 0.6157
+2026-02-27 22:24:40,012 - INFO -    Time: 0.21h
+2026-02-27 22:24:40,292 - INFO - 
+####################################################################################################
+2026-02-27 22:24:40,292 - INFO - EXPERIMENT 5/10: Method=full, Seed=49
+2026-02-27 22:24:40,292 - INFO - ####################################################################################################
+2026-02-27 22:24:40,292 - INFO - 
+================================================================================
+2026-02-27 22:24:40,293 - INFO - Sequential Training: Method=full, Seed=49
+2026-02-27 22:24:40,293 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 22:24:40,293 - INFO - ================================================================================
+2026-02-27 22:24:46,483 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 22:24:51,570 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 22:24:56,405 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 22:25:01,476 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 22:25:01,477 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 22:25:06,339 - INFO -   Training samples: 2490
+2026-02-27 22:26:21,434 - INFO -   Training completed in 1.3 min, Peak memory: 2.42GB
+2026-02-27 22:26:21,434 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:26:32,924 - INFO -     rte: 0.5776 (just trained)
+2026-02-27 22:26:32,956 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 22:26:38,828 - INFO -   Training samples: 3668
+2026-02-27 22:28:33,294 - INFO -   Training completed in 1.9 min, Peak memory: 2.42GB
+2026-02-27 22:28:33,295 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:28:45,205 - INFO -     rte: 0.4982 (Initial: 0.5776, Forgot: 0.0794)
+2026-02-27 22:29:03,658 - INFO -     mrpc: 0.8456 (just trained)
+2026-02-27 22:29:03,710 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 22:29:09,155 - INFO -   Training samples: 8551
+2026-02-27 22:33:38,253 - INFO -   Training completed in 4.5 min, Peak memory: 2.43GB
+2026-02-27 22:33:38,254 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:33:50,829 - INFO -     rte: 0.4729 (Initial: 0.5776, Forgot: 0.1047)
+2026-02-27 22:34:09,112 - INFO -     mrpc: 0.6961 (Initial: 0.8456, Forgot: 0.1495)
+2026-02-27 22:34:54,524 - INFO -     cola: 0.8265 (just trained)
+2026-02-27 22:34:54,553 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 22:35:00,514 - INFO -   Training samples: 2000
+2026-02-27 22:36:03,713 - INFO -   Training completed in 1.1 min, Peak memory: 2.43GB
+2026-02-27 22:36:03,713 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:36:13,092 - INFO -     rte: 0.4838 (Initial: 0.5776, Forgot: 0.0939)
+2026-02-27 22:36:31,432 - INFO -     mrpc: 0.4632 (Initial: 0.8456, Forgot: 0.3824)
+2026-02-27 22:37:15,787 - INFO -     cola: 0.5724 (Initial: 0.8265, Forgot: 0.2541)
+2026-02-27 22:37:56,904 - INFO -     sst2: 0.8807 (just trained)
+2026-02-27 22:37:56,934 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 22:37:56,934 - INFO -    Avg Forgetting: 0.2434
+2026-02-27 22:37:56,934 - INFO -    Final Avg Acc: 0.6000
+2026-02-27 22:37:56,934 - INFO -    Time: 0.22h
+2026-02-27 22:37:57,248 - INFO - 
+####################################################################################################
+2026-02-27 22:37:57,250 - INFO - EXPERIMENT 6/10: Method=lora, Seed=45
+2026-02-27 22:37:57,250 - INFO - ####################################################################################################
+2026-02-27 22:37:57,250 - INFO - 
+================================================================================
+2026-02-27 22:37:57,250 - INFO - Sequential Training: Method=lora, Seed=45
+2026-02-27 22:37:57,251 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 22:37:57,251 - INFO - ================================================================================
+2026-02-27 22:38:04,934 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 22:38:09,765 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 22:38:14,675 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 22:38:19,642 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 22:38:19,643 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 22:38:24,822 - INFO -   Training samples: 2490
+2026-02-27 22:39:30,723 - INFO -   Training completed in 1.1 min, Peak memory: 1.32GB
+2026-02-27 22:39:30,723 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:39:43,251 - INFO -     rte: 0.5415 (just trained)
+2026-02-27 22:39:43,287 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 22:39:48,788 - INFO -   Training samples: 3668
+2026-02-27 22:41:30,165 - INFO -   Training completed in 1.7 min, Peak memory: 1.32GB
+2026-02-27 22:41:30,166 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:41:43,793 - INFO -     rte: 0.4693 (Initial: 0.5415, Forgot: 0.0722)
+2026-02-27 22:42:02,408 - INFO -     mrpc: 0.6838 (just trained)
+2026-02-27 22:42:02,445 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 22:42:08,205 - INFO -   Training samples: 8551
+2026-02-27 22:45:54,351 - INFO -   Training completed in 3.8 min, Peak memory: 1.32GB
+2026-02-27 22:45:54,353 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:46:08,274 - INFO -     rte: 0.4657 (Initial: 0.5415, Forgot: 0.0758)
+2026-02-27 22:46:29,292 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-02-27 22:47:26,362 - INFO -     cola: 0.6961 (just trained)
+2026-02-27 22:47:26,386 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 22:47:32,207 - INFO -   Training samples: 2000
+2026-02-27 22:48:23,782 - INFO -   Training completed in 0.9 min, Peak memory: 1.32GB
+2026-02-27 22:48:23,782 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:48:39,357 - INFO -     rte: 0.4621 (Initial: 0.5415, Forgot: 0.0794)
+2026-02-27 22:49:02,175 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-02-27 22:49:56,249 - INFO -     cola: 0.7133 (Initial: 0.6961, Forgot: -0.0173)
+2026-02-27 22:50:41,528 - INFO -     sst2: 0.5218 (just trained)
+2026-02-27 22:50:41,560 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 22:50:41,560 - INFO -    Avg Forgetting: 0.0207
+2026-02-27 22:50:41,561 - INFO -    Final Avg Acc: 0.5953
+2026-02-27 22:50:41,561 - INFO -    Time: 0.21h
+2026-02-27 22:50:41,890 - INFO - 
+####################################################################################################
+2026-02-27 22:50:41,891 - INFO - EXPERIMENT 7/10: Method=lora, Seed=46
+2026-02-27 22:50:41,891 - INFO - ####################################################################################################
+2026-02-27 22:50:41,891 - INFO - 
+================================================================================
+2026-02-27 22:50:41,891 - INFO - Sequential Training: Method=lora, Seed=46
+2026-02-27 22:50:41,891 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 22:50:41,891 - INFO - ================================================================================
+2026-02-27 22:50:48,341 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 22:50:53,091 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 22:50:58,356 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 22:51:03,238 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 22:51:03,238 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 22:51:08,268 - INFO -   Training samples: 2490
+2026-02-27 22:52:19,359 - INFO -   Training completed in 1.2 min, Peak memory: 1.32GB
+2026-02-27 22:52:19,360 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:52:35,264 - INFO -     rte: 0.5307 (just trained)
+2026-02-27 22:52:35,293 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 22:52:40,978 - INFO -   Training samples: 3668
+2026-02-27 22:54:19,137 - INFO -   Training completed in 1.6 min, Peak memory: 1.32GB
+2026-02-27 22:54:19,137 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:54:34,805 - INFO -     rte: 0.4657 (Initial: 0.5307, Forgot: 0.0650)
+2026-02-27 22:54:56,607 - INFO -     mrpc: 0.6838 (just trained)
+2026-02-27 22:54:56,637 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 22:55:02,341 - INFO -   Training samples: 8551
+2026-02-27 22:59:01,639 - INFO -   Training completed in 4.0 min, Peak memory: 1.32GB
+2026-02-27 22:59:01,639 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 22:59:17,854 - INFO -     rte: 0.4657 (Initial: 0.5307, Forgot: 0.0650)
+2026-02-27 22:59:40,077 - INFO -     mrpc: 0.6863 (Initial: 0.6838, Forgot: -0.0025)
+2026-02-27 23:00:37,604 - INFO -     cola: 0.6999 (just trained)
+2026-02-27 23:00:37,631 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 23:00:43,579 - INFO -   Training samples: 2000
+2026-02-27 23:01:30,584 - INFO -   Training completed in 0.8 min, Peak memory: 1.32GB
+2026-02-27 23:01:30,584 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:01:42,921 - INFO -     rte: 0.4657 (Initial: 0.5307, Forgot: 0.0650)
+2026-02-27 23:02:05,584 - INFO -     mrpc: 0.6863 (Initial: 0.6838, Forgot: -0.0025)
+2026-02-27 23:03:05,746 - INFO -     cola: 0.7220 (Initial: 0.6999, Forgot: -0.0221)
+2026-02-27 23:03:53,650 - INFO -     sst2: 0.5218 (just trained)
+2026-02-27 23:03:53,683 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 23:03:53,683 - INFO -    Avg Forgetting: 0.0135
+2026-02-27 23:03:53,683 - INFO -    Final Avg Acc: 0.5989
+2026-02-27 23:03:53,684 - INFO -    Time: 0.22h
+2026-02-27 23:03:54,747 - INFO - 
+####################################################################################################
+2026-02-27 23:03:54,750 - INFO - EXPERIMENT 8/10: Method=lora, Seed=47
+2026-02-27 23:03:54,750 - INFO - ####################################################################################################
+2026-02-27 23:03:54,750 - INFO - 
+================================================================================
+2026-02-27 23:03:54,750 - INFO - Sequential Training: Method=lora, Seed=47
+2026-02-27 23:03:54,750 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 23:03:54,750 - INFO - ================================================================================
+2026-02-27 23:04:01,326 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 23:04:06,192 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 23:04:11,292 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 23:04:16,085 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 23:04:16,085 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 23:04:21,098 - INFO -   Training samples: 2490
+2026-02-27 23:05:25,487 - INFO -   Training completed in 1.1 min, Peak memory: 1.32GB
+2026-02-27 23:05:25,488 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:05:39,516 - INFO -     rte: 0.4152 (just trained)
+2026-02-27 23:05:39,542 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 23:05:45,167 - INFO -   Training samples: 3668
+2026-02-27 23:07:21,835 - INFO -   Training completed in 1.6 min, Peak memory: 1.32GB
+2026-02-27 23:07:21,836 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:07:39,669 - INFO -     rte: 0.4693 (Initial: 0.4152, Forgot: -0.0542)
+2026-02-27 23:08:02,592 - INFO -     mrpc: 0.6838 (just trained)
+2026-02-27 23:08:02,618 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 23:08:08,195 - INFO -   Training samples: 8551
+2026-02-27 23:12:07,927 - INFO -   Training completed in 4.0 min, Peak memory: 1.32GB
+2026-02-27 23:12:07,928 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:12:25,602 - INFO -     rte: 0.4657 (Initial: 0.4152, Forgot: -0.0505)
+2026-02-27 23:12:47,201 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-02-27 23:13:46,011 - INFO -     cola: 0.6999 (just trained)
+2026-02-27 23:13:46,039 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 23:13:51,906 - INFO -   Training samples: 2000
+2026-02-27 23:14:51,973 - INFO -   Training completed in 1.0 min, Peak memory: 1.32GB
+2026-02-27 23:14:51,973 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:15:08,462 - INFO -     rte: 0.4621 (Initial: 0.4152, Forgot: -0.0469)
+2026-02-27 23:15:32,989 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-02-27 23:16:28,908 - INFO -     cola: 0.7114 (Initial: 0.6999, Forgot: -0.0115)
+2026-02-27 23:17:27,476 - INFO -     sst2: 0.5138 (just trained)
+2026-02-27 23:17:27,505 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 23:17:27,506 - INFO -    Avg Forgetting: -0.0195
+2026-02-27 23:17:27,506 - INFO -    Final Avg Acc: 0.5928
+2026-02-27 23:17:27,506 - INFO -    Time: 0.23h
+2026-02-27 23:17:28,866 - INFO - 
+####################################################################################################
+2026-02-27 23:17:28,867 - INFO - EXPERIMENT 9/10: Method=lora, Seed=48
+2026-02-27 23:17:28,867 - INFO - ####################################################################################################
+2026-02-27 23:17:28,867 - INFO - 
+================================================================================
+2026-02-27 23:17:28,867 - INFO - Sequential Training: Method=lora, Seed=48
+2026-02-27 23:17:28,867 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 23:17:28,867 - INFO - ================================================================================
+2026-02-27 23:17:35,439 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 23:17:40,312 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 23:17:45,349 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 23:17:50,217 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 23:17:50,217 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 23:17:55,163 - INFO -   Training samples: 2490
+2026-02-27 23:19:21,965 - INFO -   Training completed in 1.4 min, Peak memory: 1.32GB
+2026-02-27 23:19:21,967 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:19:37,946 - INFO -     rte: 0.4874 (just trained)
+2026-02-27 23:19:37,979 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 23:19:43,664 - INFO -   Training samples: 3668
+2026-02-27 23:21:35,645 - INFO -   Training completed in 1.9 min, Peak memory: 1.32GB
+2026-02-27 23:21:35,645 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:21:49,991 - INFO -     rte: 0.4657 (Initial: 0.4874, Forgot: 0.0217)
+2026-02-27 23:22:12,381 - INFO -     mrpc: 0.6838 (just trained)
+2026-02-27 23:22:12,414 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 23:22:17,803 - INFO -   Training samples: 8551
+2026-02-27 23:26:03,763 - INFO -   Training completed in 3.8 min, Peak memory: 1.32GB
+2026-02-27 23:26:03,763 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:26:17,614 - INFO -     rte: 0.4657 (Initial: 0.4874, Forgot: 0.0217)
+2026-02-27 23:26:40,867 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-02-27 23:27:36,374 - INFO -     cola: 0.7009 (just trained)
+2026-02-27 23:27:36,400 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 23:27:42,739 - INFO -   Training samples: 2000
+2026-02-27 23:28:49,139 - INFO -   Training completed in 1.1 min, Peak memory: 1.32GB
+2026-02-27 23:28:49,139 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:29:05,716 - INFO -     rte: 0.4657 (Initial: 0.4874, Forgot: 0.0217)
+2026-02-27 23:29:26,056 - INFO -     mrpc: 0.6838 (Initial: 0.6838, Forgot: 0.0000)
+2026-02-27 23:30:19,326 - INFO -     cola: 0.7181 (Initial: 0.7009, Forgot: -0.0173)
+2026-02-27 23:31:05,704 - INFO -     sst2: 0.5161 (just trained)
+2026-02-27 23:31:05,730 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 23:31:05,730 - INFO -    Avg Forgetting: 0.0015
+2026-02-27 23:31:05,730 - INFO -    Final Avg Acc: 0.5959
+2026-02-27 23:31:05,730 - INFO -    Time: 0.23h
+2026-02-27 23:31:06,051 - INFO - 
+####################################################################################################
+2026-02-27 23:31:06,052 - INFO - EXPERIMENT 10/10: Method=lora, Seed=49
+2026-02-27 23:31:06,052 - INFO - ####################################################################################################
+2026-02-27 23:31:06,052 - INFO - 
+================================================================================
+2026-02-27 23:31:06,052 - INFO - Sequential Training: Method=lora, Seed=49
+2026-02-27 23:31:06,052 - INFO - Task Order: rte → mrpc → cola → sst2
+2026-02-27 23:31:06,052 - INFO - ================================================================================
+2026-02-27 23:31:12,648 - INFO -   Loaded rte validation: 277 samples
+2026-02-27 23:31:17,483 - INFO -   Loaded mrpc validation: 408 samples
+2026-02-27 23:31:23,059 - INFO -   Loaded cola validation: 1043 samples
+2026-02-27 23:31:27,956 - INFO -   Loaded sst2 validation: 872 samples
+2026-02-27 23:31:27,956 - INFO - 
+--- Training Task 1/4: rte ---
+2026-02-27 23:31:33,068 - INFO -   Training samples: 2490
+2026-02-27 23:32:40,645 - INFO -   Training completed in 1.1 min, Peak memory: 1.32GB
+2026-02-27 23:32:40,645 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:32:53,277 - INFO -     rte: 0.5090 (just trained)
+2026-02-27 23:32:53,302 - INFO - 
+--- Training Task 2/4: mrpc ---
+2026-02-27 23:32:58,692 - INFO -   Training samples: 3668
+2026-02-27 23:34:37,281 - INFO -   Training completed in 1.6 min, Peak memory: 1.32GB
+2026-02-27 23:34:37,281 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:34:53,424 - INFO -     rte: 0.4693 (Initial: 0.5090, Forgot: 0.0397)
+2026-02-27 23:35:15,651 - INFO -     mrpc: 0.6887 (just trained)
+2026-02-27 23:35:15,677 - INFO - 
+--- Training Task 3/4: cola ---
+2026-02-27 23:35:21,159 - INFO -   Training samples: 8551
+2026-02-27 23:39:10,770 - INFO -   Training completed in 3.8 min, Peak memory: 1.32GB
+2026-02-27 23:39:10,772 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:39:24,884 - INFO -     rte: 0.4657 (Initial: 0.5090, Forgot: 0.0433)
+2026-02-27 23:39:44,668 - INFO -     mrpc: 0.6838 (Initial: 0.6887, Forgot: 0.0049)
+2026-02-27 23:40:38,624 - INFO -     cola: 0.6999 (just trained)
+2026-02-27 23:40:38,659 - INFO - 
+--- Training Task 4/4: sst2 ---
+2026-02-27 23:40:44,441 - INFO -   Training samples: 2000
+2026-02-27 23:41:42,553 - INFO -   Training completed in 1.0 min, Peak memory: 1.32GB
+2026-02-27 23:41:42,554 - INFO -   Evaluating on all tasks seen so far:
+2026-02-27 23:42:01,081 - INFO -     rte: 0.4657 (Initial: 0.5090, Forgot: 0.0433)
+2026-02-27 23:42:25,010 - INFO -     mrpc: 0.6838 (Initial: 0.6887, Forgot: 0.0049)
+2026-02-27 23:43:16,975 - INFO -     cola: 0.7133 (Initial: 0.6999, Forgot: -0.0134)
+2026-02-27 23:43:58,518 - INFO -     sst2: 0.5115 (just trained)
+2026-02-27 23:43:58,543 - INFO - 
+✅ EXPERIMENT COMPLETED!
+2026-02-27 23:43:58,543 - INFO -    Avg Forgetting: 0.0116
+2026-02-27 23:43:58,543 - INFO -    Final Avg Acc: 0.5936
+2026-02-27 23:43:58,543 - INFO -    Time: 0.21h
+2026-02-27 23:43:58,758 - INFO - 
+====================================================================================================
+2026-02-27 23:43:58,758 - INFO - PHASE 7 EXTENDED V2 COMPLETED!
+2026-02-27 23:43:58,758 - INFO - Total Time: 4.99h
+2026-02-27 23:43:58,758 - INFO - Successful: 10/10 (Failed: 0)
+2026-02-27 23:43:58,758 - INFO - ====================================================================================================

@@ -1,0 +1,44 @@
+{
+  "model": "roberta-base",
+  "method": "full",
+  "seed": 44,
+  "timestamp": "2026-03-01T19:28:51.507639",
+  "task_sequence": [
+    "rte",
+    "mrpc",
+    "cola",
+    "sst2"
+  ],
+  "accuracy_matrix": {
+    "rte": {
+      "after_rte": 0.7328519855595668,
+      "after_mrpc": 0.49458483754512633,
+      "after_cola": 0.4729241877256318,
+      "after_sst2": 0.44404332129963897
+    },
+    "mrpc": {
+      "after_mrpc": 0.8504901960784313,
+      "after_cola": 0.6862745098039216,
+      "after_sst2": 0.6862745098039216
+    },
+    "cola": {
+      "after_cola": 0.8274209012464045,
+      "after_sst2": 0.5906040268456376
+    },
+    "sst2": {
+      "after_sst2": 0.8899082568807339
+    }
+  },
+  "forgetting_metrics": {
+    "avg_forgetting": 0.2299,
+    "max_forgetting": 0.2888,
+    "forgetting_per_task": {
+      "rte": 0.2888,
+      "mrpc": 0.1642,
+      "cola": 0.2368
+    },
+    "final_avg_accuracy": 0.6527,
+    "initial_avg_accuracy": 0.8252
+  },
+  "time_hours": 0.3446
+}

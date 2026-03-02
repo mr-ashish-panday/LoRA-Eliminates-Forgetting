@@ -1,0 +1,240 @@
+{
+  "experiment": "Vision ViT Cross-Modality (Combined)",
+  "model": "google/vit-base-patch16-224-in21k",
+  "lora_rerun_time_hours": 1.1,
+  "successful": 6,
+  "method_summary": {
+    "full": {
+      "avg_forgetting_mean": 0.6754,
+      "avg_forgetting_std": 0.0394,
+      "final_accuracy_mean": 0.3315,
+      "final_accuracy_std": 0.027,
+      "n_seeds": 3
+    },
+    "lora": {
+      "avg_forgetting_mean": -0.0144,
+      "avg_forgetting_std": 0.0028,
+      "final_accuracy_mean": 0.1158,
+      "final_accuracy_std": 0.0161,
+      "n_seeds": 3
+    }
+  },
+  "results": {
+    "full_seed42": {
+      "model": "google/vit-base-patch16-224-in21k",
+      "method": "full",
+      "seed": 42,
+      "timestamp": "2026-03-01T22:49:17.912530",
+      "task_sequence": [
+        "cifar10",
+        "svhn",
+        "cifar100"
+      ],
+      "accuracy_matrix": {
+        "cifar10": {
+          "after_cifar10": 0.943,
+          "after_svhn": 0.511,
+          "after_cifar100": 0.176
+        },
+        "svhn": {
+          "after_svhn": 0.846,
+          "after_cifar100": 0.163
+        },
+        "cifar100": {
+          "after_cifar100": 0.547
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.725,
+        "max_forgetting": 0.767,
+        "forgetting_per_task": {
+          "cifar10": 0.767,
+          "svhn": 0.683
+        },
+        "final_avg_accuracy": 0.2953,
+        "initial_avg_accuracy": 0.7787
+      },
+      "time_hours": 0.3885
+    },
+    "full_seed43": {
+      "model": "google/vit-base-patch16-224-in21k",
+      "method": "full",
+      "seed": 43,
+      "timestamp": "2026-03-01T23:11:10.746509",
+      "task_sequence": [
+        "cifar10",
+        "svhn",
+        "cifar100"
+      ],
+      "accuracy_matrix": {
+        "cifar10": {
+          "after_cifar10": 0.939,
+          "after_svhn": 0.6485,
+          "after_cifar100": 0.163
+        },
+        "svhn": {
+          "after_svhn": 0.861,
+          "after_cifar100": 0.292
+        },
+        "cifar100": {
+          "after_cifar100": 0.563
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.6725,
+        "max_forgetting": 0.776,
+        "forgetting_per_task": {
+          "cifar10": 0.776,
+          "svhn": 0.569
+        },
+        "final_avg_accuracy": 0.3393,
+        "initial_avg_accuracy": 0.7877
+      },
+      "time_hours": 0.3646
+    },
+    "full_seed44": {
+      "model": "google/vit-base-patch16-224-in21k",
+      "method": "full",
+      "seed": 44,
+      "timestamp": "2026-03-01T23:32:50.261079",
+      "task_sequence": [
+        "cifar10",
+        "svhn",
+        "cifar100"
+      ],
+      "accuracy_matrix": {
+        "cifar10": {
+          "after_cifar10": 0.9535,
+          "after_svhn": 0.6095,
+          "after_cifar100": 0.2245
+        },
+        "svhn": {
+          "after_svhn": 0.843,
+          "after_cifar100": 0.3145
+        },
+        "cifar100": {
+          "after_cifar100": 0.541
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": 0.6287,
+        "max_forgetting": 0.729,
+        "forgetting_per_task": {
+          "cifar10": 0.729,
+          "svhn": 0.5285
+        },
+        "final_avg_accuracy": 0.36,
+        "initial_avg_accuracy": 0.7792
+      },
+      "time_hours": 0.3609
+    },
+    "lora_seed42": {
+      "model": "google/vit-base-patch16-224-in21k",
+      "method": "lora",
+      "seed": 42,
+      "timestamp": "2026-03-02T12:33:21.459907",
+      "task_sequence": [
+        "cifar10",
+        "svhn",
+        "cifar100"
+      ],
+      "accuracy_matrix": {
+        "cifar10": {
+          "after_cifar10": 0.071,
+          "after_svhn": 0.0845,
+          "after_cifar100": 0.09
+        },
+        "svhn": {
+          "after_svhn": 0.1395,
+          "after_cifar100": 0.1415
+        },
+        "cifar100": {
+          "after_cifar100": 0.0475
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": -0.0105,
+        "max_forgetting": -0.002,
+        "forgetting_per_task": {
+          "cifar10": -0.019,
+          "svhn": -0.002
+        },
+        "final_avg_accuracy": 0.093,
+        "initial_avg_accuracy": 0.086
+      },
+      "time_hours": 0.3891
+    },
+    "lora_seed43": {
+      "model": "google/vit-base-patch16-224-in21k",
+      "method": "lora",
+      "seed": 43,
+      "timestamp": "2026-03-02T12:54:36.624194",
+      "task_sequence": [
+        "cifar10",
+        "svhn",
+        "cifar100"
+      ],
+      "accuracy_matrix": {
+        "cifar10": {
+          "after_cifar10": 0.102,
+          "after_svhn": 0.1365,
+          "after_cifar100": 0.137
+        },
+        "svhn": {
+          "after_svhn": 0.1965,
+          "after_cifar100": 0.1945
+        },
+        "cifar100": {
+          "after_cifar100": 0.0515
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": -0.0165,
+        "max_forgetting": 0.002,
+        "forgetting_per_task": {
+          "cifar10": -0.035,
+          "svhn": 0.002
+        },
+        "final_avg_accuracy": 0.1277,
+        "initial_avg_accuracy": 0.1167
+      },
+      "time_hours": 0.3542
+    },
+    "lora_seed44": {
+      "model": "google/vit-base-patch16-224-in21k",
+      "method": "lora",
+      "seed": 44,
+      "timestamp": "2026-03-02T13:15:44.706299",
+      "task_sequence": [
+        "cifar10",
+        "svhn",
+        "cifar100"
+      ],
+      "accuracy_matrix": {
+        "cifar10": {
+          "after_cifar10": 0.131,
+          "after_svhn": 0.1635,
+          "after_cifar100": 0.1655
+        },
+        "svhn": {
+          "after_svhn": 0.1645,
+          "after_cifar100": 0.1625
+        },
+        "cifar100": {
+          "after_cifar100": 0.052
+        }
+      },
+      "forgetting_metrics": {
+        "avg_forgetting": -0.0163,
+        "max_forgetting": 0.002,
+        "forgetting_per_task": {
+          "cifar10": -0.0345,
+          "svhn": 0.002
+        },
+        "final_avg_accuracy": 0.1267,
+        "initial_avg_accuracy": 0.1158
+      },
+      "time_hours": 0.3522
+    }
+  }
+}
